@@ -1,0 +1,40 @@
+// Start \\
+title Quiplash
+
+actor Player
+participant Server
+
+// Player log-in \\
+note over Player,Server:log-in
+
+Player->Server:type:LGIN^blen:5^Ophir
+
+// Start of Round-one \\
+break
+note over Player,Server:Round #1
+Server->Player:type:PRMPT^blen:57^A new tv show about baby eating crocodiles is called ___
+
+Player->Server:type:ANSWR^blen:13^Diaper Danger
+
+// Votes \\
+break
+note over Player,Server:Voting
+
+Server->Player:type:VOTE^blen:96^A new tv show about baby eating crocodiles is called ___^Diaper Danger^Tiny Jaws
+
+Player->Server:type:VOTE^blen:1^1
+
+// Start of round two \\
+break
+note over Player,Server:Round #2
+Server->Player:type:PRMPT^blen:63^a person was arrested for ___ and was given 20 years of prison.
+
+Player->Server:type:ANSWR^blen:64^taking away the lolly pops from all the little children in spain
+
+// Votes \\
+break
+note over Player,Server:Voting
+
+Server->Player:type:VOTE^blen:136^a person was arrested for ___ and was given 20 years of prison.^taking away the lolly pops from all the little children in spain^pooping
+
+Player->Server:type:VOTE^blen:1^2
