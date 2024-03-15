@@ -25,7 +25,7 @@ This project not only satisfies academic requirements but also serves as an exce
 **Detailed Game Explanations in the Git Repository**
 ### Implemented:
 
- - None🫠
+ - None
 
 ### To be implemented:
  - Quiplash
