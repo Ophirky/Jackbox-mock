@@ -3,6 +3,8 @@
     DATE: 15/03/24
     DESCRIPTION: This file contains all the needed constants for the HTTP packet
 """
+# Imports #
+from functions.general_constants import LOG_DIR
 
 # HTTP necessities #
 HTTP_VERSION = b"HTTP/1.1"

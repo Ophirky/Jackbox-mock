@@ -4,20 +4,40 @@
     DESCRIPTION: HTTP protocol package. Includes (http parser and formatter, http request builder)
 """
 
-import constants as consts
+import http.constants as consts
+import http.http_parser
+import http.http_message
 
-def is_valid_request(request):
+def http_auto_tests() -> None:
+    """
+    Function that contains all the auto_checks for the http package
+    :return: None
+    """
+    http_parser.auto_test_http_parser()
+    http_message.auto_test_http_message()
+
+    # is_valid_request auto tests #
+    request: bytes = b"GET /index.html HTTP/1.1\r\nHost: 192.168.37.45\r\n\r\n"
+    request_invalid: bytes = b"GET /index.html HTTP/1.1\r\nHost:192.168.37.45\r\n\r\n"
+    assert is_valid_request(request)["valid"], is_valid_request(request)["reason"]
+    assert not is_valid_request(request_invalid)["valid"]
+
+
+def is_valid_request(request: bytes) -> dict[bool, str] or dict[bool]:
     """
     Checks if a http request is valid.
     :param request: the request to validate.
     :return dict[bool, string]: {"valid": True/False, "reason":"reason"}
     """
+    # Making sure that the argument is correct #
+    if not isinstance(request, bytes):
+        return {"valid": False, "reason": "request data type must be bytes"}
 
     # Split the request into lines #
-    lines = request.split('\r\n')
+    lines = request.decode('utf-8').split('\r\n')
 
     # Check if there's at least one line (the request line) and a blank line separating headers and body #
-    if len(lines) < 2 or '\r\n\r\n' not in request:
+    if len(lines) < 2 or b'\r\n\r\n' not in request:
         return {"valid": False, "reason": "At least one line (the request line) and a blank line separating headers "
                                           "and body are needed."}
 
@@ -31,10 +51,9 @@ def is_valid_request(request):
     if method.encode() not in consts.REQUEST_TYPES.values():
         return {"valid": False, "reason": f"{method} is not a real method in http."}
 
-    # Check if the request has an http version #
+    # Check if the request has a http version #
     if not method or not path or not version.startswith('HTTP/'):
         return {"valid": False, "reason": "Request must have http version."}
-
 
     # Check headers for correct formatting
     is_host_header = False
@@ -42,7 +61,7 @@ def is_valid_request(request):
         if ': ' not in header:
             return {"valid": False, "reason": f"{header} header does not contain colon-space separator."}
         if "Host" in header:
-            is_host_header = True # Mandatory host header is in the request
+            is_host_header = True  # Mandatory host header is in the request
 
     # Check if the request has mandatory host header #
     if not is_host_header:

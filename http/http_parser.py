@@ -3,10 +3,6 @@
     DATE: 15/03/24
     DESCRIPTION: Takes a received http request and formats it into a structure that is easy to use in code
 """
-
-# TODO: add logs
-# TODO: add error handing to all of the functions
-
 # Imports #
 import http.constants as consts
 import http
@@ -21,7 +17,7 @@ class HttpParser:
         :param http_request: the request for the class to parse.
         """
         # If the request is invalid #
-        is_request_valid = http.is_valid_request(http_request.decode())
+        is_request_valid = http.is_valid_request(http_request)
         if not is_request_valid["valid"]:
             self.HTTP_REQUEST = is_request_valid["reason"]
             self.QUERY_PARAMS = None
@@ -37,7 +33,7 @@ class HttpParser:
             self.BODY = self.__body_parser()
 
         # Whether the request is valid #
-        self.IS_VALID = is_request_valid["valid"]
+        self.IS_VALID: bool = is_request_valid["valid"]
 
     def __header_parser(self) -> dict[bytes]:
         """
@@ -59,13 +55,15 @@ class HttpParser:
         :return: dictionary of all the query parameters
         """
         try:
-            return dict(x.split(b" ")[0].split(b"=", 1)[0:2] for x in self.HTTP_REQUEST.split(b"?", 1)[1].split(b"&", 1))
+            return dict(
+                x.split(b" ")[0].split(b"=", 1)[0:2] for x in self.HTTP_REQUEST.split(b"?", 1)[1].split(b"&", 1))
+
         # If there are no params #
-        except:
+        except IndexError:
             return None
 
 
-def test_http_parser() -> None:
+def auto_test_http_parser() -> None:
     """
     Automatic tests for the HttpParser class.
     :return: None
@@ -73,16 +71,15 @@ def test_http_parser() -> None:
     # Valid HTTP request with query parameters
     valid_request = b"GET /index.html?param1=value1&param2=value2 HTTP/1.1\r\nHost: example.com\r\n\r\n"
     parser_valid = HttpParser(valid_request)
-    assert parser_valid.IS_VALID == True
+    assert parser_valid.IS_VALID
     assert parser_valid.HTTP_REQUEST == valid_request
     assert parser_valid.QUERY_PARAMS == {b"param1": b"value1", b"param2": b"value2"}
     assert parser_valid.HEADERS == {b"Host": b"example.com"}
     assert parser_valid.BODY == b""
 
     # Invalid HTTP request
-    invalid_request = b"GET /index.html HTTP/1.1\r\nHost: example.com\r\nInvalid-Header\r\n\r\n"
-    parser_invalid = HttpParser(invalid_request)
-    assert parser_invalid.IS_VALID == False
-    assert parser_invalid.QUERY_PARAMS == None
-    assert parser_invalid.HEADERS == None
-    assert parser_invalid.BODY == None
+    parser_invalid = HttpParser(b"GET /index.html HTTP/1.1\r\nHost: example.com\r\nInvalid-Header\r\n\r\n")
+    assert not parser_invalid.IS_VALID
+    assert not parser_invalid.QUERY_PARAMS
+    assert not parser_invalid.HEADERS
+    assert not parser_invalid.BODY
