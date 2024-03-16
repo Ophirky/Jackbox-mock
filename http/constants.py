@@ -7,12 +7,13 @@
 # HTTP necessities #
 HTTP_VERSION = b"HTTP/1.1"
 HEADER_SEPERATOR = b"\r\n"
-START_OF_BODY_SEPERATOR = HEADER_SEPERATOR*2
+BODY_SEPERATOR = HEADER_SEPERATOR*2
 
 # Headers #
 LOCATION_HEADER = b"Location: %s"
 CONTENT_TYPE_HEADER = b"Content-Type: %s"
 CONTENT_LEN_HEADER = b"Content-Length: %d"
+HOST_HEADER = b"Host: %s"
 
 # Dictionaries #
 REQUEST_TYPES = {
