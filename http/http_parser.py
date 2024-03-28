@@ -20,6 +20,10 @@ class HttpParser:
         is_request_valid = http.is_valid_request(http_request)
         if not is_request_valid["valid"]:
             self.HTTP_REQUEST = is_request_valid["reason"]
+
+            self.METHOD = None
+            self.URI = None
+            self.HTTP_VERSION = None
             self.QUERY_PARAMS = None
             self.HEADERS = None
             self.BODY = None
@@ -28,9 +32,9 @@ class HttpParser:
         else:
             self.HTTP_REQUEST = http_request
 
-            self.QUERY_PARAMS = self.__query_params_parser()
             self.HEADERS = self.__header_parser()
             self.BODY = self.__body_parser()
+            self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
 
         # Whether the request is valid #
         self.IS_VALID: bool = is_request_valid["valid"]
@@ -49,18 +53,34 @@ class HttpParser:
         """
         return self.HTTP_REQUEST.split(consts.BODY_SEPERATOR)[1]
 
-    def __query_params_parser(self) -> dict[bytes] or None:
+    def __section_one_parser(self) -> tuple[bytes, bytes, bytes, dict[bytes] or None]:
         """
-        Extract the parameters from the http request
-        :return: dictionary of all the query parameters
+        Splits the first section of the http request (before the headers)
+        :return tuple: (method, uri, http_version, query_params)
         """
-        try:
-            return dict(
-                x.split(b" ")[0].split(b"=", 1)[0:2] for x in self.HTTP_REQUEST.split(b"?", 1)[1].split(b"&", 1))
+        request = self.HTTP_REQUEST.split(b' ')
 
-        # If there are no params #
-        except IndexError:
-            return None
+        def __query_params_parser() -> dict[bytes] or None:
+            """
+            Extract the parameters from the http request
+            :return: dictionary of all the query parameters
+            """
+            try:
+                return dict(
+                    x.split(b" ")[0].split(b"=", 1)[0:2] for x in request[1].split(b"?", 1)[1].split(b"&", 1))
+
+            # If there are no params #
+            except IndexError:
+                return None
+
+        return request[0], request[1], request[2],  __query_params_parser()
+
+    def __str__(self) -> str:
+        """
+        Str dunder function for the HttpMsg class
+        :return str: The http message in full
+        """
+        return self.HTTP_REQUEST.decode('utf-8')
 
 
 def auto_test_http_parser() -> None:

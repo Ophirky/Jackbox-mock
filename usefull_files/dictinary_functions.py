@@ -1,7 +1,7 @@
 """
     AUTHOR: Ophir Nevo Michrowski
     DATE: 16/03/24
-    DESCRIPTION: Useful functions on dictionary's
+    DESCRIPTION: Useful usefull_files on dictionary's
 """
 
 def dict_to_bytes(dictionary: dict) -> dict[bytes]:

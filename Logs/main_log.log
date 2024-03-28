@@ -1,0 +1,1364 @@
+2024-03-24 14:27:54,498 | INFO | Auto tests were run.
+2024-03-24 14:27:58,181 | INFO | 127.0.0.1:54223 connected.
+2024-03-24 14:27:58,181 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:27:58,192 | INFO | 127.0.0.1:54224 connected.
+2024-03-24 14:27:58,192 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:28:02,772 | INFO | 127.0.0.1:54228 connected.
+2024-03-24 14:28:02,772 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:28:07,762 | INFO | 127.0.0.1:54232 connected.
+2024-03-24 14:28:07,763 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:28:07,763 | INFO | 127.0.0.1:54233 connected.
+2024-03-24 14:28:09,842 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:28:25,539 | INFO | 127.0.0.1:54242 connected.
+2024-03-24 14:28:25,540 | INFO | 127.0.0.1:54243 connected.
+2024-03-24 14:30:17,251 | INFO | Auto tests were run.
+2024-03-24 14:30:19,603 | INFO | 127.0.0.1:54306 connected.
+2024-03-24 14:30:21,608 | INFO | 127.0.0.1:54307 connected.
+2024-03-24 14:33:40,271 | INFO | Auto tests were run.
+2024-03-24 14:33:42,255 | INFO | 127.0.0.1:54445 connected.
+2024-03-24 14:33:42,256 | ERROR | Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 151, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 100, in handle_client
+    new_player(json.loads(response.body.decode("utf-8"))["username"], client_addr[0])
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-03-24 14:33:42,259 | INFO | 127.0.0.1:54446 connected.
+2024-03-24 14:35:59,610 | INFO | Auto tests were run.
+2024-03-24 14:36:02,004 | INFO | 127.0.0.1:54538 connected.
+2024-03-24 14:36:02,004 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:36:03,329 | INFO | 127.0.0.1:54542 connected.
+2024-03-24 14:36:03,330 | ERROR | Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 152, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 101, in handle_client
+    new_player(json.loads(response.body.decode("utf-8"))["username"], client_addr[0])
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-03-24 14:36:03,331 | INFO | 127.0.0.1:54543 connected.
+2024-03-24 14:36:35,545 | INFO | Auto tests were run.
+2024-03-24 14:36:37,373 | INFO | 127.0.0.1:54560 connected.
+2024-03-24 14:36:38,435 | ERROR | Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 152, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 101, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8"))["username"], client_addr[0])
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-03-24 14:36:38,436 | INFO | 127.0.0.1:54561 connected.
+2024-03-24 14:36:38,436 | ERROR | Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 152, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 101, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8"))["username"], client_addr[0])
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-03-24 14:36:38,437 | INFO | 127.0.0.1:54562 connected.
+2024-03-24 14:36:38,437 | ERROR | Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 152, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 101, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8"))["username"], client_addr[0])
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-03-24 14:38:04,952 | INFO | Auto tests were run.
+2024-03-24 14:38:15,137 | INFO | Auto tests were run.
+2024-03-24 14:38:22,704 | INFO | 127.0.0.1:54627 connected.
+2024-03-24 14:38:22,704 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:38:22,705 | INFO | 127.0.0.1:54628 connected.
+2024-03-24 14:39:11,999 | INFO | Auto tests were run.
+2024-03-24 14:39:17,312 | INFO | 127.0.0.1:54658 connected.
+2024-03-24 14:39:17,312 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:39:17,313 | INFO | 127.0.0.1:54659 connected.
+2024-03-24 14:39:42,015 | INFO | Auto tests were run.
+2024-03-24 14:39:45,294 | INFO | 127.0.0.1:54679 connected.
+2024-03-24 14:39:45,294 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:39:45,295 | INFO | 127.0.0.1:54680 connected.
+2024-03-24 14:39:47,344 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:39:53,500 | INFO | 127.0.0.1:54685 connected.
+2024-03-24 14:39:53,500 | ERROR | Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 152, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 100, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8"))["username"], client_addr[0])
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-03-24 14:39:53,501 | INFO | 127.0.0.1:54686 connected.
+2024-03-24 14:40:40,015 | INFO | Auto tests were run.
+2024-03-24 14:40:41,371 | INFO | 127.0.0.1:54714 connected.
+2024-03-24 14:40:41,371 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:40:43,172 | INFO | 127.0.0.1:54718 connected.
+2024-03-24 14:40:43,173 | ERROR | Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 152, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 100, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8"))["username"], client_addr[0])
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-03-24 14:40:43,174 | INFO | 127.0.0.1:54719 connected.
+2024-03-24 14:40:54,350 | INFO | Auto tests were run.
+2024-03-24 14:40:57,156 | INFO | 127.0.0.1:54726 connected.
+2024-03-24 14:40:57,156 | ERROR | Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 152, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 100, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8"))["username"], client_addr[0])
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-03-24 14:40:57,158 | INFO | 127.0.0.1:54727 connected.
+2024-03-24 14:42:31,662 | INFO | Auto tests were run.
+2024-03-24 14:42:33,400 | INFO | 127.0.0.1:54794 connected.
+2024-03-24 14:42:33,400 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:42:33,401 | INFO | 127.0.0.1:54795 connected.
+2024-03-24 14:42:35,470 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:42:43,925 | INFO | 127.0.0.1:54803 connected.
+2024-03-24 14:42:43,926 | ERROR | Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 152, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 100, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8"))["username"], client_addr[0])
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-03-24 14:42:43,926 | INFO | 127.0.0.1:54804 connected.
+2024-03-24 14:43:15,038 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:43:16,238 | INFO | 127.0.0.1:54820 connected.
+2024-03-24 14:43:16,238 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:43:16,239 | INFO | 127.0.0.1:54821 connected.
+2024-03-24 14:43:18,287 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:43:23,977 | INFO | 127.0.0.1:54828 connected.
+2024-03-24 14:43:23,977 | ERROR | Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 152, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 100, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8"))["username"], client_addr[0])
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-03-24 14:43:23,978 | INFO | 127.0.0.1:54829 connected.
+2024-03-24 14:43:30,581 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:43:30,581 | INFO | 127.0.0.1:54830 connected.
+2024-03-24 14:43:36,208 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:43:36,208 | INFO | 127.0.0.1:54837 connected.
+2024-03-24 14:43:38,268 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:43:44,896 | INFO | 127.0.0.1:54844 connected.
+2024-03-24 14:43:44,896 | ERROR | Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 152, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 100, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8"))["username"], client_addr[0])
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-03-24 14:43:44,897 | INFO | 127.0.0.1:54845 connected.
+2024-03-24 14:43:52,883 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:43:52,884 | INFO | 127.0.0.1:54846 connected.
+2024-03-24 14:44:39,623 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:44:39,624 | INFO | 127.0.0.1:54876 connected.
+2024-03-24 14:44:41,683 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:44:46,989 | INFO | 127.0.0.1:54883 connected.
+2024-03-24 14:44:46,989 | ERROR | Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 152, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 100, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8"))["username"], client_addr[0])
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-03-24 14:44:46,989 | INFO | 127.0.0.1:54884 connected.
+2024-03-24 14:46:41,774 | INFO | Auto tests were run.
+2024-03-24 14:46:43,061 | INFO | 127.0.0.1:54963 connected.
+2024-03-24 14:46:43,062 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:46:43,062 | INFO | 127.0.0.1:54964 connected.
+2024-03-24 14:46:45,125 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:46:50,466 | INFO | 127.0.0.1:54968 connected.
+2024-03-24 14:46:50,466 | INFO | 127.0.0.1:54969 connected.
+2024-03-24 14:47:06,764 | INFO | 127.0.0.1:54979 connected.
+2024-03-24 14:47:15,053 | INFO | Auto tests were run.
+2024-03-24 14:47:18,128 | INFO | 127.0.0.1:54990 connected.
+2024-03-24 14:47:18,163 | INFO | 127.0.0.1:54991 connected.
+2024-03-24 14:53:19,110 | INFO | Auto tests were run.
+2024-03-24 14:53:22,509 | INFO | 127.0.0.1:55153 connected.
+2024-03-24 14:53:22,509 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:53:22,520 | INFO | 127.0.0.1:55154 connected.
+2024-03-24 14:53:22,520 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:53:30,630 | INFO | 127.0.0.1:55156 connected.
+2024-03-24 14:53:30,631 | INFO | 127.0.0.1:55157 connected.
+2024-03-24 14:53:30,894 | INFO | 127.0.0.1:55158 connected.
+2024-03-24 14:53:59,686 | INFO | 127.0.0.1:55162 connected.
+2024-03-24 14:54:05,685 | INFO | 127.0.0.1:55167 connected.
+2024-03-24 14:54:05,685 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:54:05,691 | INFO | 127.0.0.1:55168 connected.
+2024-03-24 14:54:05,691 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:54:09,902 | INFO | 127.0.0.1:55169 connected.
+2024-03-24 14:54:09,903 | INFO | 127.0.0.1:55170 connected.
+2024-03-24 14:54:28,420 | INFO | 127.0.0.1:55171 connected.
+2024-03-24 14:54:28,420 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:54:28,430 | INFO | 127.0.0.1:55172 connected.
+2024-03-24 14:54:28,430 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:54:36,543 | INFO | 127.0.0.1:55173 connected.
+2024-03-24 14:54:36,544 | INFO | 127.0.0.1:55174 connected.
+2024-03-24 14:55:02,565 | INFO | 127.0.0.1:55178 connected.
+2024-03-24 14:55:14,110 | INFO | 127.0.0.1:55179 connected.
+2024-03-24 14:55:14,110 | INFO | 127.0.0.1:55182 connected.
+2024-03-24 14:55:14,110 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 14:55:15,292 | INFO | 127.0.0.1:55184 connected.
+2024-03-24 14:55:15,293 | INFO | 127.0.0.1:55185 connected.
+2024-03-24 16:38:24,822 | INFO | Auto tests were run.
+2024-03-24 16:38:27,739 | INFO | 127.0.0.1:55688 connected.
+2024-03-24 16:38:27,740 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:38:27,751 | INFO | 127.0.0.1:55689 connected.
+2024-03-24 16:38:27,751 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:38:33,822 | INFO | 127.0.0.1:55691 connected.
+2024-03-24 16:38:33,822 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:38:35,681 | INFO | 127.0.0.1:55692 connected.
+2024-03-24 16:38:35,707 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 154, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 122, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:38:35,708 | INFO | 127.0.0.1:55693 connected.
+2024-03-24 16:38:35,708 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 154, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 122, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:39:30,736 | INFO | Auto tests were run.
+2024-03-24 16:39:33,646 | INFO | 127.0.0.1:55724 connected.
+2024-03-24 16:39:35,973 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 123, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:39:35,973 | INFO | 127.0.0.1:55725 connected.
+2024-03-24 16:39:35,974 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 123, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:39:35,974 | INFO | 127.0.0.1:55731 connected.
+2024-03-24 16:39:35,974 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 123, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:39:35,974 | INFO | 127.0.0.1:55732 connected.
+2024-03-24 16:39:36,005 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 123, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:39:38,618 | INFO | 127.0.0.1:55734 connected.
+2024-03-24 16:39:41,473 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 123, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:39:41,473 | INFO | 127.0.0.1:55735 connected.
+2024-03-24 16:39:41,473 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 123, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:39:41,474 | INFO | 127.0.0.1:55737 connected.
+2024-03-24 16:39:41,503 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 123, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:39:41,503 | INFO | 127.0.0.1:55738 connected.
+2024-03-24 16:39:41,503 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 123, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:40:15,745 | INFO | Auto tests were run.
+2024-03-24 16:40:17,627 | INFO | 127.0.0.1:55759 connected.
+2024-03-24 16:40:18,366 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:40:18,366 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 123, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:40:18,366 | INFO | 127.0.0.1:55760 connected.
+2024-03-24 16:40:18,368 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:40:18,368 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 123, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:40:18,368 | INFO | 127.0.0.1:55761 connected.
+2024-03-24 16:40:18,368 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:40:18,368 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 123, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:40:18,368 | INFO | 127.0.0.1:55762 connected.
+2024-03-24 16:40:19,402 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:40:19,403 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 123, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:40:19,403 | INFO | 127.0.0.1:55764 connected.
+2024-03-24 16:40:19,403 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:40:19,403 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 123, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:40:19,405 | INFO | 127.0.0.1:55765 connected.
+2024-03-24 16:40:24,416 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:40:24,417 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 123, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:40:24,417 | INFO | 127.0.0.1:55766 connected.
+2024-03-24 16:40:24,417 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:40:24,417 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 123, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:40:24,417 | INFO | 127.0.0.1:55769 connected.
+2024-03-24 16:40:24,417 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:40:24,418 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 123, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:40:41,876 | INFO | Auto tests were run.
+2024-03-24 16:40:45,912 | INFO | 127.0.0.1:55781 connected.
+2024-03-24 16:40:45,912 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:40:45,914 | INFO | 127.0.0.1:55782 connected.
+2024-03-24 16:40:47,978 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:40:58,424 | INFO | 127.0.0.1:55791 connected.
+2024-03-24 16:40:58,425 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 153, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 121, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:40:58,425 | INFO | 127.0.0.1:55792 connected.
+2024-03-24 16:40:58,455 | INFO | 127.0.0.1:55793 connected.
+2024-03-24 16:43:08,104 | INFO | Auto tests were run.
+2024-03-24 16:43:14,322 | INFO | 127.0.0.1:55879 connected.
+2024-03-24 16:43:14,323 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 154, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 122, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:43:14,325 | INFO | 127.0.0.1:55880 connected.
+2024-03-24 16:43:25,176 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 154, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 122, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:43:25,176 | INFO | 127.0.0.1:55881 connected.
+2024-03-24 16:43:25,176 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 154, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 122, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:43:25,177 | INFO | 127.0.0.1:55886 connected.
+2024-03-24 16:43:25,177 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 154, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 122, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:44:01,205 | INFO | Auto tests were run.
+2024-03-24 16:44:04,848 | INFO | 127.0.0.1:55908 connected.
+2024-03-24 16:44:04,848 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 123, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:44:04,849 | INFO | 127.0.0.1:55909 connected.
+2024-03-24 16:46:13,360 | INFO | Auto tests were run.
+2024-03-24 16:46:13,561 | INFO | 127.0.0.1:55990 connected.
+2024-03-24 16:46:22,068 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:46:22,068 | INFO | 127.0.0.1:55989 connected.
+2024-03-24 16:46:22,068 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:46:22,073 | INFO | 127.0.0.1:55991 connected.
+2024-03-24 16:46:24,125 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:46:39,060 | INFO | 127.0.0.1:56006 connected.
+2024-03-24 16:46:39,065 | INFO | 127.0.0.1:56007 connected.
+2024-03-24 16:46:39,065 | ERROR | local variable 'response' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 123, in handle_client
+    client_socket.send(response.build_message_bytes())
+UnboundLocalError: local variable 'response' referenced before assignment
+2024-03-24 16:46:39,066 | INFO | 127.0.0.1:56008 connected.
+2024-03-24 16:50:04,333 | INFO | Auto tests were run.
+2024-03-24 16:50:04,606 | INFO | 127.0.0.1:56128 connected.
+2024-03-24 16:50:04,606 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:50:04,607 | INFO | 127.0.0.1:56129 connected.
+2024-03-24 16:50:04,607 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:50:15,442 | INFO | 127.0.0.1:56138 connected.
+2024-03-24 16:50:15,442 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:50:15,444 | INFO | 127.0.0.1:56139 connected.
+2024-03-24 16:50:17,506 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:50:22,824 | INFO | 127.0.0.1:56143 connected.
+2024-03-24 16:50:22,824 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:50:22,824 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 16:50:22,825 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 16:50:22,825 | INFO | 127.0.0.1:56144 connected.
+2024-03-24 16:50:23,849 | INFO | 127.0.0.1:56147 connected.
+2024-03-24 16:50:23,849 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:50:23,849 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 16:50:23,849 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 16:50:28,859 | INFO | 127.0.0.1:56150 connected.
+2024-03-24 16:50:28,860 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:50:28,860 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 16:50:28,860 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 16:50:28,861 | INFO | 127.0.0.1:56151 connected.
+2024-03-24 16:50:58,877 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:50:58,877 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 16:50:58,877 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 16:50:58,877 | INFO | 127.0.0.1:56152 connected.
+2024-03-24 16:50:58,878 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:50:58,878 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 16:50:58,878 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 16:50:58,878 | INFO | 127.0.0.1:56172 connected.
+2024-03-24 16:50:58,878 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:50:58,878 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 16:50:58,878 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 16:50:58,879 | INFO | 127.0.0.1:56173 connected.
+2024-03-24 16:50:58,879 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:50:58,879 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 16:50:58,879 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 16:52:01,008 | INFO | Auto tests were run.
+2024-03-24 16:52:01,205 | INFO | 127.0.0.1:56206 connected.
+2024-03-24 16:52:01,963 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:52:01,963 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 16:52:01,964 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 154, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 16:52:01,964 | INFO | 127.0.0.1:56208 connected.
+2024-03-24 16:52:01,964 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:52:01,964 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 16:52:01,964 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 154, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 16:52:01,965 | INFO | 127.0.0.1:56209 connected.
+2024-03-24 16:52:02,987 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:52:02,987 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 16:52:02,987 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 154, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 16:52:02,987 | INFO | 127.0.0.1:56211 connected.
+2024-03-24 16:52:02,987 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:52:02,987 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 16:52:02,988 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 154, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 16:52:08,004 | INFO | 127.0.0.1:56214 connected.
+2024-03-24 16:52:08,004 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:52:08,004 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 16:52:08,005 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 154, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 16:52:08,005 | INFO | 127.0.0.1:56215 connected.
+2024-03-24 16:52:10,129 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:52:10,133 | INFO | 127.0.0.1:56216 connected.
+2024-03-24 16:52:24,666 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:52:24,666 | INFO | 127.0.0.1:56217 connected.
+2024-03-24 16:52:25,986 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:52:25,986 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 16:52:25,987 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 154, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 16:52:25,987 | INFO | 127.0.0.1:56222 connected.
+2024-03-24 16:52:25,987 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:52:25,987 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 16:52:25,987 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 154, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 16:52:25,988 | INFO | 127.0.0.1:56223 connected.
+2024-03-24 16:52:25,988 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:52:25,988 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 16:52:25,988 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 154, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 16:52:27,010 | INFO | 127.0.0.1:56224 connected.
+2024-03-24 16:52:27,010 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:52:27,010 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 16:52:27,010 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 154, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 16:52:27,011 | INFO | 127.0.0.1:56225 connected.
+2024-03-24 16:53:27,558 | INFO | Auto tests were run.
+2024-03-24 16:53:27,783 | INFO | 127.0.0.1:56256 connected.
+2024-03-24 16:53:29,956 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:53:29,957 | INFO | 127.0.0.1:56258 connected.
+2024-03-24 16:53:32,012 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:53:39,483 | INFO | 127.0.0.1:56266 connected.
+2024-03-24 16:53:39,520 | INFO | 127.0.0.1:56267 connected.
+2024-03-24 16:53:39,520 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:53:39,520 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 16:53:39,521 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 154, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 16:53:40,542 | INFO | 127.0.0.1:56268 connected.
+2024-03-24 16:53:40,543 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:53:40,543 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 16:53:40,543 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 154, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 16:53:45,558 | INFO | 127.0.0.1:56272 connected.
+2024-03-24 16:53:45,558 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:53:45,558 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 16:53:45,558 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 154, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 16:53:45,558 | INFO | 127.0.0.1:56273 connected.
+2024-03-24 16:54:15,579 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:54:15,579 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 16:54:15,579 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 154, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 16:54:15,580 | INFO | 127.0.0.1:56290 connected.
+2024-03-24 16:54:15,580 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 16:54:15,580 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 16:54:15,581 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 154, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 17:02:26,317 | INFO | Auto tests were run.
+2024-03-24 17:02:31,728 | INFO | 127.0.0.1:56374 connected.
+2024-03-24 17:02:31,728 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:02:31,735 | INFO | 127.0.0.1:56375 connected.
+2024-03-24 17:02:31,735 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:02:36,960 | INFO | 127.0.0.1:56378 connected.
+2024-03-24 17:02:36,960 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:02:36,960 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 17:02:36,961 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 17:02:36,962 | INFO | 127.0.0.1:56379 connected.
+2024-03-24 17:04:22,994 | INFO | Auto tests were run.
+2024-03-24 17:04:24,142 | INFO | 127.0.0.1:56417 connected.
+2024-03-24 17:04:24,142 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:04:24,146 | INFO | 127.0.0.1:56418 connected.
+2024-03-24 17:04:26,205 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:04:31,302 | INFO | 127.0.0.1:56423 connected.
+2024-03-24 17:04:31,303 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:04:31,303 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 17:04:31,303 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 17:04:31,303 | INFO | 127.0.0.1:56424 connected.
+2024-03-24 17:04:31,328 | INFO | 127.0.0.1:56425 connected.
+2024-03-24 17:04:32,334 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:04:32,334 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 17:04:32,334 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 17:04:32,335 | INFO | 127.0.0.1:56426 connected.
+2024-03-24 17:04:32,335 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:04:32,335 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 17:04:32,335 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 17:04:37,354 | INFO | 127.0.0.1:56429 connected.
+2024-03-24 17:04:37,354 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:04:37,354 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 17:04:37,355 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'ted.
+
+2024-03-24 17:04:37,356 | INFO | 127.0.0.1:56430 connec2024-03-24 17:08:19,190 | INFO | Auto tests were run.
+2024-03-24 17:08:24,994 | INFO | 127.0.0.1:56560 connected.
+2024-03-24 17:08:24,994 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:08:24,996 | INFO | 127.0.0.1:56561 connected.
+2024-03-24 17:08:27,053 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:08:33,230 | INFO | 127.0.0.1:56567 connected.
+2024-03-24 17:08:33,260 | INFO | 127.0.0.1:56568 connected.
+2024-03-24 17:08:33,260 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:08:33,260 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 17:08:33,261 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 17:08:34,281 | INFO | 127.0.0.1:56570 connected.
+2024-03-24 17:08:34,281 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:08:34,281 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 17:08:34,281 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 17:08:39,297 | INFO | 127.0.0.1:56573 connected.
+2024-03-24 17:08:39,297 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:08:39,297 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 17:08:39,297 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 17:08:39,298 | INFO | 127.0.0.1:56574 connected.
+2024-03-24 17:11:41,109 | INFO | Auto tests were run.
+2024-03-24 17:11:41,260 | INFO | 127.0.0.1:56686 connected.
+2024-03-24 17:11:41,260 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:11:41,494 | INFO | 127.0.0.1:56684 connected.
+2024-03-24 17:11:43,335 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:11:43,336 | INFO | 127.0.0.1:56685 connected.
+2024-03-24 17:15:15,148 | INFO | Auto tests were run.
+2024-03-24 17:18:09,501 | INFO | Auto tests were run.
+2024-03-24 17:18:11,373 | INFO | 127.0.0.1:56903 connected.
+2024-03-24 17:18:11,373 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:18:11,373 | INFO | 127.0.0.1:56904 connected.
+2024-03-24 17:18:13,426 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:18:35,584 | INFO | 127.0.0.1:56919 connected.
+2024-03-24 17:18:38,598 | INFO | 127.0.0.1:56922 connected.
+2024-03-24 17:18:40,965 | INFO | 127.0.0.1:56924 connected.
+2024-03-24 17:18:41,202 | INFO | 127.0.0.1:56925 connected.
+2024-03-24 17:18:41,358 | INFO | 127.0.0.1:56926 connected.
+2024-03-24 17:18:41,522 | INFO | 127.0.0.1:56927 connected.
+2024-03-24 17:18:41,673 | INFO | 127.0.0.1:56928 connected.
+2024-03-24 17:18:41,854 | INFO | 127.0.0.1:56929 connected.
+2024-03-24 17:18:43,030 | INFO | 127.0.0.1:56931 connected.
+2024-03-24 17:18:43,283 | INFO | 127.0.0.1:56932 connected.
+2024-03-24 17:18:51,359 | INFO | 127.0.0.1:56936 connected.
+2024-03-24 17:18:52,152 | INFO | 127.0.0.1:56938 connected.
+2024-03-24 17:18:52,351 | INFO | 127.0.0.1:56939 connected.
+2024-03-24 17:18:52,578 | INFO | 127.0.0.1:56940 connected.
+2024-03-24 17:19:13,372 | INFO | 127.0.0.1:56952 connected.
+2024-03-24 17:19:13,372 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:19:13,372 | INFO | 127.0.0.1:56953 connected.
+2024-03-24 17:19:15,437 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:19:23,213 | INFO | 127.0.0.1:56958 connected.
+2024-03-24 17:20:08,579 | INFO | 127.0.0.1:56981 connected.
+2024-03-24 17:20:08,579 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:20:08,579 | INFO | 127.0.0.1:56982 connected.
+2024-03-24 17:20:10,635 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:20:18,484 | INFO | 127.0.0.1:56991 connected.
+2024-03-24 17:20:20,542 | INFO | 127.0.0.1:56993 connected.
+2024-03-24 17:20:20,542 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:20:20,542 | INFO | 127.0.0.1:56994 connected.
+2024-03-24 17:20:42,215 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:20:42,215 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 17:20:42,216 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 17:20:42,216 | INFO | 127.0.0.1:57005 connected.
+2024-03-24 17:20:42,216 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:20:42,216 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 17:20:42,217 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 17:20:43,244 | INFO | 127.0.0.1:57006 connected.
+2024-03-24 17:20:43,244 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:20:43,244 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 17:20:43,245 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 17:20:43,246 | INFO | 127.0.0.1:57007 connected.
+2024-03-24 17:20:48,252 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:20:48,253 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 17:20:48,253 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 17:20:48,253 | INFO | 127.0.0.1:57008 connected.
+2024-03-24 17:20:48,253 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:20:48,253 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 17:20:48,253 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 17:20:48,254 | INFO | 127.0.0.1:57012 connected.
+2024-03-24 17:20:48,254 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:20:48,254 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 17:20:48,254 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 155, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 17:21:45,600 | INFO | Auto tests were run.
+2024-03-24 17:21:48,029 | INFO | 127.0.0.1:57053 connected.
+2024-03-24 17:21:49,802 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:21:49,802 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 17:21:49,803 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 156, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 17:21:49,803 | INFO | 127.0.0.1:57054 connected.
+2024-03-24 17:21:49,803 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:21:49,803 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 17:21:49,803 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 156, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 17:21:49,804 | INFO | 127.0.0.1:57055 connected.
+2024-03-24 17:21:49,804 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:21:49,804 | ERROR | dictionary update sequence element #0 has length 1; 2 is required
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 70, in receive_message
+    return http.http_parser.HttpParser(message)
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 37, in __init__
+    self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 76, in __section_one_parser
+    return request[0], request[1], request[2],  __query_params_parser()
+  File "D:\Python\JackboxMockup\http\http_parser.py", line 69, in __query_params_parser
+    return dict(
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2024-03-24 17:21:49,804 | ERROR | 'NoneType' object has no attribute 'URI'
+Traceback (most recent call last):
+  File "D:\Python\JackboxMockup\main.py", line 156, in main
+    handle_client(message, client_socket, client_addr)
+  File "D:\Python\JackboxMockup\main.py", line 90, in handle_client
+    uri = request.URI
+AttributeError: 'NoneType' object has no attribute 'URI'
+2024-03-24 17:21:50,376 | INFO | 127.0.0.1:57057 connected.
+2024-03-24 17:21:53,441 | INFO | 127.0.0.1:57058 connected.
+2024-03-24 17:21:55,490 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:21:55,491 | INFO | 127.0.0.1:57061 connected.
+2024-03-24 17:24:37,013 | INFO | Auto tests were run.
+2024-03-24 17:24:37,150 | INFO | 127.0.0.1:57154 connected.
+2024-03-24 17:24:37,150 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:24:37,151 | INFO | 127.0.0.1:57155 connected.
+2024-03-24 17:24:39,222 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:24:39,223 | INFO | 127.0.0.1:57156 connected.
+2024-03-24 17:24:45,532 | INFO | 127.0.0.1:57161 connected.
+2024-03-24 17:24:45,532 | INFO | 'NoneType' object has no attribute 'group'
+2024-03-24 17:24:45,534 | INFO | 127.0.0.1:57162 connected.

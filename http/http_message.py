@@ -5,7 +5,7 @@
 """
 # Imports #
 import http.constants as consts
-import functions.dictinary_functions
+import usefull_files.dictinary_functions
 
 
 class HttpMsg:
@@ -19,7 +19,7 @@ class HttpMsg:
         """
         self.error_code = self.__error_code_finder(error_code)
         self.body = body
-        self.headers = functions.dictinary_functions.dict_to_bytes(headers)
+        self.headers = usefull_files.dictinary_functions.dict_to_bytes(headers)
         if body != b"":
             self.headers[b"content_length"] = str(len(body)).encode()
 
