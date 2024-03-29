@@ -11,12 +11,13 @@ import socket
 import re
 import json
 
-import http
+import http_ophir
 import usefull_files.general_constants as consts
 
 # Global Vars #
 global readable_socks_list, writeable_socks_list, exception_socks_list
 players = dict()
+
 
 # Log initialization handling #
 def log_init_handler() -> None:
@@ -35,42 +36,46 @@ def auto_test_main() -> None:
     This function includes all the auto checks of the project
     :return: None
     """
-    http.http_auto_tests()
+    http_ophir.http_auto_tests()
     logging.info(consts.TESTS_RUN)
 
 
-def receive_message(client_socket: socket) -> bool or http.http_parser.HttpParser:
+def receive_message(client_socket: socket) -> bool or http_ophir.http_parser.HttpParser:
     """
     Receives a message from a client
     :param client_socket:
-    :return bool or http.http_parser.HttpParser: False if the message is invalid, HttpParser with the message
+    :return bool or http_ophir.http_parser.HttpParser: False if the message is invalid, HttpParser with the message
     """
     try:
         message = client_socket.recv(consts.RECV_LENGTH)
 
         while b"\r\n\r\n" not in message:
-            message += client_socket.recv(consts.RECV_LENGTH)
+            msg = client_socket.recv(consts.RECV_LENGTH)
+            if not msg:
+                break
+            message += msg
 
         try:
             content_length = int(re.search(rb'Content-Length: (\d+)', message).group(1))
 
-            body = b''
-            while len(body) < content_length:
-                chunk = client_socket.recv(consts.RECV_LENGTH)
-                if not chunk:
-                    break
-                body += chunk
+            # Check if body was already received #
+            if len(message.split(b'\r\n\r\n')) > 1 and len(message.split(b'\r\n\r\n')[1]) != content_length:
+                body = b''
+                # Receiving body #
+                while len(body) < content_length:
+                    chunk = client_socket.recv(consts.RECV_LENGTH)
+                    if not chunk:
+                        break
+                    body += chunk
 
-            message += body
+                message += body
 
         except Exception as e:
             logging.info(e)
-            # logging.info(consts.NO_BODY)
 
-        return http.http_parser.HttpParser(message)
+        return http_ophir.http_parser.HttpParser(message)
 
     except Exception as e:
-        print("error:" + str(e))
         logging.exception(e)
 
 
@@ -79,7 +84,7 @@ def new_player(username: bytes, address: bytes):
     print(players)
 
 
-def handle_client(request: http.http_parser.HttpParser, client_socket: socket, client_addr: list) -> None:
+def handle_client(request: http_ophir.http_parser.HttpParser, client_socket: socket, client_addr: list) -> None:
     """
     This function handles the client requests and responses
     :param client_addr: The ip and port of the client.
@@ -88,26 +93,25 @@ def handle_client(request: http.http_parser.HttpParser, client_socket: socket, c
     :return: None
     """
     uri = request.URI
-    response: http.http_message.HttpMsg
-    print(request.HTTP_REQUEST)
+    response: http_ophir.http_message.HttpMsg
+
     # fixing uri #
     if uri == b"/":
         uri = b"/index.html"
-
+    logging.debug(request.HTTP_REQUEST)
     if request.METHOD == b"POST":
-        print("post")
         # Username entry before game #
         if uri.startswith(b"/username"):
             with open(consts.ROOT_DIRECTORY + b"/waiting_lounge.html", 'rb') as f:
-                response = http.http_message.HttpMsg(location="/waiting_lounge.html")
+                response = http_ophir.http_message.HttpMsg(location="/waiting_lounge.html")
             if client_addr not in players:
                 new_player(json.loads(request.BODY.decode("utf-8"))["username"], client_addr[0])
 
     elif request.METHOD == b"GET":
         if not os.path.isfile(consts.ROOT_DIRECTORY + uri):
             with open(consts.FOUR_O_FOUR, 'rb') as file:
-                response = http.http_message.HttpMsg(error_code=404, content_type=http.constants.MIME_TYPES[".html"],
-                                                     body=file.read())
+                response = http_ophir.http_message.HttpMsg(error_code=404, content_type=http_ophir.constants.MIME_TYPES[".html"],
+                                                           body=file.read())
         else:
 
             # extract requested file type from URL (html, jpg etc)
@@ -117,9 +121,8 @@ def handle_client(request: http.http_parser.HttpParser, client_socket: socket, c
             file_data: bytes
             with open(consts.ROOT_DIRECTORY + uri, 'rb') as f:
                 file_data = f.read()
-            response = http.http_message.HttpMsg(content_type=http.constants.MIME_TYPES[file_type.decode()],
-                                                 body=file_data)
-            print(response)
+            response = http_ophir.http_message.HttpMsg(content_type=http_ophir.constants.MIME_TYPES[file_type.decode()],
+                                                       body=file_data)
 
     client_socket.send(response.build_message_bytes())
 
@@ -151,14 +154,14 @@ def main() -> None:
                     try:
                         logging.info(consts.NEW_CLIENT.format(client_addr[0], client_addr[1]))
 
-                        message: http.http_parser.HttpParser = receive_message(client_socket)
-                        print(message)
+                        message: http_ophir.http_parser.HttpParser = receive_message(client_socket)
                         handle_client(message, client_socket, client_addr)
 
                     except Exception as e:
                         logging.exception(e)
 
                     finally:
+                        logging.info("client disconnected")
                         client_socket.close()
     finally:
         sock.close()

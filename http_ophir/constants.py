@@ -3,9 +3,6 @@
     DATE: 15/03/24
     DESCRIPTION: This file contains all the needed constants for the HTTP packet
 """
-# Imports #
-from usefull_files.general_constants import LOG_DIR
-
 # HTTP necessities #
 HTTP_VERSION = b"HTTP/1.1"
 HEADER_SEPERATOR = b"\r\n"

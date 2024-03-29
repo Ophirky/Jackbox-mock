@@ -1,16 +1,17 @@
 """
     AUTHOR: Ophir Nevo Michrowski
     DATE: 15/03/24
-    DESCRIPTION: HTTP protocol package. Includes (http parser and formatter, http request builder)
+    DESCRIPTION: HTTP protocol package. Includes (http_ophir parser and formatter, http_ophir request builder)
 """
 
-import http.constants as consts
-import http.http_parser
-import http.http_message
+import http_ophir.constants as consts
+import http_ophir.http_parser
+import http_ophir.http_message
+
 
 def http_auto_tests() -> None:
     """
-    Function that contains all the auto_checks for the http package
+    Function that contains all the auto_checks for the http_ophir package
     :return: None
     """
     http_parser.auto_test_http_parser()
@@ -25,7 +26,7 @@ def http_auto_tests() -> None:
 
 def is_valid_request(request: bytes) -> dict[bool, str] or dict[bool]:
     """
-    Checks if a http request is valid.
+    Checks if a http_ophir request is valid.
     :param request: the request to validate.
     :return dict[bool, string]: {"valid": True/False, "reason":"reason"}
     """
@@ -49,11 +50,11 @@ def is_valid_request(request: bytes) -> dict[bool, str] or dict[bool]:
     # Ensure method, path, and HTTP version are correctly separated #
     method, path, version = request_line_parts[0], request_line_parts[1], request_line_parts[-1]
     if method.encode() not in consts.REQUEST_TYPES.values():
-        return {"valid": False, "reason": f"{method} is not a real method in http."}
+        return {"valid": False, "reason": f"{method} is not a real method in http_ophir."}
 
-    # Check if the request has a http version #
+    # Check if the request has a http_ophir version #
     if not method or not path or not version.startswith('HTTP/'):
-        return {"valid": False, "reason": "Request must have http version."}
+        return {"valid": False, "reason": "Request must have http_ophir version."}
 
     # Check headers for correct formatting
     is_host_header = False

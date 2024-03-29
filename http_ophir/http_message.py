@@ -1,15 +1,15 @@
 """
     AUTHOR: Ophir Nevo Michrowski
     DATE: 15/03/24
-    DESCRIPTION: Class that allows to create easy to use http messages including responses and requests
+    DESCRIPTION: Class that allows to create easy to use http_ophir messages including responses and requests
 """
 # Imports #
-import http.constants as consts
+import http_ophir.constants as consts
 import usefull_files.dictinary_functions
 
 
 class HttpMsg:
-    """Create easy to use http messages including responses and requests"""
+    """Create easy to use http_ophir messages including responses and requests"""
     def __init__(self, error_code: int = 200, body: bytes = b"", **headers) -> None:
         """
         The constructor of the HttpMsg class.
@@ -58,8 +58,8 @@ class HttpMsg:
 
     def build_message_bytes(self) -> bytes:
         """
-        Builds the http message
-        :return bytes: The http message
+        Builds the http_ophir message
+        :return bytes: The http_ophir message
         """
         headers = self.__build_headers_bytes()
         return consts.HTTP_VERSION + b" " + self.error_code + consts.HEADER_SEPERATOR + headers + \
@@ -68,7 +68,7 @@ class HttpMsg:
     def __str__(self) -> str:
         """
         Str dunder function for the HttpMsg class
-        :return str: The http message in full
+        :return str: The http_ophir message in full
         """
         return self.build_message_bytes().decode('utf-8')
 
