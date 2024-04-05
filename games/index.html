@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <title>This is a test page</title>
 </head>
 
@@ -29,7 +30,17 @@
                     "Content-Type": "text/plain",
                 },
                 body: JSON.stringify({username:playerUsername})
-            }).then((res) =>  res.headers).then(data => {window.location.replace(window.location.href + data.get("Location"))});
+            }).then((res) => {
+                if (res.status === 200)
+                    {window.location.replace(window.location.href + res.headers.get("Location"));}
+                else if (res.status === 500)
+                    {
+                        let par = document.createElement('p');
+                        par.className = "error";
+                        par.appendChild(document.createTextNode("username taken"));
+                        document.querySelector("body").appendChild(par);
+                    }
+        });
         }
 
         // GET

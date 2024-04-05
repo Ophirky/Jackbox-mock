@@ -1,0 +1,1110 @@
+2024-04-05 10:33:27,807 | INFO | Auto tests were run.
+2024-04-05 10:33:47,326 | INFO | 127.0.0.1:50331 connected.
+2024-04-05 10:33:47,327 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:33:47,328 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:33:47,353 | INFO | client disconnected
+2024-04-05 10:33:47,353 | INFO | 127.0.0.1:50332 connected.
+2024-04-05 10:33:47,648 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:33:47,648 | DEBUG | b'GET /favicon.ico HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nAccept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: no-cors\r\nSec-Fetch-Dest: image\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:33:47,658 | INFO | client disconnected
+2024-04-05 10:33:47,658 | INFO | 127.0.0.1:50334 connected.
+2024-04-05 10:34:33,850 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:34:33,876 | INFO | client disconnected
+2024-04-05 10:34:34,187 | INFO | 127.0.0.1:50395 connected.
+2024-04-05 10:34:34,187 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:34:34,188 | DEBUG | b'GET //waiting_lounge.html HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:34:34,188 | INFO | client disconnected
+2024-04-05 10:34:34,188 | INFO | 127.0.0.1:50396 connected.
+2024-04-05 10:34:51,103 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:34:51,104 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:34:51,105 | INFO | client disconnected
+2024-04-05 10:34:51,105 | INFO | 127.0.0.1:50397 connected.
+2024-04-05 10:34:51,105 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:34:51,105 | DEBUG | b'GET /sse HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nAccept: text/event-stream\r\nCache-Control: no-cache\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nOrigin: http://localhost\r\nSec-Fetch-Site: cross-site\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:34:51,106 | INFO | client disconnected
+2024-04-05 10:34:51,107 | INFO | 127.0.0.1:50398 connected.
+2024-04-05 10:34:54,117 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:34:54,117 | DEBUG | At least one line (the request line) and a blank line separating headers and body are needed.
+2024-04-05 10:34:54,117 | ERROR | cannot access local variable 'response' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 127, in handle_client
+    client_socket.send(response.build_message_bytes())
+                       ^^^^^^^^
+UnboundLocalError: cannot access local variable 'response' where it is not associated with a value
+2024-04-05 10:34:54,133 | INFO | client disconnected
+2024-04-05 10:34:54,133 | INFO | 127.0.0.1:50404 connected.
+2024-04-05 10:34:54,133 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:34:54,133 | DEBUG | At least one line (the request line) and a blank line separating headers and body are needed.
+2024-04-05 10:34:54,133 | ERROR | cannot access local variable 'response' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 127, in handle_client
+    client_socket.send(response.build_message_bytes())
+                       ^^^^^^^^
+UnboundLocalError: cannot access local variable 'response' where it is not associated with a value
+2024-04-05 10:34:54,133 | INFO | client disconnected
+2024-04-05 10:34:55,691 | INFO | 127.0.0.1:50408 connected.
+2024-04-05 10:34:55,691 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 19\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"John"}'
+2024-04-05 10:34:55,691 | INFO | client disconnected
+2024-04-05 10:34:55,935 | INFO | 127.0.0.1:50411 connected.
+2024-04-05 10:34:55,936 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:34:55,936 | DEBUG | b'GET //waiting_lounge.html HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:34:55,937 | INFO | client disconnected
+2024-04-05 10:34:56,002 | INFO | 127.0.0.1:50412 connected.
+2024-04-05 10:35:06,664 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:35:06,664 | DEBUG | At least one line (the request line) and a blank line separating headers and body are needed.
+2024-04-05 10:35:06,664 | ERROR | cannot access local variable 'response' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 127, in handle_client
+    client_socket.send(response.build_message_bytes())
+                       ^^^^^^^^
+UnboundLocalError: cannot access local variable 'response' where it is not associated with a value
+2024-04-05 10:35:06,664 | INFO | client disconnected
+2024-04-05 10:35:06,664 | INFO | 127.0.0.1:50413 connected.
+2024-04-05 10:35:06,664 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:35:06,664 | DEBUG | b'GET /sse HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nAccept: text/event-stream\r\nCache-Control: no-cache\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nOrigin: http://localhost\r\nSec-Fetch-Site: cross-site\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:35:06,664 | INFO | client disconnected
+2024-04-05 10:44:14,024 | INFO | Auto tests were run.
+2024-04-05 10:46:55,321 | INFO | 127.0.0.1:50625 connected.
+2024-04-05 10:46:55,321 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:46:55,323 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:46:55,348 | INFO | client disconnected
+2024-04-05 10:46:55,348 | INFO | 127.0.0.1:50626 connected.
+2024-04-05 10:46:55,581 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:46:55,581 | DEBUG | b'GET /favicon.ico HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nAccept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: no-cors\r\nSec-Fetch-Dest: image\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:46:55,590 | INFO | client disconnected
+2024-04-05 10:46:55,591 | INFO | 127.0.0.1:50627 connected.
+2024-04-05 10:47:01,111 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:47:01,111 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 159, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 107, in handle_client
+    username = request.BODY.decode("utf-8")["username"]
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:47:01,130 | INFO | client disconnected
+2024-04-05 10:47:01,434 | INFO | 127.0.0.1:50632 connected.
+2024-04-05 10:47:01,434 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:47:01,434 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 159, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 107, in handle_client
+    username = request.BODY.decode("utf-8")["username"]
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:47:01,434 | INFO | client disconnected
+2024-04-05 10:47:01,700 | INFO | 127.0.0.1:50634 connected.
+2024-04-05 10:47:07,652 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:47:07,653 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 159, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 107, in handle_client
+    username = request.BODY.decode("utf-8")["username"]
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:47:07,653 | INFO | client disconnected
+2024-04-05 10:47:07,956 | INFO | 127.0.0.1:50647 connected.
+2024-04-05 10:47:07,956 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:47:07,956 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 159, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 107, in handle_client
+    username = request.BODY.decode("utf-8")["username"]
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:47:07,956 | INFO | client disconnected
+2024-04-05 10:47:08,209 | INFO | 127.0.0.1:50651 connected.
+2024-04-05 10:47:13,918 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:47:13,918 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 159, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 107, in handle_client
+    username = request.BODY.decode("utf-8")["username"]
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:47:13,919 | INFO | client disconnected
+2024-04-05 10:47:14,231 | INFO | 127.0.0.1:50669 connected.
+2024-04-05 10:47:14,231 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:47:14,231 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 159, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 107, in handle_client
+    username = request.BODY.decode("utf-8")["username"]
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:47:14,231 | INFO | client disconnected
+2024-04-05 10:47:14,487 | INFO | 127.0.0.1:50670 connected.
+2024-04-05 10:47:48,571 | INFO | Auto tests were run.
+2024-04-05 10:47:52,569 | INFO | 127.0.0.1:50722 connected.
+2024-04-05 10:47:52,569 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:47:52,569 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:47:52,569 | INFO | client disconnected
+2024-04-05 10:47:52,569 | INFO | 127.0.0.1:50723 connected.
+2024-04-05 10:47:55,451 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:47:55,452 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 159, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 107, in handle_client
+    username = request.BODY.decode("utf-8")["username"]
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:47:55,457 | INFO | client disconnected
+2024-04-05 10:47:55,458 | INFO | 127.0.0.1:50724 connected.
+2024-04-05 10:47:55,458 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:47:55,459 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 159, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 107, in handle_client
+    username = request.BODY.decode("utf-8")["username"]
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:47:55,461 | INFO | client disconnected
+2024-04-05 10:47:55,770 | INFO | 127.0.0.1:50729 connected.
+2024-04-05 10:47:55,770 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:47:55,770 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 159, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 107, in handle_client
+    username = request.BODY.decode("utf-8")["username"]
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:47:55,770 | INFO | client disconnected
+2024-04-05 10:47:56,026 | INFO | 127.0.0.1:50731 connected.
+2024-04-05 10:48:14,842 | INFO | Auto tests were run.
+2024-04-05 10:48:18,128 | INFO | 127.0.0.1:50745 connected.
+2024-04-05 10:48:18,128 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:18,128 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:18,128 | INFO | client disconnected
+2024-04-05 10:48:18,390 | INFO | 127.0.0.1:50746 connected.
+2024-04-05 10:48:19,268 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:19,269 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:19,270 | INFO | client disconnected
+2024-04-05 10:48:19,585 | INFO | 127.0.0.1:50750 connected.
+2024-04-05 10:48:19,585 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:19,585 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:19,585 | INFO | client disconnected
+2024-04-05 10:48:19,829 | INFO | 127.0.0.1:50751 connected.
+2024-04-05 10:48:20,147 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:20,148 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:20,149 | INFO | client disconnected
+2024-04-05 10:48:20,462 | INFO | 127.0.0.1:50754 connected.
+2024-04-05 10:48:20,462 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:20,462 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:20,462 | INFO | client disconnected
+2024-04-05 10:48:20,718 | INFO | 127.0.0.1:50755 connected.
+2024-04-05 10:48:20,942 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:20,943 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:20,943 | INFO | client disconnected
+2024-04-05 10:48:21,246 | INFO | 127.0.0.1:50758 connected.
+2024-04-05 10:48:21,246 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:21,246 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:21,246 | INFO | client disconnected
+2024-04-05 10:48:21,501 | INFO | 127.0.0.1:50759 connected.
+2024-04-05 10:48:21,662 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:21,663 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:21,663 | INFO | client disconnected
+2024-04-05 10:48:21,978 | INFO | 127.0.0.1:50763 connected.
+2024-04-05 10:48:21,978 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:21,978 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:21,978 | INFO | client disconnected
+2024-04-05 10:48:22,218 | INFO | 127.0.0.1:50764 connected.
+2024-04-05 10:48:26,588 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:48:26,588 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:48:26,588 | INFO | client disconnected
+2024-04-05 10:48:26,905 | INFO | 127.0.0.1:50771 connected.
+2024-04-05 10:48:29,832 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:29,832 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:29,832 | INFO | client disconnected
+2024-04-05 10:48:30,144 | INFO | 127.0.0.1:50775 connected.
+2024-04-05 10:48:30,144 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:30,144 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:30,144 | INFO | client disconnected
+2024-04-05 10:48:30,409 | INFO | 127.0.0.1:50776 connected.
+2024-04-05 10:48:33,860 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:33,860 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:33,861 | INFO | client disconnected
+2024-04-05 10:48:34,165 | INFO | 127.0.0.1:50780 connected.
+2024-04-05 10:48:34,165 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:34,165 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:34,165 | INFO | client disconnected
+2024-04-05 10:48:34,418 | INFO | 127.0.0.1:50781 connected.
+2024-04-05 10:48:34,651 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:34,651 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:34,652 | INFO | client disconnected
+2024-04-05 10:48:34,968 | INFO | 127.0.0.1:50784 connected.
+2024-04-05 10:48:34,968 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:34,968 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:34,968 | INFO | client disconnected
+2024-04-05 10:48:35,206 | INFO | 127.0.0.1:50786 connected.
+2024-04-05 10:48:35,455 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:35,455 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:35,456 | INFO | client disconnected
+2024-04-05 10:48:35,772 | INFO | 127.0.0.1:50789 connected.
+2024-04-05 10:48:35,772 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:35,772 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:35,772 | INFO | client disconnected
+2024-04-05 10:48:36,012 | INFO | 127.0.0.1:50790 connected.
+2024-04-05 10:48:36,435 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:36,436 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:36,436 | INFO | client disconnected
+2024-04-05 10:48:36,749 | INFO | 127.0.0.1:50793 connected.
+2024-04-05 10:48:36,749 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:36,749 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:36,749 | INFO | client disconnected
+2024-04-05 10:48:37,004 | INFO | 127.0.0.1:50794 connected.
+2024-04-05 10:48:37,140 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:37,140 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:37,141 | INFO | client disconnected
+2024-04-05 10:48:37,454 | INFO | 127.0.0.1:50798 connected.
+2024-04-05 10:48:37,454 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:37,454 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:37,454 | INFO | client disconnected
+2024-04-05 10:48:37,710 | INFO | 127.0.0.1:50800 connected.
+2024-04-05 10:48:37,710 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:37,710 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:37,710 | INFO | client disconnected
+2024-04-05 10:48:37,849 | INFO | 127.0.0.1:50801 connected.
+2024-04-05 10:48:38,010 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:38,011 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:38,011 | INFO | client disconnected
+2024-04-05 10:48:38,320 | INFO | 127.0.0.1:50805 connected.
+2024-04-05 10:48:38,320 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:48:38,320 | ERROR | string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 158, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    new_player(json.loads(request.BODY.decode("utf-8")["username"]), client_addr[0])
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-04-05 10:48:38,320 | INFO | client disconnected
+2024-04-05 10:48:38,589 | INFO | 127.0.0.1:50806 connected.
+2024-04-05 10:49:06,680 | INFO | Auto tests were run.
+2024-04-05 10:49:10,855 | INFO | 127.0.0.1:50826 connected.
+2024-04-05 10:49:10,855 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:49:10,855 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:49:10,855 | INFO | client disconnected
+2024-04-05 10:49:10,855 | INFO | 127.0.0.1:50827 connected.
+2024-04-05 10:49:13,136 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:49:13,137 | INFO | client disconnected
+2024-04-05 10:49:13,137 | INFO | 127.0.0.1:50828 connected.
+2024-04-05 10:49:13,145 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:49:13,145 | DEBUG | b'GET //waiting_lounge.html HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:49:13,146 | INFO | client disconnected
+2024-04-05 10:49:13,360 | INFO | 127.0.0.1:50832 connected.
+2024-04-05 10:49:13,360 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:49:13,360 | DEBUG | b'GET /sse HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nAccept: text/event-stream\r\nCache-Control: no-cache\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nOrigin: http://localhost\r\nSec-Fetch-Site: cross-site\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:49:13,369 | INFO | client disconnected
+2024-04-05 10:49:13,452 | INFO | 127.0.0.1:50833 connected.
+2024-04-05 10:50:30,752 | INFO | Auto tests were run.
+2024-04-05 10:50:36,579 | INFO | 127.0.0.1:50892 connected.
+2024-04-05 10:50:36,579 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:50:36,580 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:50:36,580 | INFO | client disconnected
+2024-04-05 10:50:36,580 | INFO | 127.0.0.1:50893 connected.
+2024-04-05 10:50:40,656 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:50:40,657 | INFO | client disconnected
+2024-04-05 10:50:40,657 | INFO | 127.0.0.1:50895 connected.
+2024-04-05 10:50:40,663 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:50:40,664 | DEBUG | b'GET //waiting_lounge.html HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:50:40,664 | INFO | client disconnected
+2024-04-05 10:50:40,889 | INFO | 127.0.0.1:50899 connected.
+2024-04-05 10:50:40,889 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:50:40,889 | DEBUG | b'GET /sse HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nAccept: text/event-stream\r\nCache-Control: no-cache\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nOrigin: http://localhost\r\nSec-Fetch-Site: cross-site\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:50:40,889 | INFO | client disconnected
+2024-04-05 10:50:40,966 | INFO | 127.0.0.1:50900 connected.
+2024-04-05 10:51:08,770 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:51:08,770 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nSec-Purpose: prefetch;prerender\r\nPurpose: prefetch\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:51:08,770 | INFO | client disconnected
+2024-04-05 10:51:08,770 | INFO | 127.0.0.1:50901 connected.
+2024-04-05 10:51:10,827 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:51:10,827 | DEBUG | At least one line (the request line) and a blank line separating headers and body are needed.
+2024-04-05 10:51:10,827 | ERROR | cannot access local variable 'response' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 159, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 128, in handle_client
+    client_socket.send(response.build_message_bytes())
+                       ^^^^^^^^
+UnboundLocalError: cannot access local variable 'response' where it is not associated with a value
+2024-04-05 10:51:10,843 | INFO | client disconnected
+2024-04-05 10:51:14,463 | INFO | 127.0.0.1:50923 connected.
+2024-04-05 10:51:14,463 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 19\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"John"}'
+2024-04-05 10:51:14,463 | INFO | client disconnected
+2024-04-05 10:51:14,705 | INFO | 127.0.0.1:50925 connected.
+2024-04-05 10:51:14,705 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:51:14,705 | DEBUG | b'GET //waiting_lounge.html HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:51:14,706 | INFO | client disconnected
+2024-04-05 10:51:14,771 | INFO | 127.0.0.1:50926 connected.
+2024-04-05 10:51:49,569 | INFO | Auto tests were run.
+2024-04-05 10:51:51,218 | INFO | 127.0.0.1:50944 connected.
+2024-04-05 10:51:51,219 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:51:51,219 | DEBUG | b'GET /sse HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nAccept: text/event-stream\r\nCache-Control: no-cache\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nOrigin: http://localhost\r\nSec-Fetch-Site: cross-site\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:51:51,219 | INFO | client disconnected
+2024-04-05 10:51:55,118 | INFO | 127.0.0.1:50957 connected.
+2024-04-05 10:51:55,118 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:51:55,118 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:51:55,119 | INFO | client disconnected
+2024-04-05 10:51:55,119 | INFO | 127.0.0.1:50958 connected.
+2024-04-05 10:51:58,030 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:51:58,030 | ERROR | 'list' object has no attribute 'values'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 159, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    if username not in players.values():
+                       ^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'values'
+2024-04-05 10:51:58,034 | INFO | client disconnected
+2024-04-05 10:51:58,035 | INFO | 127.0.0.1:50959 connected.
+2024-04-05 10:51:58,035 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:51:58,035 | ERROR | 'list' object has no attribute 'values'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 159, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    if username not in players.values():
+                       ^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'values'
+2024-04-05 10:51:58,037 | INFO | client disconnected
+2024-04-05 10:51:58,344 | INFO | 127.0.0.1:50964 connected.
+2024-04-05 10:51:58,344 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:51:58,345 | ERROR | 'list' object has no attribute 'values'
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 159, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 108, in handle_client
+    if username not in players.values():
+                       ^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'values'
+2024-04-05 10:51:58,345 | INFO | client disconnected
+2024-04-05 10:51:58,594 | INFO | 127.0.0.1:50965 connected.
+2024-04-05 10:52:20,552 | INFO | Auto tests were run.
+2024-04-05 10:52:24,023 | INFO | 127.0.0.1:50983 connected.
+2024-04-05 10:52:24,023 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:52:24,023 | INFO | client disconnected
+2024-04-05 10:52:24,276 | INFO | 127.0.0.1:50985 connected.
+2024-04-05 10:52:24,277 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:52:24,277 | DEBUG | b'GET //waiting_lounge.html HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:52:24,278 | INFO | client disconnected
+2024-04-05 10:52:24,347 | INFO | 127.0.0.1:50986 connected.
+2024-04-05 10:52:34,411 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:52:34,411 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:52:34,412 | INFO | client disconnected
+2024-04-05 10:52:34,412 | INFO | 127.0.0.1:50987 connected.
+2024-04-05 10:52:34,412 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:52:34,412 | DEBUG | b'GET /sse HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nAccept: text/event-stream\r\nCache-Control: no-cache\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nOrigin: http://localhost\r\nSec-Fetch-Site: cross-site\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:52:34,413 | INFO | client disconnected
+2024-04-05 10:52:34,721 | INFO | 127.0.0.1:50996 connected.
+2024-04-05 10:52:37,706 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 19\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"John"}'
+2024-04-05 10:52:37,706 | INFO | client disconnected
+2024-04-05 10:52:37,706 | INFO | 127.0.0.1:50997 connected.
+2024-04-05 10:52:37,724 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:52:37,724 | DEBUG | b'GET //waiting_lounge.html HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:52:37,724 | INFO | client disconnected
+2024-04-05 10:52:37,794 | INFO | 127.0.0.1:51005 connected.
+2024-04-05 10:52:37,794 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:52:37,794 | DEBUG | b'GET /sse HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nAccept: text/event-stream\r\nCache-Control: no-cache\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nOrigin: http://localhost\r\nSec-Fetch-Site: cross-site\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:52:37,794 | INFO | client disconnected
+2024-04-05 10:52:38,037 | INFO | 127.0.0.1:51006 connected.
+2024-04-05 10:55:22,369 | INFO | Auto tests were run.
+2024-04-05 10:55:41,167 | INFO | 127.0.0.1:51106 connected.
+2024-04-05 10:55:41,168 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:55:41,168 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:55:41,168 | INFO | client disconnected
+2024-04-05 10:55:41,169 | INFO | 127.0.0.1:51107 connected.
+2024-04-05 10:55:54,799 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:55:54,800 | INFO | client disconnected
+2024-04-05 10:55:54,801 | INFO | 127.0.0.1:51108 connected.
+2024-04-05 10:55:54,807 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:55:54,808 | DEBUG | b'GET //waiting_lounge.html HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:55:54,808 | INFO | client disconnected
+2024-04-05 10:55:55,040 | INFO | 127.0.0.1:51117 connected.
+2024-04-05 10:55:55,040 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:55:55,040 | DEBUG | b'GET /sse HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nAccept: text/event-stream\r\nCache-Control: no-cache\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nOrigin: http://localhost\r\nSec-Fetch-Site: cross-site\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:55:55,040 | INFO | client disconnected
+2024-04-05 10:55:55,120 | INFO | 127.0.0.1:51118 connected.
+2024-04-05 10:56:03,751 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:56:03,751 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nSec-Purpose: prefetch;prerender\r\nPurpose: prefetch\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:56:03,751 | INFO | client disconnected
+2024-04-05 10:56:03,751 | INFO | 127.0.0.1:51119 connected.
+2024-04-05 10:56:10,311 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 10:56:10,312 | INFO | client disconnected
+2024-04-05 10:56:10,628 | INFO | 127.0.0.1:51134 connected.
+2024-04-05 10:56:10,629 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:56:10,629 | DEBUG | b'GET /null HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 10:56:10,629 | INFO | client disconnected
+2024-04-05 10:56:10,630 | INFO | 127.0.0.1:51135 connected.
+2024-04-05 10:58:06,685 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:58:06,685 | DEBUG | At least one line (the request line) and a blank line separating headers and body are needed.
+2024-04-05 10:58:06,685 | ERROR | cannot access local variable 'response' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 162, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 131, in handle_client
+    client_socket.send(response.build_message_bytes())
+                       ^^^^^^^^
+UnboundLocalError: cannot access local variable 'response' where it is not associated with a value
+2024-04-05 10:58:06,685 | INFO | client disconnected
+2024-04-05 10:58:06,685 | INFO | 127.0.0.1:51136 connected.
+2024-04-05 10:58:06,685 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 10:58:06,685 | DEBUG | At least one line (the request line) and a blank line separating headers and body are needed.
+2024-04-05 10:58:06,685 | ERROR | cannot access local variable 'response' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 162, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 131, in handle_client
+    client_socket.send(response.build_message_bytes())
+                       ^^^^^^^^
+UnboundLocalError: cannot access local variable 'response' where it is not associated with a value
+2024-04-05 10:58:06,685 | INFO | client disconnected
+2024-04-05 11:04:28,733 | INFO | Auto tests were run.
+2024-04-05 11:04:32,036 | INFO | 127.0.0.1:51651 connected.
+2024-04-05 11:04:32,036 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:04:32,037 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nSec-Purpose: prefetch;prerender\r\nPurpose: prefetch\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:04:32,037 | INFO | client disconnected
+2024-04-05 11:04:32,299 | INFO | 127.0.0.1:51652 connected.
+2024-04-05 11:04:32,767 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:04:32,767 | DEBUG | b'GET /favicon.ico HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nAccept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: no-cors\r\nSec-Fetch-Dest: image\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:04:32,768 | INFO | client disconnected
+2024-04-05 11:04:38,052 | INFO | 127.0.0.1:51657 connected.
+2024-04-05 11:04:38,052 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:04:38,052 | INFO | client disconnected
+2024-04-05 11:04:38,307 | INFO | 127.0.0.1:51658 connected.
+2024-04-05 11:04:40,814 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:04:40,814 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nSec-Purpose: prefetch;prerender\r\nPurpose: prefetch\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:04:40,814 | INFO | client disconnected
+2024-04-05 11:04:51,758 | INFO | 127.0.0.1:51672 connected.
+2024-04-05 11:04:51,758 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:04:51,758 | INFO | client disconnected
+2024-04-05 11:04:52,013 | INFO | 127.0.0.1:51674 connected.
+2024-04-05 11:05:45,915 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:05:45,915 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:05:45,916 | INFO | client disconnected
+2024-04-05 11:05:46,227 | INFO | 127.0.0.1:51708 connected.
+2024-04-05 11:05:50,668 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:05:50,669 | INFO | client disconnected
+2024-04-05 11:07:23,689 | INFO | 127.0.0.1:51769 connected.
+2024-04-05 11:07:23,690 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:07:23,690 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:07:23,709 | INFO | client disconnected
+2024-04-05 11:07:23,709 | INFO | 127.0.0.1:51770 connected.
+2024-04-05 11:07:27,183 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:07:27,183 | INFO | client disconnected
+2024-04-05 11:07:27,183 | INFO | 127.0.0.1:51772 connected.
+2024-04-05 11:07:37,208 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:07:37,208 | DEBUG | At least one line (the request line) and a blank line separating headers and body are needed.
+2024-04-05 11:07:37,208 | ERROR | cannot access local variable 'response' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 162, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 131, in handle_client
+    client_socket.send(response.build_message_bytes())
+                       ^^^^^^^^
+UnboundLocalError: cannot access local variable 'response' where it is not associated with a value
+2024-04-05 11:07:37,216 | INFO | client disconnected
+2024-04-05 11:09:05,569 | INFO | 127.0.0.1:51895 connected.
+2024-04-05 11:09:05,569 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 19\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"John"}'
+2024-04-05 11:09:05,569 | INFO | client disconnected
+2024-04-05 11:09:05,826 | INFO | 127.0.0.1:51896 connected.
+2024-04-05 11:09:12,215 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 19\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"John"}'
+2024-04-05 11:09:12,215 | INFO | client disconnected
+2024-04-05 11:10:30,425 | INFO | 127.0.0.1:52046 connected.
+2024-04-05 11:10:30,426 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:10:30,426 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:10:30,426 | INFO | client disconnected
+2024-04-05 11:10:30,427 | INFO | 127.0.0.1:52047 connected.
+2024-04-05 11:10:34,091 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:10:34,092 | INFO | client disconnected
+2024-04-05 11:10:34,092 | INFO | 127.0.0.1:52048 connected.
+2024-04-05 11:11:18,659 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:11:18,659 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:11:18,661 | INFO | client disconnected
+2024-04-05 11:11:18,972 | INFO | 127.0.0.1:52084 connected.
+2024-04-05 11:11:21,964 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:11:21,965 | INFO | client disconnected
+2024-04-05 11:11:53,014 | INFO | 127.0.0.1:52105 connected.
+2024-04-05 11:11:53,014 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:11:53,014 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:11:53,014 | INFO | client disconnected
+2024-04-05 11:11:53,014 | INFO | 127.0.0.1:52106 connected.
+2024-04-05 11:11:55,835 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:11:55,835 | INFO | client disconnected
+2024-04-05 11:11:55,836 | INFO | 127.0.0.1:52107 connected.
+2024-04-05 11:13:19,126 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:13:19,126 | DEBUG | At least one line (the request line) and a blank line separating headers and body are needed.
+2024-04-05 11:13:19,126 | ERROR | cannot access local variable 'response' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 162, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 131, in handle_client
+    client_socket.send(response.build_message_bytes())
+                       ^^^^^^^^
+UnboundLocalError: cannot access local variable 'response' where it is not associated with a value
+2024-04-05 11:13:19,126 | INFO | client disconnected
+2024-04-05 11:18:03,157 | INFO | 127.0.0.1:52325 connected.
+2024-04-05 11:18:03,157 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:18:03,157 | INFO | client disconnected
+2024-04-05 11:18:03,420 | INFO | 127.0.0.1:52326 connected.
+2024-04-05 11:18:59,872 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:18:59,872 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:18:59,890 | INFO | client disconnected
+2024-04-05 11:19:00,174 | INFO | 127.0.0.1:52360 connected.
+2024-04-05 11:19:03,094 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:19:03,095 | INFO | client disconnected
+2024-04-05 11:20:05,333 | INFO | 127.0.0.1:52404 connected.
+2024-04-05 11:20:05,333 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:20:05,333 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:20:05,333 | INFO | client disconnected
+2024-04-05 11:20:05,348 | INFO | 127.0.0.1:52405 connected.
+2024-04-05 11:20:08,754 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:20:08,755 | INFO | client disconnected
+2024-04-05 11:20:08,755 | INFO | 127.0.0.1:52406 connected.
+2024-04-05 11:20:44,472 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 19\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"John"}'
+2024-04-05 11:20:44,472 | INFO | client disconnected
+2024-04-05 11:20:49,235 | INFO | 127.0.0.1:52433 connected.
+2024-04-05 11:20:49,235 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 21\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Johnny"}'
+2024-04-05 11:20:49,235 | INFO | client disconnected
+2024-04-05 11:20:49,474 | INFO | 127.0.0.1:52434 connected.
+2024-04-05 11:21:24,718 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:21:24,718 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:21:24,718 | INFO | client disconnected
+2024-04-05 11:21:25,031 | INFO | 127.0.0.1:52455 connected.
+2024-04-05 11:21:27,267 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:21:27,267 | INFO | client disconnected
+2024-04-05 11:21:27,267 | INFO | 127.0.0.1:52456 connected.
+2024-04-05 11:21:30,584 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 23\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirkul"}'
+2024-04-05 11:21:30,584 | INFO | client disconnected
+2024-04-05 11:22:03,237 | INFO | 127.0.0.1:52484 connected.
+2024-04-05 11:22:03,237 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:22:03,237 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:22:03,254 | INFO | client disconnected
+2024-04-05 11:22:03,255 | INFO | 127.0.0.1:52485 connected.
+2024-04-05 11:22:05,974 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:22:05,974 | INFO | client disconnected
+2024-04-05 11:22:05,975 | INFO | 127.0.0.1:52486 connected.
+2024-04-05 11:22:10,261 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 24\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirkull"}'
+2024-04-05 11:22:10,261 | INFO | client disconnected
+2024-04-05 11:22:53,177 | INFO | Auto tests were run.
+2024-04-05 11:23:07,776 | INFO | 127.0.0.1:52525 connected.
+2024-04-05 11:23:07,776 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:23:07,776 | INFO | client disconnected
+2024-04-05 11:23:08,046 | INFO | 127.0.0.1:52526 connected.
+2024-04-05 11:23:10,342 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:23:10,342 | INFO | client disconnected
+2024-04-05 11:23:12,124 | INFO | 127.0.0.1:52531 connected.
+2024-04-05 11:23:12,124 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:23:12,124 | INFO | client disconnected
+2024-04-05 11:23:12,381 | INFO | 127.0.0.1:52532 connected.
+2024-04-05 11:23:37,886 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:23:37,886 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:23:37,910 | INFO | client disconnected
+2024-04-05 11:23:38,194 | INFO | 127.0.0.1:52546 connected.
+2024-04-05 11:23:41,034 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 19\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"John"}'
+2024-04-05 11:23:41,035 | INFO | client disconnected
+2024-04-05 11:23:41,357 | INFO | 127.0.0.1:52555 connected.
+2024-04-05 11:23:41,358 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:23:41,358 | DEBUG | b'GET //waiting_lounge.html HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:23:41,358 | INFO | client disconnected
+2024-04-05 11:23:41,359 | INFO | 127.0.0.1:52556 connected.
+2024-04-05 11:23:55,081 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:23:55,081 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nSec-Purpose: prefetch;prerender\r\nPurpose: prefetch\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:23:55,081 | INFO | client disconnected
+2024-04-05 11:23:55,081 | INFO | 127.0.0.1:52557 connected.
+2024-04-05 11:23:55,081 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:23:55,081 | DEBUG | b'GET /sse HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nAccept: text/event-stream\r\nCache-Control: no-cache\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nOrigin: http://localhost\r\nSec-Fetch-Site: cross-site\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:23:55,081 | INFO | client disconnected
+2024-04-05 11:23:55,081 | INFO | 127.0.0.1:52558 connected.
+2024-04-05 11:24:01,052 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:24:01,052 | INFO | client disconnected
+2024-04-05 11:26:57,136 | INFO | 127.0.0.1:52669 connected.
+2024-04-05 11:26:57,136 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:26:57,136 | INFO | client disconnected
+2024-04-05 11:26:57,399 | INFO | 127.0.0.1:52671 connected.
+2024-04-05 11:32:15,386 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:32:15,386 | DEBUG | At least one line (the request line) and a blank line separating headers and body are needed.
+2024-04-05 11:32:15,386 | ERROR | cannot access local variable 'response' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 162, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 131, in handle_client
+    client_socket.send(response.build_message_bytes())
+                       ^^^^^^^^
+UnboundLocalError: cannot access local variable 'response' where it is not associated with a value
+2024-04-05 11:32:15,403 | INFO | client disconnected
+2024-04-05 11:32:21,998 | INFO | 127.0.0.1:52850 connected.
+2024-04-05 11:32:21,998 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:32:21,998 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:32:22,013 | INFO | client disconnected
+2024-04-05 11:32:22,014 | INFO | 127.0.0.1:52851 connected.
+2024-04-05 11:32:29,834 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:32:29,834 | INFO | client disconnected
+2024-04-05 11:32:29,834 | INFO | 127.0.0.1:52852 connected.
+2024-04-05 11:32:35,085 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:32:35,085 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:32:35,086 | INFO | client disconnected
+2024-04-05 11:32:35,394 | INFO | 127.0.0.1:52871 connected.
+2024-04-05 11:32:39,618 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:32:39,618 | INFO | client disconnected
+2024-04-05 11:32:39,619 | INFO | 127.0.0.1:52872 connected.
+2024-04-05 11:33:12,983 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:33:12,983 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:33:12,984 | INFO | client disconnected
+2024-04-05 11:33:13,285 | INFO | 127.0.0.1:52896 connected.
+2024-04-05 11:33:16,740 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:33:16,740 | INFO | client disconnected
+2024-04-05 11:33:36,625 | INFO | Auto tests were run.
+2024-04-05 11:33:43,553 | INFO | 127.0.0.1:52914 connected.
+2024-04-05 11:33:43,554 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:33:43,554 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:33:43,555 | INFO | client disconnected
+2024-04-05 11:33:43,555 | INFO | 127.0.0.1:52915 connected.
+2024-04-05 11:33:46,832 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:33:46,832 | INFO | client disconnected
+2024-04-05 11:33:46,832 | INFO | 127.0.0.1:52918 connected.
+2024-04-05 11:33:46,839 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:33:46,839 | DEBUG | b'GET //waiting_lounge.html HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:33:46,840 | INFO | client disconnected
+2024-04-05 11:33:47,056 | INFO | 127.0.0.1:52924 connected.
+2024-04-05 11:33:47,056 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:33:47,057 | DEBUG | b'GET /sse HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nAccept: text/event-stream\r\nCache-Control: no-cache\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nOrigin: http://localhost\r\nSec-Fetch-Site: cross-site\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:33:47,058 | INFO | client disconnected
+2024-04-05 11:33:47,152 | INFO | 127.0.0.1:52925 connected.
+2024-04-05 11:33:55,903 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:33:55,903 | INFO | client disconnected
+2024-04-05 11:33:55,903 | INFO | 127.0.0.1:52926 connected.
+2024-04-05 11:34:14,193 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:34:14,193 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:34:14,230 | INFO | client disconnected
+2024-04-05 11:34:14,500 | INFO | 127.0.0.1:52941 connected.
+2024-04-05 11:34:18,647 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:34:18,647 | INFO | client disconnected
+2024-04-05 11:35:27,304 | INFO | 127.0.0.1:52990 connected.
+2024-04-05 11:35:27,304 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:35:27,304 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:35:27,306 | INFO | client disconnected
+2024-04-05 11:35:27,306 | INFO | 127.0.0.1:52991 connected.
+2024-04-05 11:35:29,933 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:35:29,933 | INFO | client disconnected
+2024-04-05 11:35:29,933 | INFO | 127.0.0.1:52992 connected.
+2024-04-05 11:36:31,988 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:36:31,988 | DEBUG | At least one line (the request line) and a blank line separating headers and body are needed.
+2024-04-05 11:36:31,988 | ERROR | cannot access local variable 'response' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 162, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 131, in handle_client
+    client_socket.send(response.build_message_bytes())
+                       ^^^^^^^^
+UnboundLocalError: cannot access local variable 'response' where it is not associated with a value
+2024-04-05 11:36:31,994 | INFO | client disconnected
+2024-04-05 11:36:32,303 | INFO | 127.0.0.1:53036 connected.
+2024-04-05 11:36:32,304 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:36:32,304 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:36:32,304 | INFO | client disconnected
+2024-04-05 11:36:32,319 | INFO | 127.0.0.1:53037 connected.
+2024-04-05 11:36:35,182 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:36:35,182 | INFO | client disconnected
+2024-04-05 11:36:35,183 | INFO | 127.0.0.1:53038 connected.
+2024-04-05 11:37:19,601 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:37:19,601 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:37:19,630 | INFO | client disconnected
+2024-04-05 11:37:19,921 | INFO | 127.0.0.1:53066 connected.
+2024-04-05 11:37:21,945 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:37:21,945 | INFO | client disconnected
+2024-04-05 11:37:38,005 | INFO | 127.0.0.1:53079 connected.
+2024-04-05 11:37:38,006 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:37:38,006 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:37:38,021 | INFO | client disconnected
+2024-04-05 11:37:38,021 | INFO | 127.0.0.1:53080 connected.
+2024-04-05 11:37:41,634 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:37:41,635 | INFO | client disconnected
+2024-04-05 11:37:41,635 | INFO | 127.0.0.1:53081 connected.
+2024-04-05 11:38:02,793 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:38:02,793 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:38:02,811 | INFO | client disconnected
+2024-04-05 11:38:03,103 | INFO | 127.0.0.1:53097 connected.
+2024-04-05 11:38:05,475 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:38:05,475 | INFO | client disconnected
+2024-04-05 11:38:17,276 | INFO | 127.0.0.1:53107 connected.
+2024-04-05 11:38:17,276 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:38:17,276 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:38:17,290 | INFO | client disconnected
+2024-04-05 11:38:17,290 | INFO | 127.0.0.1:53108 connected.
+2024-04-05 11:38:20,105 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:38:20,105 | INFO | client disconnected
+2024-04-05 11:38:20,105 | INFO | 127.0.0.1:53109 connected.
+2024-04-05 11:40:00,878 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:40:00,878 | DEBUG | At least one line (the request line) and a blank line separating headers and body are needed.
+2024-04-05 11:40:00,878 | ERROR | cannot access local variable 'response' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 162, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 131, in handle_client
+    client_socket.send(response.build_message_bytes())
+                       ^^^^^^^^
+UnboundLocalError: cannot access local variable 'response' where it is not associated with a value
+2024-04-05 11:40:00,878 | INFO | client disconnected
+2024-04-05 11:40:01,182 | INFO | 127.0.0.1:53172 connected.
+2024-04-05 11:40:01,182 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:40:01,182 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:40:01,198 | INFO | client disconnected
+2024-04-05 11:40:01,198 | INFO | 127.0.0.1:53173 connected.
+2024-04-05 11:40:03,712 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:40:03,712 | INFO | client disconnected
+2024-04-05 11:40:03,712 | INFO | 127.0.0.1:53174 connected.
+2024-04-05 11:41:19,523 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:41:19,523 | DEBUG | At least one line (the request line) and a blank line separating headers and body are needed.
+2024-04-05 11:41:19,523 | ERROR | cannot access local variable 'response' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 162, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 131, in handle_client
+    client_socket.send(response.build_message_bytes())
+                       ^^^^^^^^
+UnboundLocalError: cannot access local variable 'response' where it is not associated with a value
+2024-04-05 11:41:19,524 | INFO | client disconnected
+2024-04-05 11:41:19,825 | INFO | 127.0.0.1:53221 connected.
+2024-04-05 11:41:19,825 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:41:19,825 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:41:19,840 | INFO | client disconnected
+2024-04-05 11:41:19,840 | INFO | 127.0.0.1:53222 connected.
+2024-04-05 11:41:23,046 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:41:23,047 | INFO | client disconnected
+2024-04-05 11:41:23,047 | INFO | 127.0.0.1:53223 connected.
+2024-04-05 11:42:12,105 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:42:12,106 | INFO | client disconnected
+2024-04-05 11:42:14,495 | INFO | 127.0.0.1:53261 connected.
+2024-04-05 11:42:14,496 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:42:14,496 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:42:14,497 | INFO | client disconnected
+2024-04-05 11:42:14,497 | INFO | 127.0.0.1:53262 connected.
+2024-04-05 11:42:17,357 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:42:17,357 | INFO | client disconnected
+2024-04-05 11:42:17,357 | INFO | 127.0.0.1:53263 connected.
+2024-04-05 11:42:58,215 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:42:58,215 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:42:58,215 | INFO | client disconnected
+2024-04-05 11:42:58,523 | INFO | 127.0.0.1:53288 connected.
+2024-04-05 11:43:46,442 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:43:46,442 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:43:46,442 | INFO | client disconnected
+2024-04-05 11:43:46,747 | INFO | 127.0.0.1:53317 connected.
+2024-04-05 11:43:51,527 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:43:51,527 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:43:51,527 | INFO | client disconnected
+2024-04-05 11:43:51,837 | INFO | 127.0.0.1:53324 connected.
+2024-04-05 11:44:06,597 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:44:06,597 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:44:06,618 | INFO | client disconnected
+2024-04-05 11:44:06,618 | INFO | 127.0.0.1:53325 connected.
+2024-04-05 11:44:06,638 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:44:06,639 | DEBUG | b'GET /styles.css HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nAccept: text/css,*/*;q=0.1\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: no-cors\r\nSec-Fetch-Dest: style\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:44:06,650 | INFO | client disconnected
+2024-04-05 11:44:10,530 | INFO | 127.0.0.1:53336 connected.
+2024-04-05 11:44:10,530 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:44:10,530 | INFO | client disconnected
+2024-04-05 11:44:10,784 | INFO | 127.0.0.1:53337 connected.
+2024-04-05 11:44:23,994 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:44:23,995 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:44:24,025 | INFO | client disconnected
+2024-04-05 11:44:24,303 | INFO | 127.0.0.1:53345 connected.
+2024-04-05 11:44:24,303 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:44:24,303 | DEBUG | b'GET /styles.css HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nAccept: text/css,*/*;q=0.1\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: no-cors\r\nSec-Fetch-Dest: style\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:44:24,304 | INFO | client disconnected
+2024-04-05 11:44:26,581 | INFO | 127.0.0.1:53349 connected.
+2024-04-05 11:44:26,581 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:44:26,581 | INFO | client disconnected
+2024-04-05 11:44:26,835 | INFO | 127.0.0.1:53353 connected.
+2024-04-05 11:45:27,317 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:45:27,317 | DEBUG | At least one line (the request line) and a blank line separating headers and body are needed.
+2024-04-05 11:45:27,317 | ERROR | cannot access local variable 'response' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 162, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 131, in handle_client
+    client_socket.send(response.build_message_bytes())
+                       ^^^^^^^^
+UnboundLocalError: cannot access local variable 'response' where it is not associated with a value
+2024-04-05 11:45:27,318 | INFO | client disconnected
+2024-04-05 11:45:27,620 | INFO | 127.0.0.1:53391 connected.
+2024-04-05 11:45:27,620 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:45:27,620 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:45:27,636 | INFO | client disconnected
+2024-04-05 11:45:27,636 | INFO | 127.0.0.1:53392 connected.
+2024-04-05 11:45:27,659 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:45:27,660 | DEBUG | b'GET /styles.css HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nAccept: text/css,*/*;q=0.1\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: no-cors\r\nSec-Fetch-Dest: style\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:45:27,661 | INFO | client disconnected
+2024-04-05 11:45:27,876 | INFO | 127.0.0.1:53393 connected.
+2024-04-05 11:45:30,399 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:45:30,399 | INFO | client disconnected
+2024-04-05 11:45:38,730 | INFO | 127.0.0.1:53405 connected.
+2024-04-05 11:45:38,730 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:45:38,730 | INFO | client disconnected
+2024-04-05 11:45:38,970 | INFO | 127.0.0.1:53406 connected.
+2024-04-05 11:45:47,050 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:45:47,050 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:45:47,069 | INFO | client disconnected
+2024-04-05 11:45:47,364 | INFO | 127.0.0.1:53414 connected.
+2024-04-05 11:45:47,364 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:45:47,364 | DEBUG | b'GET /styles.css HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nAccept: text/css,*/*;q=0.1\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: no-cors\r\nSec-Fetch-Dest: style\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:45:47,365 | INFO | client disconnected
+2024-04-05 11:45:49,637 | INFO | 127.0.0.1:53418 connected.
+2024-04-05 11:45:49,637 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:45:49,637 | INFO | client disconnected
+2024-04-05 11:45:49,897 | INFO | 127.0.0.1:53420 connected.
+2024-04-05 11:45:50,700 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:45:50,700 | INFO | client disconnected
+2024-04-05 11:48:57,351 | INFO | 127.0.0.1:53536 connected.
+2024-04-05 11:48:57,352 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:48:57,352 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:48:57,370 | INFO | client disconnected
+2024-04-05 11:48:57,370 | INFO | 127.0.0.1:53537 connected.
+2024-04-05 11:48:57,387 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:48:57,387 | DEBUG | b'GET /styles.css HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nAccept: text/css,*/*;q=0.1\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: no-cors\r\nSec-Fetch-Dest: style\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:48:57,387 | INFO | client disconnected
+2024-04-05 11:48:57,616 | INFO | 127.0.0.1:53538 connected.
+2024-04-05 11:48:59,871 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:48:59,871 | INFO | client disconnected
+2024-04-05 11:49:13,894 | INFO | 127.0.0.1:53554 connected.
+2024-04-05 11:49:13,895 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:49:13,895 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:49:13,895 | INFO | client disconnected
+2024-04-05 11:49:13,895 | INFO | 127.0.0.1:53555 connected.
+2024-04-05 11:49:13,923 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:49:13,923 | DEBUG | b'GET /styles.css HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nAccept: text/css,*/*;q=0.1\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: no-cors\r\nSec-Fetch-Dest: style\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:49:13,923 | INFO | client disconnected
+2024-04-05 11:49:14,154 | INFO | 127.0.0.1:53556 connected.
+2024-04-05 11:49:16,142 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:49:16,143 | INFO | client disconnected
+2024-04-05 11:50:06,540 | INFO | 127.0.0.1:53596 connected.
+2024-04-05 11:50:06,541 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:50:06,541 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:50:06,541 | INFO | client disconnected
+2024-04-05 11:50:06,541 | INFO | 127.0.0.1:53597 connected.
+2024-04-05 11:50:06,555 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:50:06,555 | DEBUG | b'GET /styles.css HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nAccept: text/css,*/*;q=0.1\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: no-cors\r\nSec-Fetch-Dest: style\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:50:06,563 | INFO | client disconnected
+2024-04-05 11:50:06,800 | INFO | 127.0.0.1:53598 connected.
+2024-04-05 11:50:08,883 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:50:08,883 | INFO | client disconnected
+2024-04-05 11:50:25,240 | INFO | 127.0.0.1:53611 connected.
+2024-04-05 11:50:25,241 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:50:25,241 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:50:25,260 | INFO | client disconnected
+2024-04-05 11:50:25,260 | INFO | 127.0.0.1:53612 connected.
+2024-04-05 11:50:25,282 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:50:25,283 | DEBUG | b'GET /styles.css HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nAccept: text/css,*/*;q=0.1\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: no-cors\r\nSec-Fetch-Dest: style\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:50:25,283 | INFO | client disconnected
+2024-04-05 11:50:25,504 | INFO | 127.0.0.1:53613 connected.
+2024-04-05 11:50:27,774 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:50:27,775 | INFO | client disconnected
+2024-04-05 11:50:41,405 | INFO | 127.0.0.1:53627 connected.
+2024-04-05 11:50:41,406 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:50:41,406 | DEBUG | b'GET / HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:50:41,406 | INFO | client disconnected
+2024-04-05 11:50:41,407 | INFO | 127.0.0.1:53628 connected.
+2024-04-05 11:50:41,420 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:50:41,420 | DEBUG | b'GET /styles.css HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nAccept: text/css,*/*;q=0.1\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: no-cors\r\nSec-Fetch-Dest: style\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:50:41,421 | INFO | client disconnected
+2024-04-05 11:50:41,672 | INFO | 127.0.0.1:53629 connected.
+2024-04-05 11:50:44,936 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 22\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"Ophirky"}'
+2024-04-05 11:50:44,936 | INFO | client disconnected
+2024-04-05 11:51:10,438 | INFO | 127.0.0.1:53649 connected.
+2024-04-05 11:51:10,438 | DEBUG | b'POST /username HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nContent-Length: 19\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-platform: "Windows"\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nContent-Type: text/plain\r\nAccept: */*\r\nOrigin: http://localhost\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n{"username":"John"}'
+2024-04-05 11:51:10,438 | INFO | client disconnected
+2024-04-05 11:51:10,707 | INFO | 127.0.0.1:53651 connected.
+2024-04-05 11:51:10,707 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:51:10,707 | DEBUG | b'GET //waiting_lounge.html HTTP/1.1\r\nHost: localhost\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:51:10,708 | INFO | client disconnected
+2024-04-05 11:51:10,754 | INFO | 127.0.0.1:53652 connected.
+2024-04-05 11:51:14,457 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:51:14,457 | DEBUG | At least one line (the request line) and a blank line separating headers and body are needed.
+2024-04-05 11:51:14,457 | ERROR | cannot access local variable 'response' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 162, in main
+    handle_client(message, client_socket, client_addr)
+  File "C:\Users\ophir\OneDrive\Desktop\School\Projects\Code\Python\Jackbox-mock\main.py", line 131, in handle_client
+    client_socket.send(response.build_message_bytes())
+                       ^^^^^^^^
+UnboundLocalError: cannot access local variable 'response' where it is not associated with a value
+2024-04-05 11:51:14,457 | INFO | client disconnected
+2024-04-05 11:51:14,457 | INFO | 127.0.0.1:53653 connected.
+2024-04-05 11:51:14,457 | INFO | 'NoneType' object has no attribute 'group'
+2024-04-05 11:51:14,457 | DEBUG | b'GET /sse HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: keep-alive\r\nsec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"\r\nAccept: text/event-stream\r\nCache-Control: no-cache\r\nsec-ch-ua-mobile: ?0\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\r\nsec-ch-ua-platform: "Windows"\r\nOrigin: http://localhost\r\nSec-Fetch-Site: cross-site\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost/\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\n\r\n'
+2024-04-05 11:51:14,457 | INFO | client disconnected

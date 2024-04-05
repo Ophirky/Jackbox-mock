@@ -16,7 +16,7 @@ import usefull_files.general_constants as consts
 
 # Global Vars #
 global readable_socks_list, writeable_socks_list, exception_socks_list
-players = dict()
+players = []
 
 
 # Log initialization handling #
@@ -80,7 +80,7 @@ def receive_message(client_socket: socket) -> bool or http_ophir.http_parser.Htt
 
 
 def new_player(username: bytes, address: bytes):
-    players[address] = username
+    players.append(username)
     print(players)
 
 
@@ -102,10 +102,14 @@ def handle_client(request: http_ophir.http_parser.HttpParser, client_socket: soc
     if request.METHOD == b"POST":
         # Username entry before game #
         if uri.startswith(b"/username"):
-            with open(consts.ROOT_DIRECTORY + b"/waiting_lounge.html", 'rb') as f:
-                response = http_ophir.http_message.HttpMsg(location="/waiting_lounge.html")
-            if client_addr not in players:
-                new_player(json.loads(request.BODY.decode("utf-8"))["username"], client_addr[0])
+            username = json.loads(request.BODY.decode("utf-8"))["username"]
+            if username not in players:
+                new_player(username, client_addr[0])
+                with open(consts.ROOT_DIRECTORY + b"/waiting_lounge.html", 'rb') as f:
+                    response = http_ophir.http_message.HttpMsg(location="/waiting_lounge.html")
+            else:
+                response = http_ophir.http_message.HttpMsg(error_code=500, content_type="text/plain",
+                                                           body=b'{"error": "username is already taken."}'  )
 
     elif request.METHOD == b"GET":
         if not os.path.isfile(consts.ROOT_DIRECTORY + uri):
