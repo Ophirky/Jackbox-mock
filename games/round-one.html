@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round 1</title>
+</head>
+<body>
+    <h1 id="sentence"></h1>
+    <input type="text" name="answer" id="answer">
+    <script async>
+        const evtSource = new EventSource("/get-sentence");
+        evtSource.onmessage = function(event) {
+            document.getElementById("senctence").textContent = event.data;
+            evtSource.close();
+        };
+    </script>
+</body>
+</html>

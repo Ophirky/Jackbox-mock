@@ -11,12 +11,16 @@ import socket
 import re
 import json
 
+import games.game_manager
 import http_ophir
+
+from games import Player
 import usefull_files.general_constants as consts
 
 # Global Vars #
 global readable_socks_list, writeable_socks_list, exception_socks_list
 players = []
+game_started = False
 
 
 # Log initialization handling #
@@ -70,8 +74,11 @@ def receive_message(client_socket: socket) -> bool or http_ophir.http_parser.Htt
 
                 message += body
 
+        except AttributeError:
+            logging.info(consts.NO_CONTENT_HEADER)
+
         except Exception as e:
-            logging.info(e)
+            logging.exception(e)
 
         return http_ophir.http_parser.HttpParser(message)
 
@@ -79,9 +86,16 @@ def receive_message(client_socket: socket) -> bool or http_ophir.http_parser.Htt
         logging.exception(e)
 
 
-def new_player(username: bytes, address: bytes):
-    players.append(username)
-    print(players)
+def new_player(username: bytes) -> None:
+    """
+    This function is responsible for adding the new player to the player list.
+    :param username: The username of the new player.
+    :return: None
+    """
+    global game_started
+    players.append(Player.Player(username))
+    if len(players) == 4:
+        game_started = True
 
 
 def handle_client(request: http_ophir.http_parser.HttpParser, client_socket: socket, client_addr: list) -> None:
@@ -98,26 +112,40 @@ def handle_client(request: http_ophir.http_parser.HttpParser, client_socket: soc
     # fixing uri #
     if uri == b"/":
         uri = b"/index.html"
+
     logging.debug(request.HTTP_REQUEST)
+
     if request.METHOD == b"POST":
         # Username entry before game #
         if uri.startswith(b"/username"):
             username = json.loads(request.BODY.decode("utf-8"))["username"]
-            if username not in players:
-                new_player(username, client_addr[0])
-                with open(consts.ROOT_DIRECTORY + b"/waiting_lounge.html", 'rb') as f:
-                    response = http_ophir.http_message.HttpMsg(location="/waiting_lounge.html")
+            if game_started:
+                response = http_ophir.http_message.HttpMsg(location="/game-started.html")
+            elif username not in players:
+                new_player(username)
+                response = http_ophir.http_message.HttpMsg(location="/waiting_lounge.html")
             else:
-                response = http_ophir.http_message.HttpMsg(error_code=500, content_type="text/plain",
-                                                           body=b'{"error": "username is already taken."}'  )
+                response = http_ophir.http_message.HttpMsg(error_code=500)
+
+        # Start the game #
+        if game_started:
+            games.game_manager.game_manager()
 
     elif request.METHOD == b"GET":
-        if not os.path.isfile(consts.ROOT_DIRECTORY + uri):
+        # Client checks if the game has started #
+        if uri.startswith(b"/did-start"):
+            if game_started:
+                response = http_ophir.http_message.HttpMsg(content_type="text/event-stream", body=b"data: start-game\n\n")
+            else:
+                response = http_ophir.http_message.HttpMsg(content_type="text/event-stream", body=b"data: game-not-started\n\n")
+
+        # If the requested file is not in the website root folder #
+        elif not os.path.isfile(consts.ROOT_DIRECTORY + uri):
             with open(consts.FOUR_O_FOUR, 'rb') as file:
                 response = http_ophir.http_message.HttpMsg(error_code=404, content_type=http_ophir.constants.MIME_TYPES[".html"],
                                                            body=file.read())
+        # If uri does not have a special path #
         else:
-
             # extract requested file type from URL (html, jpg etc)
             file_type = os.path.splitext(uri)[1]
 
@@ -128,6 +156,7 @@ def handle_client(request: http_ophir.http_parser.HttpParser, client_socket: soc
             response = http_ophir.http_message.HttpMsg(content_type=http_ophir.constants.MIME_TYPES[file_type.decode()],
                                                        body=file_data)
 
+    # Send the final message to the client #
     client_socket.send(response.build_message_bytes())
 
 
@@ -139,6 +168,7 @@ def main() -> None:
     """
     global readable_socks_list, writeable_socks_list, exception_socks_list
 
+    # Setting up the socket #
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
@@ -165,7 +195,6 @@ def main() -> None:
                         logging.exception(e)
 
                     finally:
-                        logging.info("client disconnected")
                         client_socket.close()
     finally:
         sock.close()

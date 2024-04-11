@@ -7,11 +7,12 @@
 <body>
   Wait for the game to start
   <script async>
-        const evtSource = new EventSource("http://127.0.0.1:80/sse");
+        const evtSource = new EventSource("/did-start");
         evtSource.onmessage = function(event) {
-            const newElement = document.createElement("p");
-            newElement.textContent = "Received: " + event.data;
-            document.getElementById("events").appendChild(newElement);
+            if (event.data === "start-game") {
+              window.location.replace("/game");
+              evtSource.close();
+            }
         };
   </script>
 </body>
