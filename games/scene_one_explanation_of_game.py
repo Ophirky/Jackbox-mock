@@ -7,6 +7,7 @@
 from games.scene import Scene
 from usefull_files import general_constants as consts
 
+
 # Scene #
 class Explanation(Scene):
 

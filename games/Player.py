@@ -4,6 +4,7 @@
     DESCRIPTION: This is the player class for the game.
 """
 
+
 class Player:
     """Player class - contains the username and score of the player."""
     def __init__(self, username, is_admin=False) -> None:

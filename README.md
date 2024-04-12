@@ -24,15 +24,10 @@ This project not only satisfies academic requirements but also serves as an exce
 ## Contained Games
 **Detailed Game Explanations in the Git Repository**
 ### Implemented:
-
  - None
 
 ### To be implemented:
  - Quiplash
- - Monster Seeking Monster
- - Drum Hero - not in Jackbox
- - Melody Jumble - not in Jackbox
- - Fixytext
 
 ## Resources
 

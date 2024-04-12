@@ -3,6 +3,8 @@
     DATE: 07/04/24
     DESCRIPTION: This is a class that contains everything that is needed for a scene.
 """
+
+
 class Scene:
     """This is a Scene interface"""
     def __init__(self, background_color=(255, 255, 255)):

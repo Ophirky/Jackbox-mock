@@ -21,6 +21,7 @@ import usefull_files.general_constants as consts
 global readable_socks_list, writeable_socks_list, exception_socks_list
 players = []
 game_started = False
+response: http_ophir.http_message.HttpMsg
 
 
 # Log initialization handling #
@@ -98,6 +99,28 @@ def new_player(username: bytes) -> None:
         game_started = True
 
 
+def user_login_handler(uri: bytes, request: http_ophir.http_parser.HttpParser) -> None:
+    """
+    Handles the user log-in requests
+    :param uri: The request uri
+    :param request: the request itself
+    :return: None
+    """
+    if uri.startswith(b"/username"):
+        global response
+        username = json.loads(request.BODY.decode("utf-8"))["username"]
+        if game_started:
+            response = http_ophir.http_message.HttpMsg(location="/game-started.html")
+        elif username not in players:
+            new_player(username)
+            response = http_ophir.http_message.HttpMsg(location="/waiting_lounge.html")
+        else:
+            response = http_ophir.http_message.HttpMsg(error_code=500)
+    # Start the game #
+    if game_started:
+        games.game_manager.game_manager(players)
+
+
 def handle_client(request: http_ophir.http_parser.HttpParser, client_socket: socket, client_addr: list) -> None:
     """
     This function handles the client requests and responses
@@ -106,8 +129,8 @@ def handle_client(request: http_ophir.http_parser.HttpParser, client_socket: soc
     :param client_socket: The client socket.
     :return: None
     """
+    global response
     uri = request.URI
-    response: http_ophir.http_message.HttpMsg
 
     # fixing uri #
     if uri == b"/":
@@ -117,32 +140,24 @@ def handle_client(request: http_ophir.http_parser.HttpParser, client_socket: soc
 
     if request.METHOD == b"POST":
         # Username entry before game #
-        if uri.startswith(b"/username"):
-            username = json.loads(request.BODY.decode("utf-8"))["username"]
-            if game_started:
-                response = http_ophir.http_message.HttpMsg(location="/game-started.html")
-            elif username not in players:
-                new_player(username)
-                response = http_ophir.http_message.HttpMsg(location="/waiting_lounge.html")
-            else:
-                response = http_ophir.http_message.HttpMsg(error_code=500)
-
-        # Start the game #
-        if game_started:
-            games.game_manager.game_manager()
+        user_login_handler(uri, request)
 
     elif request.METHOD == b"GET":
         # Client checks if the game has started #
         if uri.startswith(b"/did-start"):
             if game_started:
-                response = http_ophir.http_message.HttpMsg(content_type="text/event-stream", body=b"data: start-game\n\n")
+
+                response = http_ophir.http_message.HttpMsg(content_type="text/event-stream",
+                                                           body=b"data: {\"start-game\": \"%s\"}\n\n" % b"Hello Bro")
             else:
-                response = http_ophir.http_message.HttpMsg(content_type="text/event-stream", body=b"data: game-not-started\n\n")
+                response = http_ophir.http_message.HttpMsg(content_type="text/event-stream",
+                                                           body=b"data: \n\n")
 
         # If the requested file is not in the website root folder #
         elif not os.path.isfile(consts.ROOT_DIRECTORY + uri):
             with open(consts.FOUR_O_FOUR, 'rb') as file:
-                response = http_ophir.http_message.HttpMsg(error_code=404, content_type=http_ophir.constants.MIME_TYPES[".html"],
+                response = http_ophir.http_message.HttpMsg(error_code=404,
+                                                           content_type=http_ophir.constants.MIME_TYPES[".html"],
                                                            body=file.read())
         # If uri does not have a special path #
         else:

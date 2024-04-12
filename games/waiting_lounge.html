@@ -9,8 +9,8 @@
   <script async>
         const evtSource = new EventSource("/did-start");
         evtSource.onmessage = function(event) {
-            if (event.data === "start-game") {
-              window.location.replace("/game");
+            if (JSON.parse(event.data)["start-game"] !== null) {
+              window.location.replace("/round-one.html");
               evtSource.close();
             }
         };

@@ -56,6 +56,10 @@ GAME_PROMPTS = (
     "My dream job is %s.",
     "The funniest joke I know is %s.",
     "The most beautiful place I've ever been is %s.",
-    "A new TV show called \"MommyFight\" is about %s"
+    "A new TV show called \"MommyFight\" is about %s",
+    "FluffyPoofs is a name for a new %s",
+    "Tell me something I don't know. %s",
+    "My mom told that she %s",
+    "There is nothing I love more than %s"
 )
 
