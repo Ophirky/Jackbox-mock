@@ -1,90 +1,18 @@
 """
     AUTHOR: Ophir Nevo Michrowski
-    DATE: 16/03/24
-    DESCRIPTION: The main file of the project - the file that needs to be run.
+    DATE: 25/04/24
+    DESCRIPTION: This is the main file for the project rewrite using the new HTTP library.
 """
-# Imports #
-import logging
-import os.path
-import select
-import socket
-import re
+import httpro
+from quiplash import game_constants as gconsts
+from utils.decorators import lock_game_manager
+from quiplash.player import Player
 import json
-
-import games.game_manager
-import http_ophir
-
-from games import Player
-import usefull_files.general_constants as consts
-
-# Global Vars #
-global readable_socks_list, writeable_socks_list, exception_socks_list
-players = []
-game_started = False
-response: http_ophir.http_message.HttpMsg
-
-
-# Log initialization handling #
-def log_init_handler() -> None:
-    """
-    Handlers all the logging initialization process
-    :return: None
-    """
-    if not os.path.isdir(consts.LOG_DIR):
-        os.makedirs(consts.LOG_DIR)
-
-    logging.basicConfig(level=consts.LOG_LEVEL, filename=consts.MAIN_LOG, format=consts.LOG_FORMAT)
-
-
-def auto_test_main() -> None:
-    """
-    This function includes all the auto checks of the project
-    :return: None
-    """
-    http_ophir.http_auto_tests()
-    logging.info(consts.TESTS_RUN)
-
-
-def receive_message(client_socket: socket) -> bool or http_ophir.http_parser.HttpParser:
-    """
-    Receives a message from a client
-    :param client_socket:
-    :return bool or http_ophir.http_parser.HttpParser: False if the message is invalid, HttpParser with the message
-    """
-    try:
-        message = client_socket.recv(consts.RECV_LENGTH)
-
-        while b"\r\n\r\n" not in message:
-            msg = client_socket.recv(consts.RECV_LENGTH)
-            if not msg:
-                break
-            message += msg
-
-        try:
-            content_length = int(re.search(rb'Content-Length: (\d+)', message).group(1))
-
-            # Check if body was already received #
-            if len(message.split(b'\r\n\r\n')) > 1 and len(message.split(b'\r\n\r\n')[1]) != content_length:
-                body = b''
-                # Receiving body #
-                while len(body) < content_length:
-                    chunk = client_socket.recv(consts.RECV_LENGTH)
-                    if not chunk:
-                        break
-                    body += chunk
-
-                message += body
-
-        except AttributeError:
-            logging.info(consts.NO_CONTENT_HEADER)
-
-        except Exception as e:
-            logging.exception(e)
-
-        return http_ophir.http_parser.HttpParser(message)
-
-    except Exception as e:
-        logging.exception(e)
+from utils.global_vars import app, game_manager, sentence_division_lock, round_time_seconds
+import utils.global_vars
+from quiplash import game_main
+import threading
+import time
 
 
 def new_player(username: bytes) -> None:
@@ -93,134 +21,144 @@ def new_player(username: bytes) -> None:
     :param username: The username of the new player.
     :return: None
     """
-    global game_started
-    players.append(Player.Player(username))
-    if len(players) == 4:
-        game_started = True
+    game_manager.players.append(Player(username))
+    if len(game_manager.players) == gconsts.NUMBER_OF_PLAYERS_TO_START:
+        game_manager.game_started = True
 
 
-def user_login_handler(uri: bytes, request: http_ophir.http_parser.HttpParser) -> None:
+@app.route(b"/")
+def home_page(request: httpro.http_parser.HttpParser) -> httpro.http_message.HttpMsg:
     """
-    Handles the user log-in requests
-    :param uri: The request uri
-    :param request: the request itself
-    :return: None
+    Home page for the game - log in
+    :param request: The request for the page.
+    :return httpro.http_message.HttpMsg: The html for the index.html file.
     """
-    if uri.startswith(b"/username"):
-        global response
-        username = json.loads(request.BODY.decode("utf-8"))["username"]
-        if game_started:
-            response = http_ophir.http_message.HttpMsg(location="/game-started.html")
-        elif username not in players:
-            new_player(username)
-            response = http_ophir.http_message.HttpMsg(location="/waiting_lounge.html")
-        else:
-            response = http_ophir.http_message.HttpMsg(error_code=500)
-    # Start the game #
-    if game_started:
-        games.game_manager.game_manager(players)
+    return httpro.http_message.HttpMsg(content_type=httpro.constants.MIME_TYPES[".html"],
+                                       body=httpro.read_file(gconsts.HOME_PAGE_PATH))
 
 
-def handle_client(request: http_ophir.http_parser.HttpParser, client_socket: socket, client_addr: list) -> None:
+@app.route(b"/did-start")
+@lock_game_manager
+def did_start_check(request: httpro.http_parser.HttpParser) -> httpro.http_message.HttpMsg:
     """
-    This function handles the client requests and responses
-    :param client_addr: The ip and port of the client.
-    :param request: The client message.
-    :param client_socket: The client socket.
-    :return: None
+    way for users to check if the game started.
+    :param request: The request for the page.
+    :return httpro.http_message.HttpMsg: Returns if the game starts.
     """
-    global response
-    uri = request.URI
-
-    # fixing uri #
-    if uri == b"/":
-        uri = b"/index.html"
-
-    logging.debug(request.HTTP_REQUEST)
-
-    if request.METHOD == b"POST":
-        # Username entry before game #
-        user_login_handler(uri, request)
-
-    elif request.METHOD == b"GET":
-        # Client checks if the game has started #
-        if uri.startswith(b"/did-start"):
-            if game_started:
-
-                response = http_ophir.http_message.HttpMsg(content_type="text/event-stream",
-                                                           body=b"data: {\"start-game\": \"%s\"}\n\n" % b"Hello Bro")
-            else:
-                response = http_ophir.http_message.HttpMsg(content_type="text/event-stream",
-                                                           body=b"data: \n\n")
-
-        # If the requested file is not in the website root folder #
-        elif not os.path.isfile(consts.ROOT_DIRECTORY + uri):
-            with open(consts.FOUR_O_FOUR, 'rb') as file:
-                response = http_ophir.http_message.HttpMsg(error_code=404,
-                                                           content_type=http_ophir.constants.MIME_TYPES[".html"],
-                                                           body=file.read())
-        # If uri does not have a special path #
-        else:
-            # extract requested file type from URL (html, jpg etc)
-            file_type = os.path.splitext(uri)[1]
-
-            # generate proper HTTP header
-            file_data: bytes
-            with open(consts.ROOT_DIRECTORY + uri, 'rb') as f:
-                file_data = f.read()
-            response = http_ophir.http_message.HttpMsg(content_type=http_ophir.constants.MIME_TYPES[file_type.decode()],
-                                                       body=file_data)
-
-    # Send the final message to the client #
-    client_socket.send(response.build_message_bytes())
+    print("DID START")
+    if game_manager.current_scene == gconsts.SENTENCE_INPUT_SCENE_INDEX:
+        print("GAME STARTED")
+        response = httpro.http_message.HttpMsg(content_type="text/event-stream",
+                                               body=b"data: {\"start-game\": \"%s\"}\n\n" % b"true")
+    else:
+        print("not GAME STARTED")
+        response = httpro.http_message.HttpMsg(content_type="text/event-stream",
+                                               body=b"data: {\"start-game\": \"%s\"}\n\n" % b"false")
+    print("sending res")
+    return response
 
 
-# Main Function #
-def main() -> None:
+@app.route(b"/username")
+@lock_game_manager
+def username_check(request: httpro.http_parser.HttpParser) -> httpro.http_message.HttpMsg:
     """
-    The main function of the project
-    :return: None
+    Handles the user logi-n
+    :param request: The request for the page.
+    :return httpro.http_message.HttpMsg: if the username is valid.
     """
-    global readable_socks_list, writeable_socks_list, exception_socks_list
+    username = json.loads(request.BODY.decode("utf-8"))["username"]
 
-    # Setting up the socket #
-    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    if game_manager.game_started:
+        response = httpro.http_message.HttpMsg(location="game-started.html")
+    elif username not in game_manager.players:
+        new_player(username)
+        response = httpro.http_message.HttpMsg(location="waiting-lounge.html", set_cookie="username=" + username)
+    else:
+        response = httpro.http_message.HttpMsg(error_code=500)
 
-    sock.bind((consts.IP, consts.PORT))
-    sock.listen()
+    return response
 
-    socket_list = [sock]
 
-    try:
-        while True:
-            readable_socks_list, writeable_socks_list, exception_socks_list = select.select(socket_list, socket_list,
-                                                                                            socket_list)
+@app.route(b"/waiting-lounge.html")
+def waiting_lounge_page(request: httpro.http_parser.HttpParser) -> httpro.http_message.HttpMsg:
+    """
+    Page where players wait for the game to start.
+    :param request: The request for the page.
+    :return httpro.http_message.HttpMsg: Waiting lounge html.
+    """
+    return httpro.http_message.HttpMsg(content_type=httpro.constants.MIME_TYPES[".html"],
+                                       body=httpro.read_file(gconsts.WAITING_LOUNGE_FILE_PATH))
 
-            for notified_socket in readable_socks_list:
-                if notified_socket == sock:  # checking for new connection #
-                    client_socket, client_addr = sock.accept()
-                    try:
-                        logging.info(consts.NEW_CLIENT.format(client_addr[0], client_addr[1]))
 
-                        message: http_ophir.http_parser.HttpParser = receive_message(client_socket)
-                        handle_client(message, client_socket, client_addr)
+@app.route(b"/sentence-input.html")
+def sentence_input_page(request: httpro.http_parser.HttpParser) -> httpro.http_message.HttpMsg:
+    """
 
-                    except Exception as e:
-                        logging.exception(e)
+    :param request: The request for the page.
+    :return httpro.http_message.HttpMsg: round one html.
+    """
+    return_value = None
+    if not game_manager.current_scene == gconsts.SENTENCE_INPUT_SCENE_INDEX:
+        return_value = httpro.http_message.HttpMsg(error_code=403, content_type=httpro.constants.MIME_TYPES[".html"],
+                                                   body=httpro.read_file(gconsts.FORBIDDEN_PATH))
+    else:
+        return_value = httpro.http_message.HttpMsg(conten_type=httpro.constants.MIME_TYPES[".html"],
+                                                   body=httpro.read_file(gconsts.ROUND_ONE_FILE_PATH))
+    return return_value
 
-                    finally:
-                        client_socket.close()
-    finally:
-        sock.close()
+
+@app.route(b"/get-sentence")
+@lock_game_manager
+def get_sentence_request(request: httpro.http_parser.HttpParser) -> httpro.http_message.HttpMsg:
+    """
+    Sends a player his sentence and the time remaining to game.
+    :param request: The player's request
+    :return httpro.http_message.HttpMsg: sentence and the time remaining to game
+    """
+    return_value = httpro.http_message.HttpMsg(error_code=404)
+    print("I am in the route")
+    if not game_manager.current_scene == gconsts.SENTENCE_INPUT_SCENE_INDEX:
+        print("No permission 403")
+        return_value = httpro.http_message.HttpMsg(error_code=403, content_type=httpro.constants.MIME_TYPES[".html"],
+                                                   body=httpro.read_file(gconsts.FORBIDDEN_PATH))
+    else:
+        print("The user has permission to page")
+        username = request.COOKIES[b"username"]
+
+        # with sentence_division_lock:
+        print("Locked sentence_division")
+        # Find the sentence assigned to the player #
+        for sentence, players in utils.global_vars.sentence_division.items():
+            print("iteration")
+            # If sentence found #
+            if username.decode() in [player.username for player in players]:
+                print("Sentence found")
+                time_left_for_game = utils.global_vars.round_start_time + round_time_seconds - time.time()
+                protocol_res = json.dumps({"sentence": sentence % "___", "time-left": str(time_left_for_game)})
+
+                return_value = httpro.http_message.HttpMsg(content_type=httpro.constants.MIME_TYPES["sse"],
+                                                           body=b'data: %s\n\n' % protocol_res.encode())
+                print("response created")
+                print(protocol_res)
+                break
+
+    print("Out Of Loop - end of response")
+    return return_value
 
 
 if __name__ == '__main__':
-    # Log handling #
-    log_init_handler()
+    # Asserts #
+    httpro.http_auto_tests()
 
-    # Auto tests #
-    auto_test_main()
+    # 404 page setup #
+    app.set_four_o_four(gconsts.NOT_FOUND_PAGE)
 
-    # Main program #
-    main()
+    # Thread setup #
+    socket_thread = threading.Thread(target=app.run)
+    game_socket = threading.Thread(target=game_main.main)
+
+    socket_thread.start()
+    game_socket.start()
+
+    while socket_thread.is_alive() or game_socket.is_alive():
+        pass

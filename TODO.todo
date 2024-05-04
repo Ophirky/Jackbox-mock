@@ -1,3 +1,7 @@
+// Security - good to have \\
+- TODO: Make the cookie use a random token instead of display name.
+- TODO: Make pages inaccessible using cookie
+
 // main file \\
 - TODO: add logs
 - TODO: add asserts

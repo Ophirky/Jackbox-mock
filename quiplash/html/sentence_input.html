@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round 1</title>
+</head>
+<body>
+    <h1 id="sentence"></h1>
+    <input type="text" name="answer" id="answer">
+    <script async>
+        var time = null;
+
+        const evtSource = new EventSource("/get-sentence");
+         evtSource.onmessage = function(event) {
+            let ans = JSON.parse(event.data);
+            document.getElementById("sentence").textContent = ans["sentence"];
+
+            time = ans["time-left"];
+
+            evtSource.close();
+        };
+
+        
+    </script>
+</body>
+</html>
