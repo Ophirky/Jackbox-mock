@@ -27,5 +27,4 @@ class WaitingLounge(Scene):
         The waiting lounge (waiting for players) scene
         :return: None
         """
-        # print("Wait for everyone to enter")
-        pass
+        print("Wait for everyone to enter")

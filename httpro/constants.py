@@ -49,6 +49,7 @@ MIME_TYPES = {
     ".ico": "image/x-icon",
     ".gif": "image/jpeg",
     ".png": "image/png",
+    ".ttf": "font/ttf",
     "sse": "text/event-stream"
 }
 

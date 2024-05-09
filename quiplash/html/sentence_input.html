@@ -1,27 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Round 1</title>
+    <link rel="stylesheet" href="/quiplash/static/css/sentence-input.css">
+    <link rel="stylesheet" href="/quiplash/static/css/timer.css">
+    <link rel="stylesheet" href="/quiplash/static/css/styles.css">
 </head>
+
 <body>
-    <h1 id="sentence"></h1>
-    <input type="text" name="answer" id="answer">
-    <script async>
-        var time = null;
+    <div class="timer animatable">
+        <!-- Timer Circle -->
+        <svg>
+            <!-- Timer outline -->
+            <circle cx="50%" cy="50%" r="45" />
+            <circle cx="50%" cy="50%" r="45" pathLength="1" />
+            <text x="50" y="55" text-anchor="middle">
+                <tspan id="timeLeft"></tspan>
+            </text>
+        </svg>
+    </div>
+
+    <div id="sentence-input-section">
+        <h1 id="sentence">Lorem ipsum dolorsss sit amet consectetur adipisicing elit ___</h1>
+        <div id="form">
+            <input type="text" name="answer" id="answer">
+            <button class="button" onclick="sendSentence()">
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75">
+                    </path>
+                </svg>
+
+
+                <div class="text">
+                    Submit
+                </div>
+
+            </button>
+        </div>
+    </div>
+
+    <script>
+        let countdownTimer;
+
+        function sendSentence() {
+            let answer = document.getElementById("answer").value;
+            fetch("/send-sentence", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "text/plain"
+                },
+                body: JSON.stringify({ txt: answer })
+            }).then((res) => {
+                if (res.status === 200) {
+                    clearInterval(countdownTimer);
+
+                    document.querySelector("body").innerHTML = "<h1>Wait for other players.</h1>";
+                }
+            })
+        }
+
+
+        function runTimer(initialTime) {
+            let timer = document.getElementById('timeLeft');
+            let timerElement = document.querySelector('.timer');
+            let timeLeft = initialTime;
+
+            const timerCircle = timerElement.querySelector('svg > circle + circle');
+            timerCircle.style.strokeDashoffset = 1;
+
+            countdownTimer = setInterval(() => {
+                if (timeLeft > -1) {
+                    // Progress Time \\
+                    const timeRemaining = timeLeft--;
+
+                    const normalizedTime = (initialTime - timeRemaining) / initialTime;
+
+                    // Html updating \\
+                    timerCircle.style.strokeDashoffset = normalizedTime; // Border length.
+                    timer.innerHTML = timeRemaining; // Adding the time in the circle.
+                } else {
+                    // Time ended \\
+                    sendSentence();
+                }
+            }, 1000);
+        }
 
         const evtSource = new EventSource("/get-sentence");
-         evtSource.onmessage = function(event) {
+        evtSource.onmessage = function (event) {
             let ans = JSON.parse(event.data);
-            document.getElementById("sentence").textContent = ans["sentence"];
-
-            time = ans["time-left"];
+            document.getElementById("sentence").textContent = ans["txt"];
 
             evtSource.close();
+
+            // Start Countdown \\
+            runTimer(Math.floor(parseFloat(ans["time-left"])));
         };
 
-        
+
     </script>
 </body>
+
 </html>

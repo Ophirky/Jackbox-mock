@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Nunito:wght@800;900&display=swap');
+
+.timer {
+    position: absolute;
+    top: 10px;
+}
+
+.timer>svg {
+    width: 100px;
+    height: 100px;
+}
+
+.timer>svg>circle {
+    fill: none;
+    stroke-opacity: 0.3;
+    stroke: #22bae9;
+    stroke-width: 5;
+    transform-origin: center center;
+    transform: rotate(-90deg);
+}
+
+.timer>svg>circle+circle {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    stroke-linecap: round;
+    stroke-opacity: 1;
+}
+
+.timer.animatable>svg>circle+circle {
+    transition: stroke-dashoffset 0.3s ease;
+}
+
+.timer>svg>text {
+    font-size: 1rem;
+    font-family: "Heebo", sans-serif;
+    font-weight: bold;
+    color: white;
+}

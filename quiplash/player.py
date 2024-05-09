@@ -7,6 +7,7 @@
 
 class Player:
     """Player class - contains the username and score of the player."""
+
     def __init__(self, username, is_admin=False) -> None:
         """
         Constructor of Player class
@@ -15,6 +16,7 @@ class Player:
         self.username = username
         self.score = 0
         self.is_admin = is_admin
+        self.answer = None
 
     def __str__(self):
         return f"{self.username}, {self.score}"
@@ -26,4 +28,3 @@ class Player:
             return self.score == other
         else:
             return self == other
-

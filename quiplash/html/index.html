@@ -3,16 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-<!--    <link rel="stylesheet" href="quiplash/css/styles.css">-->
+    <link rel="stylesheet" href="/quiplash/static/css/styles.css">
+    <link rel="stylesheet" href="/quiplash/static/css/index-style.css">
+
     <title>This is a test page</title>
 </head>
 
 <body>
     <h1>Enter Username</h1>
-    <form>
         <input type="text" id="username-input" required>
-        <input type="button" value="Enter Game" onclick="sendUsername()">
-    </form>
+        <button class="button" onclick="sendUsername()">
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75">
+                </path>
+            </svg>
+
+
+            <div class="text">
+                Enter
+            </div>
+
+        </button>
     <script>
         function timer(startTime, amountOfTimeInMinutes) {
             let totalTimeInSeconds = ((startTime + amountOfTimeInMinutes * 60000) - new Date().getTime()) / 1000;
@@ -23,24 +37,21 @@
 
         function sendUsername() {
             const playerUsername = document.querySelector("#username-input").value;
-            console.log(playerUsername);
             fetch("/username", {
                 method: "POST",
                 headers: {
                     "Content-Type": "text/plain",
                 },
-                body: JSON.stringify({username:playerUsername})
+                body: JSON.stringify({ txt: playerUsername })
             }).then((res) => {
-                if (res.status === 200)
-                    {window.location.replace(window.location.href + res.headers.get("Location"));}
-                else if (res.status === 500)
-                    {
-                        let par = document.createElement('p');
-                        par.className = "error";
-                        par.appendChild(document.createTextNode("username taken"));
-                        document.querySelector("body").appendChild(par);
-                    }
-        });
+                if (res.status === 200) { window.location.replace(window.location.href + res.headers.get("Location")); }
+                else if (res.status === 500) {
+                    let par = document.createElement('p');
+                    par.className = "error";
+                    par.appendChild(document.createTextNode("username taken"));
+                    document.querySelector("body").appendChild(par);
+                }
+            });
         }
 
         // GET
@@ -68,4 +79,5 @@
 
     </script>
 </body>
+
 </html>

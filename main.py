@@ -45,16 +45,12 @@ def did_start_check(request: httpro.http_parser.HttpParser) -> httpro.http_messa
     :param request: The request for the page.
     :return httpro.http_message.HttpMsg: Returns if the game starts.
     """
-    print("DID START")
     if game_manager.current_scene == gconsts.SENTENCE_INPUT_SCENE_INDEX:
-        print("GAME STARTED")
         response = httpro.http_message.HttpMsg(content_type="text/event-stream",
                                                body=b"data: {\"start-game\": \"%s\"}\n\n" % b"true")
     else:
-        print("not GAME STARTED")
         response = httpro.http_message.HttpMsg(content_type="text/event-stream",
                                                body=b"data: {\"start-game\": \"%s\"}\n\n" % b"false")
-    print("sending res")
     return response
 
 
@@ -66,7 +62,7 @@ def username_check(request: httpro.http_parser.HttpParser) -> httpro.http_messag
     :param request: The request for the page.
     :return httpro.http_message.HttpMsg: if the username is valid.
     """
-    username = json.loads(request.BODY.decode("utf-8"))["username"]
+    username = json.loads(request.BODY.decode("utf-8"))["txt"]
 
     if game_manager.game_started:
         response = httpro.http_message.HttpMsg(location="game-started.html")
@@ -93,7 +89,6 @@ def waiting_lounge_page(request: httpro.http_parser.HttpParser) -> httpro.http_m
 @app.route(b"/sentence-input.html")
 def sentence_input_page(request: httpro.http_parser.HttpParser) -> httpro.http_message.HttpMsg:
     """
-
     :param request: The request for the page.
     :return httpro.http_message.HttpMsg: round one html.
     """
@@ -115,34 +110,50 @@ def get_sentence_request(request: httpro.http_parser.HttpParser) -> httpro.http_
     :param request: The player's request
     :return httpro.http_message.HttpMsg: sentence and the time remaining to game
     """
-    return_value = httpro.http_message.HttpMsg(error_code=404)
-    print("I am in the route")
+    return_value = httpro.http_message.HttpMsg(error_code=500)
     if not game_manager.current_scene == gconsts.SENTENCE_INPUT_SCENE_INDEX:
-        print("No permission 403")
         return_value = httpro.http_message.HttpMsg(error_code=403, content_type=httpro.constants.MIME_TYPES[".html"],
                                                    body=httpro.read_file(gconsts.FORBIDDEN_PATH))
     else:
-        print("The user has permission to page")
         username = request.COOKIES[b"username"]
 
-        # with sentence_division_lock:
-        print("Locked sentence_division")
         # Find the sentence assigned to the player #
         for sentence, players in utils.global_vars.sentence_division.items():
-            print("iteration")
             # If sentence found #
             if username.decode() in [player.username for player in players]:
-                print("Sentence found")
                 time_left_for_game = utils.global_vars.round_start_time + round_time_seconds - time.time()
-                protocol_res = json.dumps({"sentence": sentence % "___", "time-left": str(time_left_for_game)})
+                protocol_res = json.dumps({"txt": sentence % "___", "time-left": str(time_left_for_game)})
 
                 return_value = httpro.http_message.HttpMsg(content_type=httpro.constants.MIME_TYPES["sse"],
                                                            body=b'data: %s\n\n' % protocol_res.encode())
-                print("response created")
-                print(protocol_res)
                 break
 
-    print("Out Of Loop - end of response")
+    return return_value
+
+
+# TODO: Check if works.
+@app.route(b"/send-sentence")
+def get_answer_from_user(request: httpro.http_parser.HttpParser) -> httpro.http_message.HttpMsg:
+    """
+    Gets the answer from a player and adds it to the answers dict
+    :param request: The player's answer
+    :return httpro.http_message.HttpMsg: confirm message that the sentence was received.
+    """
+    return_value = httpro.http_message.HttpMsg(error_code=404)  # is the user wasn't found.
+    if game_manager.current_scene != gconsts.SENTENCE_INPUT_SCENE_INDEX:
+        return_value = httpro.http_message.HttpMsg(error_code=403, content_type=httpro.constants.MIME_TYPES[".html"],
+                                                   body=httpro.read_file(gconsts.FORBIDDEN_PATH))
+    else:
+        username = request.COOKIES[b"username"]
+
+        # Find the sentence assigned to the player #
+        for player in utils.global_vars.game_manager.players:
+            # If sentence found #
+            if username.decode() == player.username:
+                player.answer = request.BODY.decode()["txt"]
+                return_value = httpro.http_message.HttpMsg()
+                break
+
     return return_value
 
 

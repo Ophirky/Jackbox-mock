@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Sentence-Font';
+    src: url("/quiplash/static/fonts/GROBOLD.ttf")
+}
+
+html {
+    height: 100vh;
+
+    background: #12c2e9;
+    background: -webkit-linear-gradient(to bottom right, #f64f59, #c471ed, #12c2e9);
+    background: linear-gradient(to bottom right, #f64f59, #c471ed, #12c2e9);
+    background-size: inherit;
+    background-repeat: no-repeat;
+}
+
+.error {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+    font-size: medium;
+}

@@ -46,8 +46,6 @@ class PlayerSentences(Scene):
         :param players: List of Player objects
         :return: Dictionary with the sentence as the key and a tuple of usernames as the value
         """
-        print(sentences)
-        print(str(player) + ", " for player in players)
         # Convert tuple to list
         sentences_list = list(sentences)
 
@@ -74,5 +72,5 @@ class PlayerSentences(Scene):
         The sentence scene
         :return: None
         """
-        # print("Alright! let's get it started!")
+        print("Alright! let's get it started!")
         self.__scene_over = True

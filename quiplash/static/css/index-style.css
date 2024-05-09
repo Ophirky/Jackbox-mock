@@ -1,0 +1,63 @@
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white
+}
+
+h1 {
+    font-family: 'Sentence-Font';
+    letter-spacing: 3px;
+    font-size: 50px;
+    font-weight: 50;
+}
+
+.button {
+    background-color: #ffffff00;
+    color: #fff;
+    min-width: 10.5em;
+    min-height: 4.9em;
+    background-color: #12c2e9af;
+    border: none;
+    border-radius: 0 11px 11px 0;
+    -webkit-box-shadow: 0px 0px 25px -12px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 25px -12px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 25px -12px rgba(0, 0, 0, 1);
+    text-align: right;
+    transition: all 0.6s ease;
+}
+
+.button:hover {
+    background-color: #19b5d8af;
+    cursor: pointer;
+}
+
+.button svg {
+    width: 2.6em;
+    margin: -.7em 0.8em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+}
+
+.button:hover svg {
+    transform: translateX(5px);
+}
+
+.text {
+    margin: 0 3em;
+    font-size: 1.25em;
+}
+
+#username-input {
+    height: 4.7em;
+    border-radius: 11px 0 0 11px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+
+    -webkit-box-shadow: 0px 0px 25px -12px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 25px -12px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 25px -12px rgba(0, 0, 0, 1);
+}
