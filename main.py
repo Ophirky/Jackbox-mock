@@ -8,7 +8,7 @@ from quiplash import game_constants as gconsts
 from utils.decorators import lock_game_manager
 from quiplash.player import Player
 import json
-from utils.global_vars import app, game_manager, sentence_division_lock, round_time_seconds
+from utils.global_vars import app, game_manager, round_time_seconds
 import utils.global_vars
 from quiplash import game_main
 import threading
@@ -150,8 +150,17 @@ def get_answer_from_user(request: httpro.http_parser.HttpParser) -> httpro.http_
         for player in utils.global_vars.game_manager.players:
             # If sentence found #
             if username.decode() == player.username:
-                player.answer = request.BODY.decode()["txt"]
-                return_value = httpro.http_message.HttpMsg()
+                if not player.answer:
+                    return_value = httpro.http_message.HttpMsg(error_code=403,
+                                                               content_type=httpro.constants.MIME_TYPES[".html"],
+                                                               body=httpro.read_file(gconsts.FORBIDDEN_PATH))
+                else:
+                    player.answer = json.loads(request.BODY.decode())["txt"]
+                    return_value = httpro.http_message.HttpMsg()
+
+                    with utils.global_vars.submission_count_lock:
+                        utils.global_vars.submission_count += 1
+
                 break
 
     return return_value

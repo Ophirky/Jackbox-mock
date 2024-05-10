@@ -67,10 +67,24 @@ class PlayerSentences(Scene):
 
         return assignments
 
+    @staticmethod
+    def __check_scene_over() -> bool:
+        """
+        Check if everyone submitted their game.
+        :return bool: Whether the scene is over or not
+        """
+        return_val = False
+        with global_vars.submission_count_lock:
+            if global_vars.submission_count == consts.NUMBER_OF_PLAYERS_TO_START:
+                return_val = True
+
+        return return_val
+
     def scene(self) -> None:
         """
         The sentence scene
         :return: None
         """
         print("Alright! let's get it started!")
-        self.__scene_over = True
+        if self.__check_scene_over():
+            self.__scene_over = True

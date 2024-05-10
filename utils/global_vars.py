@@ -14,13 +14,14 @@ game_manager = GameManager()
 game_manager_lock = Lock()
 
 sentence_division = None
-sentence_division_lock = Lock()
 
 current_scene_instance = None
 current_scene_instance_lock = Lock()
 
 round_time_seconds = ROUND_TIME_SECONDS_DEFAULT
 
+submission_count = 0
+submission_count_lock = Lock()
 
 # variable has no lock since it cannot be accessed from two threads at the same time #
 round_start_time = None
