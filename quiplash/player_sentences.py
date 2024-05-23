@@ -13,7 +13,7 @@ import time
 
 # Scene #
 class PlayerSentences(Scene):
-    """Round One"""
+    """Sentence submission scene"""
 
     def __init__(self):
         """Constructor of Round One"""
@@ -26,9 +26,11 @@ class PlayerSentences(Scene):
         global_vars.round_start_time = time.time()
 
         # Set the sentence division of the players #
-        # with global_vars.sentence_division_lock:
         global_vars.sentence_division = self.__assign_sentences(
             players=self.__PLAYERS, sentences=consts.GAME_PROMPTS)
+
+        # Set submission counter to 0 - GAME_MANAGER IS ALREADY LOCKED #
+        global_vars.game_manager.submission_counter = 0
 
     @property
     def scene_over(self) -> bool:
@@ -70,13 +72,17 @@ class PlayerSentences(Scene):
     @staticmethod
     def __check_scene_over() -> bool:
         """
-        Check if everyone submitted their game.
-        :return bool: Whether the scene is over or not
+        Check if everyone submitted their sentence.
+        CALL ONLY WHEN GAME MANAGER IS LOCKED!
+        :return bool: Whether the scene is over or not. If Game_manager is locked will return False.
         """
         return_val = False
-        with global_vars.submission_count_lock:
-            if global_vars.submission_count == consts.NUMBER_OF_PLAYERS_TO_START:
-                return_val = True
+
+        # Game Manager is already locked when function is called.
+        print(global_vars.game_manager.submission_counter)
+        if global_vars.game_manager_lock.locked() and \
+                global_vars.game_manager.submission_counter == consts.NUMBER_OF_PLAYERS_TO_START:
+            return_val = True
 
         return return_val
 
@@ -85,6 +91,5 @@ class PlayerSentences(Scene):
         The sentence scene
         :return: None
         """
-        print("Alright! let's get it started!")
         if self.__check_scene_over():
             self.__scene_over = True

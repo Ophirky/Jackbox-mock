@@ -7,13 +7,12 @@
 import logging
 
 # Logging #
-LOG_LEVEL = logging.DEBUG
-LOG_DIR = r"Logs"
-LOG_FORMAT = "%(asctime)s | %(levelname)s | %(message)s"
+GLOBAL_LOG_LEVEL = logging.DEBUG
+GLOBAL_LOG_DIR = r"Logs"
+GLOBAL_LOG_FORMAT = "%(asctime)s | %(levelname)s | %(message)s"
 
 # Log Files #
-HTTP_LOG = LOG_DIR + r"\http_logs.log"
-MAIN_LOG = LOG_DIR + r"\main_log.log"
+MAIN_LOG = GLOBAL_LOG_DIR + r"\main_log.log"
 
 # Socket Related #
 RECV_LENGTH = 1024

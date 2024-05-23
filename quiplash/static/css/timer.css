@@ -1,5 +1,7 @@
+/* Importing the timer font */
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Nunito:wght@800;900&display=swap');
 
+/* Timer basic design */
 .timer {
     position: absolute;
     top: 10px;

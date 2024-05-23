@@ -3,6 +3,8 @@
     DATE: 15/03/24
     DESCRIPTION: Class that allows to create easy to use http_ophir messages including responses and requests
 """
+import logging
+
 # Imports #
 import httpro.constants as consts
 import httpro.functions
@@ -34,7 +36,13 @@ class HttpMsg:
         """
         return_value = b"-1"
         if error_code in consts.ERROR_CODES.keys():
-            return_value = str(error_code).encode() + b" " + consts.ERROR_CODES[error_code]
+            try:
+                return_value = str(error_code).encode() + b" " + consts.ERROR_CODES[error_code]
+            except KeyError:
+                consts.HTTP_LOGGER.exception(f"{error_code} is not valid")
+                raise KeyError(f"{error_code} is not valid")
+            except Exception:
+                consts.HTTP_LOGGER.exception(f"error while finding error code")
 
         return return_value
 
@@ -53,8 +61,11 @@ class HttpMsg:
         :return bytes: Byte string with the headers formatted
         """
         headers = b""
-        for key, value in self.headers.items():
-            headers += key.title().replace(b'_', b'-') + b": " + value + consts.HEADER_SEPERATOR
+        if self.headers.items():
+            for key, value in self.headers.items():
+                headers += key.title().replace(b'_', b'-') + b": " + value + consts.HEADER_SEPERATOR
+        else:
+            consts.HTTP_LOGGER.debug("no headers found")
 
         return headers
 

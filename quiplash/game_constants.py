@@ -3,6 +3,14 @@
     DATE: 25/04/24
     DESCRIPTION: Constants for the game.
 """
+import logging
+from utils.general_constants import GLOBAL_LOG_DIR
+
+# Logging #
+LOG_FILE_NAME = GLOBAL_LOG_DIR + r"\quiplash_logs.log"
+QUIPLASH_LOGGER_NAME = "quip_log"
+LOGGER = logging.getLogger(QUIPLASH_LOGGER_NAME)
+
 
 HOME_PAGE_PATH = r"quiplash/html/index.html"
 WAITING_LOUNGE_FILE_PATH = r"quiplash/html/waiting_lounge.html"
@@ -13,10 +21,11 @@ ROUND_ONE_FILE_PATH = r"quiplash/html/sentence_input.html"
 WAITING_LOUNGE_SCENE_INDEX = 0
 EXPLANATION_SCENE_INDEX = 1
 SENTENCE_INPUT_SCENE_INDEX = 2
+VOTING_SCENE_INDEX = 3
 
 ROUND_TIME_SECONDS_DEFAULT = 120
 
-NUMBER_OF_PLAYERS_TO_START = 4
+NUMBER_OF_PLAYERS_TO_START = 2
 
 GAME_PROMPTS = (
     "I couldn't believe my eyes when I saw %s.",

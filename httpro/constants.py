@@ -3,6 +3,8 @@
     DATE: 15/03/24
     DESCRIPTION: This file contains all the needed constants for the HTTP packet
 """
+import logging
+
 # HTTP necessities #
 HTTP_VERSION = b"HTTP/1.1"
 HEADER_SEPERATOR = b"\r\n"
@@ -10,6 +12,14 @@ BODY_SEPERATOR = HEADER_SEPERATOR*2
 
 # Other #
 RECV_TIMEOUT = 3
+
+# Logging #
+LOG_LEVEL = logging.DEBUG
+LOG_DIR = r"Logs"
+LOG_FORMAT = "%(asctime)s | %(levelname)s | %(message)s"
+LOG_FILE_NAME = LOG_DIR + r"\http_logs.log"
+HTTP_LOGGER_NAME = "http_log"
+HTTP_LOGGER = logging.getLogger(HTTP_LOGGER_NAME)
 
 # Headers #
 LOCATION_HEADER = b"Location: %s"
@@ -62,5 +72,4 @@ IP = "0.0.0.0"
 NO_BODY = "Message has no body."
 NEW_CLIENT = "{}:{} connected."
 TESTS_RUN = "Auto tests were run."
-NO_CONTENT_HEADER = "The message does not have Content-Length header"
 FOUR_O_FOUR = "httpro/html_defaults/404.html"

@@ -1,0 +1,13 @@
+/* Page design */
+html {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Text Design */
+#text {
+    font-family: 'Main-Font';
+    font-size: 50px;
+}

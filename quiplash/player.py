@@ -17,6 +17,14 @@ class Player:
         self.score = 0
         self.is_admin = is_admin
         self.answer = None
+        self.voted = False
+
+    def add_score(self) -> None:
+        """
+        Add 1000 points to the player's score.
+        :return: None
+        """
+        self.score += 1000
 
     def __str__(self):
         return f"{self.username}, {self.score}"

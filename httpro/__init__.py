@@ -3,6 +3,7 @@
     DATE: 15/03/24
     DESCRIPTION: HTTP protocol package. Includes (http parser and formatter, http request builder)
 """
+import logging
 import os.path
 import httpro.constants as consts
 import httpro.http_parser
@@ -12,19 +13,30 @@ import httpro.functions
 import httpro.constants
 
 
-def http_auto_tests() -> None:
+def http_setup() -> None:
     """
-    Function that contains all the auto_checks for the http package
+    Function that contains all the auto_checks for the http package and sets up logger
     :return: None
     """
-    http_parser.auto_test_http_parser()
-    http_message.auto_test_http_message()
+    httpro.http_parser.auto_test_http_parser()
+    httpro.http_message.auto_test_http_message()
 
     # is_valid_request auto tests #
     request: bytes = b"GET /index.html HTTP/1.1\r\nHost: 192.168.37.45\r\n\r\n"
     request_invalid: bytes = b"GET /index.html HTTP/1.1\r\nHost:192.168.37.45\r\n\r\n"
     assert is_valid_request(request)["valid"], is_valid_request(request)["reason"]
     assert not is_valid_request(request_invalid)["valid"]
+
+    # Start logger #
+    if not os.path.isdir(consts.LOG_DIR):
+        os.makedirs(consts.LOG_DIR)
+
+    consts.HTTP_LOGGER.setLevel(consts.LOG_LEVEL)
+    file_handler = logging.FileHandler(consts.LOG_FILE_NAME)
+    file_handler.setFormatter(logging.Formatter(consts.LOG_FORMAT))
+    consts.HTTP_LOGGER.addHandler(file_handler)
+
+    consts.HTTP_LOGGER.info("httpro initiated")
 
 
 def is_valid_request(request: bytes) -> dict[bool, str] or dict[bool]:
@@ -81,7 +93,8 @@ def read_file(path: str) -> http_message:
     :return http_message: the http formatted message containing the html file.
     """
     if not os.path.isfile(path):
-        raise Exception("File not found.")
+        consts.HTTP_LOGGER.Exception("File not found.")
+        raise FileNotFoundError("File not found.")
     else:
         with open(path, 'rb') as f:
             return f.read()

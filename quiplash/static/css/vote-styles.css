@@ -1,0 +1,55 @@
+/* Variables */
+* {
+    --button-a-default-color: #46178f;
+    --button-a-hover-color: #864cbf;
+        
+    --button-b-default-color: #1368ce;
+    --button-b-hover-color: #45a3e5;
+}
+
+/* General */
+body {
+    height: inherit;
+}
+
+#buttons {
+    width: inherit;
+    height: inherit;
+
+    margin: 0 1vh;
+
+    display: flex;
+}
+
+/* Button Design */
+#buttons .vote-button {
+    width: 49vw;
+    margin: 1vh .5vh;
+
+    background-color: var(--button-b-default-color);
+
+    border: none;
+    outline: none;
+
+    transition: background-color ease-in-out .2s 0s;
+}
+
+#buttons .vote-button:first-child {
+    background-color: var(--button-a-default-color);
+}
+
+/* Buttons hover */
+#buttons .vote-button:hover {
+    background-color: var(--button-b-hover-color);
+}
+
+#buttons .vote-button:first-child:hover {
+    background-color: var(--button-a-hover-color);
+}
+
+/* Button text */
+#buttons .vote-button span {
+    color: white;
+    font-family: 'Main-Font';
+    font-size: 10vw;
+}

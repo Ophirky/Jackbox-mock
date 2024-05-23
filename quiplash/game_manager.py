@@ -13,6 +13,8 @@ class GameManager:
         self.players = []
         self.game_started = False
         self.current_scene = 0
+        self.submission_counter = 0
+        self.current_sentence_vote = None
 
     def next_scene(self):
         """
@@ -20,3 +22,14 @@ class GameManager:
         :return:
         """
         self.current_scene += 1
+
+def game_manager_auto_asserts() -> None:
+    """
+    Auto tests of this file
+    :return: None
+    """
+    test_game_manager = GameManager()
+    assert isinstance(test_game_manager, GameManager)
+    assert test_game_manager.current_scene == 0
+    test_game_manager.next_scene()
+    assert test_game_manager.current_scene == 1

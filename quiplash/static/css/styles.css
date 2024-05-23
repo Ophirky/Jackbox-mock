@@ -1,8 +1,17 @@
+/* Font Creation */
 @font-face {
-    font-family: 'Sentence-Font';
+    font-family: 'Main-Font';
     src: url("/quiplash/static/fonts/GROBOLD.ttf")
 }
 
+/* Default for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Default for all pages */
 html {
     height: 100vh;
 
@@ -11,10 +20,4 @@ html {
     background: linear-gradient(to bottom right, #f64f59, #c471ed, #12c2e9);
     background-size: inherit;
     background-repeat: no-repeat;
-}
-
-.error {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: red;
-    font-size: medium;
 }

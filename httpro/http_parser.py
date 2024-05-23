@@ -57,7 +57,10 @@ class HttpParser:
         Extracts the headers from the request
         :return dict[bytes]: {header: value}
         """
-        return dict(x.split(b": ") for x in self.HTTP_REQUEST.split(consts.HEADER_SEPERATOR)[1:-2])
+        try:
+            return dict(x.split(b": ") for x in self.HTTP_REQUEST.split(consts.HEADER_SEPERATOR)[1:-2])
+        except IndexError:
+            consts.HTTP_LOGGER.debug("Request has no headers.")
 
     def __body_parser(self) -> bytes:
         """
@@ -84,7 +87,10 @@ class HttpParser:
 
             # If there are no params #
             except IndexError:
+                consts.HTTP_LOGGER.error("no query parameters")
                 return None
+            except Exception as e:
+                consts.HTTP_LOGGER.exception(e)
 
         return request[0], request[1], request[2], __query_params_parser()
 

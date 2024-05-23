@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-      <link rel="stylesheet" href="/quiplash/static/css/styles.css">
+  <!-- css and icon importing -->
+  <link rel="stylesheet" href="/quiplash/static/css/styles.css">
+  <link rel="stylesheet" href="/quiplash/static/css/default-page.css">
+  <link rel="icon" type="image/x-icon" href="/quiplash/static/imgs/favicon.ico">
 
-    <title>Waiting Lounge</title>
+  <!-- Page title -->
+  <title>Quiplash</title>
 </head>
+
 <body>
-  Wait for the game to start
+  <!-- Text - middle of the page -->
+  <div id="text">
+    Wait for the game to start
+  </div>
+
+  <!-- Request script -->
   <script async>
-        const evtSource = new EventSource("/did-start");
-        evtSource.onmessage = function(event) {
-            if (JSON.parse(event.data)["start-game"] !== "false") {
-              window.location.replace("/sentence-input.html");
-              evtSource.close();
-            }
-        };
+    const evtSource = new EventSource("/did-start");
+    evtSource.onmessage = function (event) {
+      // Check if request is valid \\
+      if (JSON.parse(event.data)["start-game"] !== "false") {
+        // Replace the location in the search bar to wanted location \\
+        window.location.replace("/sentence-input.html");
+
+        // Close event \\
+        evtSource.close();
+      }
+    };
   </script>
 </body>
+
 </html>

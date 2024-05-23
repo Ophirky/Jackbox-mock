@@ -4,10 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Round 1</title>
+
+    <!-- css and icon importing -->
+    <link rel="stylesheet" href="/quiplash/static/css/styles.css">
     <link rel="stylesheet" href="/quiplash/static/css/sentence-input.css">
     <link rel="stylesheet" href="/quiplash/static/css/timer.css">
-    <link rel="stylesheet" href="/quiplash/static/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/quiplash/static/imgs/favicon.ico">
+
+    <!-- Page title -->
+    <title>Quiplash</title>
 </head>
 
 <body>
@@ -23,10 +28,12 @@
         </svg>
     </div>
 
+    <!-- Sentece input form -->
     <div id="sentence-input-section">
         <h1 id="sentence">Lorem ipsum dolorsss sit amet consectetur adipisicing elit ___</h1>
         <div id="form">
             <input type="text" name="answer" id="answer">
+            <!-- Submit button -->
             <button class="button" onclick="sendSentence()">
 
 
@@ -51,7 +58,7 @@
 
         function sendSentence() {
             let answer = document.getElementById("answer").value;
-            fetch("/send-sentence", {
+            fetch("/submit", {
                 method: "POST",
                 headers: {
                     "Content-Type": "text/plain"
@@ -92,6 +99,7 @@
             }, 1000);
         }
 
+        // Get the sentence assigned to the player \\
         const evtSource = new EventSource("/get-sentence");
         evtSource.onmessage = function (event) {
             let ans = JSON.parse(event.data);

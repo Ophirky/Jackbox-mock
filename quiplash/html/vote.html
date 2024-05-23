@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css and icon importing -->
+    <link rel="stylesheet" href="/quiplash/static/css/styles.css">
+    <link rel="stylesheet" href="/quiplash/static/css/vote-styles.css">
+    <link rel="icon" type="image/x-icon" href="/quiplash/static/imgs/favicon.ico">
+
+    <!-- Page title -->
+    <title>Quiplash</title>
+</head>
+
+<body>
+    <!-- Buttons container -->
+    <div id="buttons">
+        <!-- Button - A -->
+        <button class="vote-button" onclick="sendVote(1)">
+            <span>A</span>
+        </button>
+
+        <!-- Button - B -->
+        <button class="vote-button" onclick="sendVote(0)">
+            <span>B</span>
+        </button>
+    </div>
+
+    <script>
+        function sendVote(vote) {
+            fetch("/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "text/plain"
+                },
+                body: JSON.stringify({ txt: vote.toString() })
+            }).then((res) => {
+                if (res.status === 200) {
+                    clearInterval(countdownTimer);
+
+                    document.querySelector("body").innerHTML = "<h1>Wait for other players to vote.</h1>";
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>

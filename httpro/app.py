@@ -43,7 +43,10 @@ class App:
             :param original_function: original function that decorator decorates
             :return: what the original function needs to return
             """
-            self.routes[route] = original_function, permission_cookie
+            try:
+                self.routes[route] = original_function, permission_cookie
+            except TypeError:
+                consts.HTTP_LOGGER.debug("routes is not initialized.")
 
             def wrapper_function(*args, **kwargs):
                 """
@@ -73,7 +76,9 @@ class App:
                 try:
                     msg = client_socket.recv(consts.RECV_LENGTH)
                 except socket.timeout:
-                    pass
+                    consts.HTTP_LOGGER.debug("Got timeout on socket receive")
+                else:
+                    consts.HTTP_LOGGER.debug("Success on socket receive.")
 
                 if not msg:
                     continue
@@ -88,21 +93,22 @@ class App:
                     while len(body) < content_length:
                         chunk = client_socket.recv(consts.RECV_LENGTH)
                         if not chunk:
+                            logging.debug("Ended body receive")
                             break
                         body += chunk
 
                     message += body
 
             except AttributeError:
-                logging.info(consts.NO_CONTENT_HEADER)
+                consts.HTTP_LOGGER.debug("The message does not have Content-Length header")
 
             except Exception as e:
-                logging.exception(e)
+                consts.HTTP_LOGGER.exception(e)
 
             return httpro.http_parser.HttpParser(message)
 
         except Exception as e:
-            logging.exception(e)
+            consts.HTTP_LOGGER.exception(e)
 
     def __handle_client(self, request: httpro.http_parser.HttpParser, client_socket: socket) -> None:
         """
@@ -113,7 +119,7 @@ class App:
         """
         response: httpro.http_message
 
-        if request.URI is not None:
+        if request is not None and request.URI is not None:
             if request.URI in self.routes.keys() and \
                     (self.routes[request.URI][1] == "None" or
                      (request.COOKIES and self.routes[request.URI][1] in request.COOKIES.keys())):
@@ -136,6 +142,7 @@ class App:
                 response = httpro.http_message.HttpMsg(headers={"content_type": consts.MIME_TYPES[file_type.decode()]},
                                                        body=file_data)
 
+            consts.HTTP_LOGGER.info(f"Request to {request.URI} got response of {response.error_code}")
             client_socket.send(response.build_message_bytes())
 
     # ---------- Public functions ---------- #
@@ -145,7 +152,10 @@ class App:
         :param route: The route to the 404 page html.
         :return: None
         """
-        self.four_o_four = route
+        if isinstance(route, str):
+            self.four_o_four = route
+        else:
+            raise TypeError("Function must get a string that holds the route to the 404 html file")
 
     def run(self, port=consts.PORT, host=consts.IP) -> None:
         """
@@ -172,17 +182,20 @@ class App:
                 for notified_socket in readable_socks_list:
                     if notified_socket == sock:  # checking for new connection #
                         client_socket, client_addr = sock.accept()
+                        logging.info(consts.NEW_CLIENT.format(client_addr[0], client_addr[1]))
                         client_socket.settimeout(.5)
+                        socket_list.append(client_socket)  # Adding the socket to the connected clients #
+                    else:
                         try:
-                            logging.info(consts.NEW_CLIENT.format(client_addr[0], client_addr[1]))
-
-                            message: httpro.http_parser.HttpParser = self.__receive_message(client_socket)
-                            self.__handle_client(message, client_socket)
+                            message: httpro.http_parser.HttpParser = self.__receive_message(notified_socket)
+                            consts.HTTP_LOGGER.info(b"Got Request: " + message.URI)
+                            self.__handle_client(message, notified_socket)
 
                         except Exception as e:
-                            logging.exception(e)
+                            consts.HTTP_LOGGER.exception(e)
 
                         finally:
-                            client_socket.close()
+                            notified_socket.close()
+                            socket_list.remove(notified_socket)
         finally:
             sock.close()

@@ -10,6 +10,7 @@ from quiplash.scene import Scene
 # Scene #
 class WaitingLounge(Scene):
     """Waiting lounge - while waiting for players to join"""
+
     def __init__(self):
         """Constructor"""
         self.__scene_over = False
@@ -27,4 +28,4 @@ class WaitingLounge(Scene):
         The waiting lounge (waiting for players) scene
         :return: None
         """
-        print("Wait for everyone to enter")
+        ...

@@ -1,3 +1,4 @@
+/* Object positioning  */
 html {
     display: flex;
     flex-direction: column;
@@ -17,6 +18,13 @@ body {
     text-align: center;
 }
 
+/* Timer design */
+.timer {
+    left: 10px;
+    position: absolute;
+}
+
+/* The input form design */
 #sentence-input-section {
     display: flex;
     flex-direction: column;
@@ -26,13 +34,6 @@ body {
     text-align: center;
 }
 
-#sentence {
-    font-family: 'Sentence-Font';
-    font-size: 5vw;
-    letter-spacing: .5vw;
-    color: white;
-
-}
 
 #form {
     display: flex;
@@ -42,6 +43,16 @@ body {
     justify-content: center;
 }
 
+/* The sentece text */
+#sentence {
+    font-family: 'Main-Font';
+    font-size: 5vw;
+    letter-spacing: .5vw;
+    color: white;
+
+}
+
+/* Answer input */
 #answer,
 #answer:focus {
     background: rgba(156, 156, 156, 0.31);
@@ -62,12 +73,7 @@ body {
 
 }
 
-.timer {
-    left: 10px;
-    position: absolute;
-}
-
-
+/* Submit button */
 .button {
     background-color: #ffffff00;
     color: #fff;
