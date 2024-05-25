@@ -53,3 +53,15 @@ body {
     font-family: 'Main-Font';
     font-size: 10vw;
 }
+
+/* Wait for other players text */
+#wait-title {
+    display: none;
+}
+
+#wait-title h1 {
+    color: white;
+    font-family: 'Main-Font';
+    font-size: 50px;
+}
+

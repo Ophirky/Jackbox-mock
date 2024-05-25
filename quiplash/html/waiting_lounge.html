@@ -15,7 +15,7 @@
 
 <body>
   <!-- Text - middle of the page -->
-  <div id="text">
+  <div class="text">
     Wait for the game to start
   </div>
 
@@ -24,7 +24,7 @@
     const evtSource = new EventSource("/did-start");
     evtSource.onmessage = function (event) {
       // Check if request is valid \\
-      if (JSON.parse(event.data)["start-game"] !== "false") {
+      if (JSON.parse(event.data)["start-game"] === "true") {
         // Replace the location in the search bar to wanted location \\
         window.location.replace("/sentence-input.html");
 

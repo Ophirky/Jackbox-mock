@@ -54,7 +54,7 @@
             ).then((res) => { // once response was given
                 // if response is ok \\
                 if (res.status === 200) {
-                    window.location.replace(window.location.href + res.headers.get("Location"));
+                    window.location.replace("/" + res.headers.get("Location"));
                 } else if (res.status === 500) {
                     let par = document.createElement('p');
                     par.className = "error";

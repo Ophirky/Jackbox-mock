@@ -12,11 +12,14 @@ QUIPLASH_LOGGER_NAME = "quip_log"
 LOGGER = logging.getLogger(QUIPLASH_LOGGER_NAME)
 
 
-HOME_PAGE_PATH = r"quiplash/html/index.html"
-WAITING_LOUNGE_FILE_PATH = r"quiplash/html/waiting_lounge.html"
-NOT_FOUND_PAGE = r"quiplash/html/404.html"
-FORBIDDEN_PATH = r"quiplash/html/403.html"
-ROUND_ONE_FILE_PATH = r"quiplash/html/sentence_input.html"
+ROOT_DIR = r"quiplash/"
+HOME_PAGE_PATH = ROOT_DIR + r"html/index.html"
+WAITING_LOUNGE_FILE_PATH = ROOT_DIR + r"html/waiting_lounge.html"
+NOT_FOUND_PAGE = ROOT_DIR + r"html/404.html"
+FORBIDDEN_PATH = ROOT_DIR + r"html/403.html"
+ROUND_ONE_FILE_PATH = ROOT_DIR + r"html/sentence_input.html"
+VOTING_PAGE_FILE_PATH = ROOT_DIR + r"html/vote.html"
+GAME_OVER_PAGE_PATH = ROOT_DIR + r"html/game_over.html"
 
 WAITING_LOUNGE_SCENE_INDEX = 0
 EXPLANATION_SCENE_INDEX = 1
@@ -25,7 +28,7 @@ VOTING_SCENE_INDEX = 3
 
 ROUND_TIME_SECONDS_DEFAULT = 120
 
-NUMBER_OF_PLAYERS_TO_START = 2
+NUMBER_OF_PLAYERS_TO_START = 4
 
 GAME_PROMPTS = (
     "I couldn't believe my eyes when I saw %s.",

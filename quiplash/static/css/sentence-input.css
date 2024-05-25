@@ -43,8 +43,8 @@ body {
     justify-content: center;
 }
 
-/* The sentece text */
-#sentence {
+/* The sentence text */
+#sentence, h1 {
     font-family: 'Main-Font';
     font-size: 5vw;
     letter-spacing: .5vw;

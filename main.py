@@ -6,7 +6,6 @@ import quiplash
 import httpro
 import os
 import utils.general_constants as consts
-import logging
 import threading
 
 if __name__ == '__main__':

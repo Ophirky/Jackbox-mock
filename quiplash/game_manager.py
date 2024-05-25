@@ -14,7 +14,8 @@ class GameManager:
         self.game_started = False
         self.current_scene = 0
         self.submission_counter = 0
-        self.current_sentence_vote = None
+        self.current_sentence_vote = 0
+        self.game_over = False
 
     def next_scene(self):
         """

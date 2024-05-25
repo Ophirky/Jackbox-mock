@@ -19,10 +19,5 @@ RECV_LENGTH = 1024
 PORT = 80
 IP = "127.0.0.1"
 
-# Website #
-ROOT_DIRECTORY = b"games"
-INDEX_PAGE = ROOT_DIRECTORY + b"/index.html"
-FOUR_O_FOUR = ROOT_DIRECTORY + b"/404.html"
-
 # Colors #
 WHITE = (255, 255, 255)

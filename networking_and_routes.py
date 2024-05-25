@@ -68,6 +68,7 @@ from utils.global_vars import app, game_manager, round_time_seconds, game_manage
 import utils.global_vars
 from quiplash.protocol import QuiplashProtocol
 
+
 def increase_submition_counter() -> int:
     """
     Increases the submition counter
@@ -76,9 +77,10 @@ def increase_submition_counter() -> int:
     res = -1
     if game_manager_lock.locked():
         utils.global_vars.game_manager.submission_counter += 1
-        LOGGER.debug(utils.global_vars.game_manager.submission_counter)
+        LOGGER.debug(f"submission_counter = {utils.global_vars.game_manager.submission_counter}")
         res = utils.global_vars.game_manager.submission_counter
     return res
+
 
 def handle_sentence_submition(player: Player, submition: str) -> None:
     """
@@ -99,9 +101,10 @@ def handle_vote_submission(submition: str, player: Player) -> None:
     :return: None
     """
     player.voted = True
-    with utils.global_vars.game_manager_lock:
-        game_manager.current_sentence_vote[1][
-            int(submition)].add_score()
+    with utils.global_vars.sentence_division_lock:
+        utils.global_vars.sentence_division[list(utils.global_vars.sentence_division.keys())[
+            game_manager.current_sentence_vote]][
+            int(submition)].voting_score += 1
 
     increase_submition_counter()
 
@@ -117,32 +120,35 @@ def new_player(username: bytes) -> None:
         game_manager.game_started = True
 
 
-@app.route(b"/")
-def home_page(request: httpro.http_parser.HttpParser) -> httpro.http_message.HttpMsg:
-    """
-    Home page for the game - log in
-    :param request: The request for the page.
-    :return httpro.http_message.HttpMsg: The html for the index.html file.
-    """
-    return httpro.http_message.HttpMsg(content_type=httpro.constants.MIME_TYPES[".html"],
-                                       body=httpro.read_file(gconsts.HOME_PAGE_PATH))
-
-
-@app.route(b"/did-start")
+# Non page requests #
+@app.route(b"/start-vote")
 @lock_game_manager
-def did_start_check(request: httpro.http_parser.HttpParser) -> httpro.http_message.HttpMsg:
+def start_sentence_vote(request: httpro.http_parser.HttpParser) -> httpro.http_message.HttpMsg:
     """
-    way for users to check if the game started.
-    :param request: The request for the page.
-    :return httpro.http_message.HttpMsg: Returns if the game starts.
+    This will handle the routing to the voting/game-over page.
+    :param request: The request from the client.
+    :return: The html request for the correct page or 200 for game not started.
     """
-    if game_manager.current_scene == gconsts.SENTENCE_INPUT_SCENE_INDEX:
-        response = httpro.http_message.HttpMsg(content_type="text/event-stream",
-                                               body=b"data: {\"start-game\": \"%s\"}\n\n" % b"true")
-    else:
-        response = httpro.http_message.HttpMsg(content_type="text/event-stream",
-                                               body=b"data: {\"start-game\": \"%s\"}\n\n" % b"false")
-    return response
+    return_val = httpro.http_message.HttpMsg(content_type=httpro.constants.MIME_TYPES["sse"],
+                                             body=b"data: %b\n\n" % QuiplashProtocol.format(start_game=False))
+
+    if game_manager.current_scene == gconsts.VOTING_SCENE_INDEX:
+        for player in game_manager.players:
+            print(player.username + " " + request.COOKIES[b"username"].decode())
+            print(player.username == request.COOKIES[b"username"].decode())
+            if player.username == request.COOKIES[b"username"].decode() \
+                    and not player.voted and not game_manager.game_over:
+                return_val = httpro.http_message.HttpMsg(content_type=httpro.constants.MIME_TYPES["sse"],
+                                                         body=b"data: %b\n\n" % QuiplashProtocol.format(
+                                                             start_game=True,
+                                                             location="vote.html"))
+    elif game_manager.game_over:
+        return_val = httpro.http_message.HttpMsg(content_type=httpro.constants.MIME_TYPES["sse"],
+                                                 body=b"data: %b\n\n" % QuiplashProtocol.format(
+                                                     start_game=True,
+                                                     location="game-over.html"))
+
+    return return_val
 
 
 @app.route(b"/username")
@@ -156,7 +162,7 @@ def username_check(request: httpro.http_parser.HttpParser) -> httpro.http_messag
     username = QuiplashProtocol.deformat(request.BODY.decode())["txt"]
 
     if game_manager.game_started:
-        response = httpro.http_message.HttpMsg(location="403.html")
+        response = httpro.http_message.HttpMsg(location="forbidden.html")
     elif username not in game_manager.players:
         new_player(username)
         response = httpro.http_message.HttpMsg(location="waiting-lounge.html", set_cookie="username=" + username)
@@ -166,31 +172,21 @@ def username_check(request: httpro.http_parser.HttpParser) -> httpro.http_messag
     return response
 
 
-@app.route(b"/waiting-lounge.html")
-def waiting_lounge_page(request: httpro.http_parser.HttpParser) -> httpro.http_message.HttpMsg:
+@app.route(b"/did-start")
+@lock_game_manager
+def did_start_check(request: httpro.http_parser.HttpParser) -> httpro.http_message.HttpMsg:
     """
-    Page where players wait for the game to start.
+    way for users to check if the game started.
     :param request: The request for the page.
-    :return httpro.http_message.HttpMsg: Waiting lounge html.
+    :return httpro.http_message.HttpMsg: Returns if the game starts.
     """
-    return httpro.http_message.HttpMsg(content_type=httpro.constants.MIME_TYPES[".html"],
-                                       body=httpro.read_file(gconsts.WAITING_LOUNGE_FILE_PATH))
-
-
-@app.route(b"/sentence-input.html")
-def sentence_input_page(request: httpro.http_parser.HttpParser) -> httpro.http_message.HttpMsg:
-    """
-    :param request: The request for the page.
-    :return httpro.http_message.HttpMsg: round one html.
-    """
-    return_value = None
-    if not game_manager.current_scene == gconsts.SENTENCE_INPUT_SCENE_INDEX:
-        return_value = httpro.http_message.HttpMsg(error_code=403, content_type=httpro.constants.MIME_TYPES[".html"],
-                                                   body=httpro.read_file(gconsts.FORBIDDEN_PATH))
+    if game_manager.current_scene == gconsts.SENTENCE_INPUT_SCENE_INDEX:
+        response = httpro.http_message.HttpMsg(content_type="text/event-stream",
+                                               body=b"data: %b\n\n" % QuiplashProtocol.format(start_game=True))
     else:
-        return_value = httpro.http_message.HttpMsg(content_type=httpro.constants.MIME_TYPES[".html"],
-                                                   body=httpro.read_file(gconsts.ROUND_ONE_FILE_PATH))
-    return return_value
+        response = httpro.http_message.HttpMsg(content_type="text/event-stream",
+                                               body=b"data: %b\n\n" % QuiplashProtocol.format(start_game=False))
+    return response
 
 
 @app.route(b"/get-sentence")
@@ -209,15 +205,16 @@ def get_sentence_request(request: httpro.http_parser.HttpParser) -> httpro.http_
         username = request.COOKIES[b"username"]
 
         # Find the sentence assigned to the player #
-        for sentence, players in utils.global_vars.sentence_division.items():
-            # If sentence found #
-            if username.decode() in [player.username for player in players]:
-                time_left_for_game = utils.global_vars.round_start_time + round_time_seconds - time.time()
-                protocol_res = QuiplashProtocol.format(txt=sentence % "___", time_left=time_left_for_game)
+        with utils.global_vars.sentence_division_lock:
+            for sentence, players in utils.global_vars.sentence_division.items():
+                # If sentence found #
+                if username.decode() in [player.username for player in players]:
+                    time_left_for_game = utils.global_vars.round_start_time + round_time_seconds - time.time()
+                    protocol_res = QuiplashProtocol.format(txt=sentence % "___", time_left=time_left_for_game)
 
-                return_value = httpro.http_message.HttpMsg(content_type=httpro.constants.MIME_TYPES["sse"],
-                                                           body=b'data: %s\n\n' % protocol_res)
-                break
+                    return_value = httpro.http_message.HttpMsg(content_type=httpro.constants.MIME_TYPES["sse"],
+                                                               body=b'data: %s\n\n' % protocol_res)
+                    break
 
     return return_value
 
@@ -234,16 +231,14 @@ def get_answer_from_user(request: httpro.http_parser.HttpParser) -> httpro.http_
     if game_manager.current_scene != gconsts.SENTENCE_INPUT_SCENE_INDEX \
             and game_manager.current_scene != gconsts.VOTING_SCENE_INDEX:
         LOGGER.debug("The scene is not correct.")
-        # return_value = httpro.http_message.HttpMsg(error_code=403, content_type=httpro.constants.MIME_TYPES[".html"],
-        #                                            body=httpro.read_file(gconsts.FORBIDDEN_PATH))
+        return_value = httpro.http_message.HttpMsg(error_code=403, content_type=httpro.constants.MIME_TYPES[".html"],
+                                                   body=httpro.read_file(gconsts.FORBIDDEN_PATH))
     else:
         username = request.COOKIES[b"username"]
-        print(username)
 
         # Find the sentence assigned to the player #
         for player in utils.global_vars.game_manager.players:
             # If player found #
-            print(player.username + " ?= " + username.decode())
             if username.decode() == player.username:
                 if game_manager.current_scene == gconsts.SENTENCE_INPUT_SCENE_INDEX and not player.answer:
                     handle_sentence_submition(player, QuiplashProtocol.deformat(request.BODY.decode())["txt"])
@@ -264,7 +259,89 @@ def get_answer_from_user(request: httpro.http_parser.HttpParser) -> httpro.http_
 
     return return_value
 
-def network_setup():
+
+# Page requests #
+@app.route(b"/")
+def home_page(request: httpro.http_parser.HttpParser) -> httpro.http_message.HttpMsg:
+    """
+    Home page for the game - log in
+    :param request: The request for the page.
+    :return httpro.http_message.HttpMsg: The html for the index.html file.
+    """
+    return httpro.http_message.HttpMsg(content_type=httpro.constants.MIME_TYPES[".html"],
+                                       body=httpro.read_file(gconsts.HOME_PAGE_PATH))
+
+
+@app.route(b"/forbidden.html")
+def forbidden_page(request: httpro.http_parser.HttpParser) -> httpro.http_message.HttpMsg:
+    """
+    A route to the forbidden html page.
+    :param request: The client request.
+    :return: The html for the 403 forbidden page.
+    """
+    return httpro.http_message.HttpMsg(content_type=httpro.constants.MIME_TYPES[".html"],
+                                       body=httpro.read_file(gconsts.FORBIDDEN_PATH))
+
+
+@app.route(b"/vote.html")
+@lock_game_manager
+def vote_page(request: httpro.http_parser.HttpParser) -> httpro.http_message.HttpMsg:
+    """
+    Gives the client the voting page.
+    :param request: The client request
+    :return: http message containing the appropriate html code.
+    """
+    return_val = httpro.http_message.HttpMsg(error_code=403, content_type=httpro.constants.MIME_TYPES[".html"],
+                                             body=httpro.read_file(gconsts.FORBIDDEN_PATH))
+    if game_manager.current_scene == gconsts.VOTING_SCENE_INDEX:
+        return_val = httpro.http_message.HttpMsg(content_type=httpro.constants.MIME_TYPES[".html"],
+                                                 body=httpro.read_file(gconsts.VOTING_PAGE_FILE_PATH))
+    return return_val
+
+
+@app.route(b"/waiting-lounge.html")
+def waiting_lounge_page(request: httpro.http_parser.HttpParser) -> httpro.http_message.HttpMsg:
+    """
+    Page where players wait for the game to start.
+    :param request: The request for the page.
+    :return httpro.http_message.HttpMsg: Waiting lounge html.
+    """
+    return httpro.http_message.HttpMsg(content_type=httpro.constants.MIME_TYPES[".html"],
+                                       body=httpro.read_file(gconsts.WAITING_LOUNGE_FILE_PATH))
+
+
+@app.route(b"/sentence-input.html")
+def sentence_input_page(request: httpro.http_parser.HttpParser) -> httpro.http_message.HttpMsg:
+    """
+    The page that the players will enter the sentences to.
+    :param request: The request for the page.
+    :return httpro.http_message.HttpMsg: round one html.
+    """
+    return_value = None
+    if not game_manager.current_scene == gconsts.SENTENCE_INPUT_SCENE_INDEX:
+        return_value = httpro.http_message.HttpMsg(error_code=403, content_type=httpro.constants.MIME_TYPES[".html"],
+                                                   body=httpro.read_file(gconsts.FORBIDDEN_PATH))
+    else:
+        return_value = httpro.http_message.HttpMsg(content_type=httpro.constants.MIME_TYPES[".html"],
+                                                   body=httpro.read_file(gconsts.ROUND_ONE_FILE_PATH))
+    return return_value
+
+
+@app.route(b"/game-over.html")
+def game_over_page(request: httpro.http_parser.HttpParser) -> httpro.http_message.HttpMsg:
+    """
+    The game over page.
+    :param request: The request for the page.
+    :return httpro.http_message.HttpMsg: round one html.
+    """
+    return httpro.http_message.HttpMsg(content_type=httpro.constants.MIME_TYPES[".html"],
+                                       body=httpro.read_file(gconsts.GAME_OVER_PAGE_PATH))
+
+def network_setup() -> None:
+    """
+    Setting up the logger.
+    :return: None
+    """
     # Main logger setup #
     LOGGER.setLevel(consts.GLOBAL_LOG_LEVEL)
     file_handler = logging.FileHandler(consts.MAIN_LOG)

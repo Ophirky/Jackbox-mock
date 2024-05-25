@@ -7,13 +7,13 @@ import logging
 import time
 import quiplash.waiting_lounge as wait_lounge
 import quiplash.explanation_of_game as explain
-from quiplash import player_sentences, voting_scene
+from quiplash import player_sentences, voting_scene, game_over
 from quiplash import game_constants as consts
 from utils import global_vars
 
 # Constants #
 SCENE_ORDER = (wait_lounge.WaitingLounge, explain.Explanation, player_sentences.PlayerSentences,
-               voting_scene.VotingScene)
+               voting_scene.VotingScene, game_over.GameOver)
 
 # variables init #
 explanation_scene = None

@@ -10,7 +10,7 @@ import logging
 
 def quiplash_setup() -> None:
     """
-    Running te auto tests and sets up logger
+    Running the auto tests and sets up logger
     ! No need to check for log dir because when function is called it will already be checked !
     :return: None
     """

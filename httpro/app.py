@@ -188,7 +188,7 @@ class App:
                     else:
                         try:
                             message: httpro.http_parser.HttpParser = self.__receive_message(notified_socket)
-                            consts.HTTP_LOGGER.info(b"Got Request: " + message.URI)
+                            consts.HTTP_LOGGER.info(b"Got Request: " + message.URI if message.URI else "None")
                             self.__handle_client(message, notified_socket)
 
                         except Exception as e:

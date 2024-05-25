@@ -6,7 +6,7 @@
 from quiplash.scene import Scene
 from utils import global_vars
 import quiplash.game_constants as consts
-import logging
+
 
 class VotingScene(Scene):
     """Voting scene"""
@@ -32,23 +32,46 @@ class VotingScene(Scene):
         Check if everyone submitted their game.
         :return bool: Whether the scene is over or not
         """
-        return_val = False
-
-        if global_vars.game_manager.submission_counter == consts.NUMBER_OF_PLAYERS_TO_START:
-            return_val = True
-
-        return return_val
+        return global_vars.game_manager.submission_counter == consts.NUMBER_OF_PLAYERS_TO_START
 
     def scene(self) -> None:
         """
         The waiting lounge (waiting for players) scene
         :return: None
         """
-        for sentence, players in global_vars.sentence_division.items():
-            global_vars.game_manager.current_sentence_vote = (sentence, players)
-            while not self.__check_section_over():
-                print(f"{sentence}:\n {[player.answer for player in players]}")
+        current_sentence = None
+        with global_vars.sentence_division_lock:
+            current_sentence = list(global_vars.sentence_division.keys())[
+                global_vars.game_manager.current_sentence_vote
+            ], global_vars.sentence_division[
+                list(global_vars.sentence_division.keys())[global_vars.game_manager.current_sentence_vote]
+            ]
 
-            global_vars.game_manager.current_sentence_vote = 0
+        if not self.__check_section_over():
+            print(f"{current_sentence[0]}:\n {[player.answer for player in current_sentence[1]]}")
+        else:
+            player_one = current_sentence[1][0]
+            player_two = current_sentence[1][1]
 
-        self.__scene_over = True
+            player_one.add_score()
+            player_two.add_score()
+
+            winner = f"{player_one.username} and {player_two.username}"
+
+            if player_one.voting_score > player_two.voting_score:
+                winner = player_one.username
+            elif player_one.voting_score < player_two.voting_score:
+                winner = player_two.username
+
+            global_vars.game_manager.current_sentence_vote += 1
+            global_vars.game_manager.submission_counter = 0
+
+            for player in global_vars.game_manager.players:
+                player.voted = False
+
+            print(f"winner: {winner}")
+
+        with global_vars.sentence_division_lock:
+            if len(global_vars.sentence_division) == global_vars.game_manager.current_sentence_vote:
+                self.__scene_over = True
+                global_vars.game_manager.game_over = True

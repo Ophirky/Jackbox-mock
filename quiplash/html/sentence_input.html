@@ -69,6 +69,16 @@
                     clearInterval(countdownTimer);
 
                     document.querySelector("body").innerHTML = "<h1>Wait for other players.</h1>";
+
+                    const evtSource = new EventSource("/start-vote");
+                    evtSource.onmessage = (event) => {
+                        let ans = JSON.parse(event.data);
+                        if (ans["start-game"] == "true") {
+                            window.location.replace("/" + ans["location"]);
+                            evtSource.close();
+                        }
+                        
+                    }
                 }
             })
         }

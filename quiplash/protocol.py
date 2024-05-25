@@ -4,15 +4,19 @@
     DESCRIPTION: This file will handle the protocol of the game.
 """
 import json
+import logging
+
 from quiplash import game_constants as consts
+
 
 class QuiplashProtocol:
     """Protocol Functions - format and deformat"""
 
     @staticmethod
-    def format(time_left: float = None, txt: str = None, start_game: bool = None) -> bytes:
+    def format(time_left: float = None, txt: str = None, start_game: bool = None, location: str = None) -> bytes:
         """
         This will take the params given in the arguments.
+        :param location: Location header in-case of an event-source
         :param time_left: The time left for a round.
         :param txt: Any kind of text that needs to be transmitted between the client and the server..
         :param start_game: Whether the game started or not.
@@ -23,10 +27,15 @@ class QuiplashProtocol:
             formatted_protocol["time-left"] = str(time_left)
         if txt:
             formatted_protocol["txt"] = txt
-        if start_game:
-            formatted_protocol["start-game"] = str(start_game)
+        if isinstance(start_game, bool):
+            formatted_protocol["start-game"] = str(start_game).lower()
+        if location:
+            formatted_protocol["location"] = location
 
-        return json.dumps(formatted_protocol).encode()
+        formatted_msg = json.dumps(formatted_protocol).encode()
+        consts.LOGGER.debug(f"Message formatted to protocol {json.loads(formatted_msg)}")
+
+        return formatted_msg
 
     @staticmethod
     def deformat(msg: str) -> dict:
@@ -42,6 +51,7 @@ class QuiplashProtocol:
             consts.LOGGER.exception("The message is not in json format")
 
         return res
+
 
 def protocol_auto_tests() -> None:
     """

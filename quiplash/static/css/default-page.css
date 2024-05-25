@@ -7,7 +7,8 @@ html {
 }
 
 /* Text Design */
-#text {
+.text {
     font-family: 'Main-Font';
     font-size: 50px;
+    color: white;
 }

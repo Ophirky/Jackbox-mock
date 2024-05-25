@@ -79,7 +79,6 @@ class PlayerSentences(Scene):
         return_val = False
 
         # Game Manager is already locked when function is called.
-        print(global_vars.game_manager.submission_counter)
         if global_vars.game_manager_lock.locked() and \
                 global_vars.game_manager.submission_counter == consts.NUMBER_OF_PLAYERS_TO_START:
             return_val = True

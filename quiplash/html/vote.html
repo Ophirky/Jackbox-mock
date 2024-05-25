@@ -28,6 +28,10 @@
         </button>
     </div>
 
+    <div id="wait-title">
+        <h1>Wait for other players to vote.</h1>
+    </div>
+
     <script>
         function sendVote(vote) {
             fetch("/submit", {
@@ -38,11 +42,26 @@
                 body: JSON.stringify({ txt: vote.toString() })
             }).then((res) => {
                 if (res.status === 200) {
-                    clearInterval(countdownTimer);
+                    document.getElementById("wait-title").style.display = "inline-block";
+                    document.getElementById("buttons").style.display = "none";
 
-                    document.querySelector("body").innerHTML = "<h1>Wait for other players to vote.</h1>";
+                    const evtSource = new EventSource("/start-vote");
+                    evtSource.onmessage = (event) => {
+                        let ans = JSON.parse(event.data);
+                        if (ans["start-game"] === "true") {
+                            if (ans["location"] === "game-over.html") {
+                                window.location.replace("/" + ans["location"]);
+                            } else {
+                                document.getElementById("wait-title").style.display = "none";
+                                document.getElementById("buttons").style.display = "flex";
+                            }
+
+                            evtSource.close();
+                        }
+
+                    }
                 }
-            })
+            });
         }
     </script>
 </body>

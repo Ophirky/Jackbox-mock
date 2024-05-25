@@ -86,6 +86,7 @@ def is_valid_request(request: bytes) -> dict[bool, str] or dict[bool]:
     # Return true if the request is valid #
     return {"valid": True}
 
+
 def read_file(path: str) -> http_message:
     """
     Create a request for a html page.

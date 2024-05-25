@@ -8,16 +8,17 @@
 - TODO: Add loggers to the files.
 
 // http_message file \\
-- TODO: add logs
 - TODO: add error handling
 
 // http_parser file \\
-- TODO: add logs
 - TODO: add error handing to all of the functions
 
 // http.__init__ file \\
-- TODO: add logs
 - TODO: add error handling to the is_valid function
+
+// HTML FILES \\
+- TODO: Create javascript files.
+- TODO: Add js function commenting according to the way it is written in the example js file. 
 
 // Before submission - all files \\
 - TODO: make sure that all functions have a return decorator (-> return type)
