@@ -177,6 +177,7 @@ class App:
         # Setting up the socket #
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        sock.settimeout(.5)
 
         sock.bind((host, port))
         sock.listen()
@@ -187,7 +188,8 @@ class App:
             while not self.__closed:
                 readable_socks_list, writeable_socks_list, exception_socks_list = select.select(socket_list,
                                                                                                 socket_list,
-                                                                                                socket_list)
+                                                                                                socket_list,
+                                                                                                .1)
                 for notified_socket in readable_socks_list:
                     if notified_socket == sock:  # checking for new connection #
                         consts.HTTP_LOGGER.debug("Getting new connection")

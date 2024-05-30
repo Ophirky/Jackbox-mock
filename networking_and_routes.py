@@ -4,60 +4,7 @@
     DESCRIPTION: This is the main file for the project rewrite using the new HTTP library.
 """
 import logging
-import threading
-import inspect
-
 import quiplash
-
-threading_lock_backup = threading.Lock
-
-# Logger #
-LOGGER = logging.getLogger("routes_log")
-
-
-class CustomLock:
-    def __init__(self):
-        self.lock = threading_lock_backup()
-
-    def get_bc(self) -> str:
-        if consts.GLOBAL_LOG_LEVEL == logging.DEBUG:
-            return ' <- '.join(v.function for v in inspect.stack()[1:])
-        return ''
-
-    def locked(self):
-        return self.lock.locked()
-
-    def acquire(self, blocking=True, timeout=-1):
-        stack = self.get_bc()
-        if consts.GLOBAL_LOG_LEVEL == logging.DEBUG:
-            print("Trying to acquire lock from " + stack)
-        result = self.lock.acquire(blocking, timeout)
-        if consts.GLOBAL_LOG_LEVEL == logging.DEBUG:
-            print("Got lock for " + stack)
-        return result
-
-    def release(self):
-        self.lock.release()
-        if consts.GLOBAL_LOG_LEVEL == logging.DEBUG:
-            print("Released lock for " + self.get_bc())
-
-    def __enter__(self):
-        stack = self.get_bc()
-        if consts.GLOBAL_LOG_LEVEL == logging.DEBUG:
-            print("Trying to acquire lock from " + stack)
-        res = self.lock.__enter__()
-        if consts.GLOBAL_LOG_LEVEL == logging.DEBUG:
-            print("Got lock for " + stack)
-        return res
-
-    def __exit__(self, exc_type, exc_val, exc_tb):
-        if consts.GLOBAL_LOG_LEVEL == logging.DEBUG:
-            print("Released lock for " + self.get_bc())
-        return self.lock.__exit__(exc_type, exc_val, exc_tb)
-
-
-threading.Lock = CustomLock
-
 import time
 import httpro
 from quiplash import game_constants as gconsts
@@ -68,6 +15,8 @@ from utils.global_vars import app, game_manager, round_time_seconds, game_manage
 import utils.global_vars
 from quiplash.protocol import QuiplashProtocol
 
+# Logger #
+LOGGER = logging.getLogger("routes_log")
 
 def increase_submition_counter() -> int:
     """
