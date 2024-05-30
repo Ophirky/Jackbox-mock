@@ -3,8 +3,6 @@
     DATE: 03/05/24
     DESCRIPTION: All the decorators for the project
 """
-import logging
-
 from utils.global_vars import game_manager_lock
 
 

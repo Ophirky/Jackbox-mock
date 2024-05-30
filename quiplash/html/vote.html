@@ -33,6 +33,11 @@
     </div>
 
     <script>
+        /**
+         * Sends the players vote to the server.
+         * @param {vote} - int that is 0 or 1 for the players vote.
+         * @return {null}
+        **/
         function sendVote(vote) {
             fetch("/submit", {
                 method: "POST",

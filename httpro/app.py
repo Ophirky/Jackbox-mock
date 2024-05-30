@@ -3,7 +3,6 @@
     DATE: 15/04/24
     DESCRIPTION: This is the app class. It will handle the webapp and the path.
 """
-import glob
 # Imports #
 import socket
 import time
@@ -24,7 +23,10 @@ class App:
 
     # ---------- Constructor ---------- #
     def __init__(self):
-        """This is the Constructor of the App class."""
+        """
+        Constructor of class
+        :return: None
+        """
         self.routes = dict()
         self.four_o_four = consts.FOUR_O_FOUR
         self.__closed = False

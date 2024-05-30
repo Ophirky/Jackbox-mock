@@ -3,7 +3,6 @@
     DATE: 04/05/24
     DESCRIPTION: Global variables for the project.
 """
-
 import httpro
 from quiplash.game_manager import GameManager
 from quiplash.game_constants import ROUND_TIME_SECONDS_DEFAULT, WINDOW_WIDTH, WINDOW_HEIGHT, FONT_PATH, TITLE_FONT_SIZE

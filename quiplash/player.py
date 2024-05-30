@@ -12,6 +12,7 @@ class Player:
         """
         Constructor of Player class
         :param username: The player username
+        :return: None
         """
         self.username = username
         self.score = 0
@@ -28,12 +29,8 @@ class Player:
         self.score += 1000 * self.voting_score
 
     def __str__(self):
+        """
+        When class is cast to string.
+        :return: String including the username and current score
+        """
         return f"{self.username}, {self.score}"
-
-    def __eq__(self, other):
-        if isinstance(other, str):
-            return self.username == other
-        elif isinstance(other, int):
-            return self.score == other
-        else:
-            return self == other

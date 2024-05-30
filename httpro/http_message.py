@@ -3,8 +3,6 @@
     DATE: 15/03/24
     DESCRIPTION: Class that allows to create easy to use http_ophir messages including responses and requests
 """
-import logging
-
 # Imports #
 import httpro.constants as consts
 import httpro.functions
@@ -12,12 +10,14 @@ import httpro.functions
 
 class HttpMsg:
     """Create easy to use http_ophir messages including responses and requests"""
+
     def __init__(self, error_code: int = 200, body: bytes = b"", **headers) -> None:
         """
         The constructor of the HttpMsg class.
         :param error_code: The error code of the message.
         :param body: The body of the message.
         :param headers: The headers of the message - host=127.0.0.1 -> { b"host": b"127.0.0.1"}
+        :return: None
         """
         if headers is None:
             headers = dict()

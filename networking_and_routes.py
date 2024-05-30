@@ -18,6 +18,7 @@ from quiplash.protocol import QuiplashProtocol
 # Logger #
 LOGGER = logging.getLogger("routes_log")
 
+
 def increase_submition_counter() -> int:
     """
     Increases the submition counter
@@ -128,10 +129,10 @@ def did_start_check(request: httpro.http_parser.HttpParser) -> httpro.http_messa
     :return httpro.http_message.HttpMsg: Returns if the game starts.
     """
     if game_manager.current_scene == gconsts.SENTENCE_INPUT_SCENE_INDEX:
-        response = httpro.http_message.HttpMsg(content_type="text/event-stream",
+        response = httpro.http_message.HttpMsg(content_type=httpro.constants.MIME_TYPES["sse"],
                                                body=b"data: %b\n\n" % QuiplashProtocol.format(start_game=True))
     else:
-        response = httpro.http_message.HttpMsg(content_type="text/event-stream",
+        response = httpro.http_message.HttpMsg(content_type=httpro.constants.MIME_TYPES["sse"],
                                                body=b"data: %b\n\n" % QuiplashProtocol.format(start_game=False))
     return response
 
@@ -283,6 +284,7 @@ def game_over_page(request: httpro.http_parser.HttpParser) -> httpro.http_messag
     """
     return httpro.http_message.HttpMsg(content_type=httpro.constants.MIME_TYPES[".html"],
                                        body=httpro.read_file(gconsts.GAME_OVER_PAGE_PATH))
+
 
 def network_setup() -> None:
     """

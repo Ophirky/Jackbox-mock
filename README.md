@@ -20,17 +20,10 @@ This project not only satisfies academic requirements but also serves as an exce
     -   Each player opens the displayed IP address in their preferred web browser.
     -   The game website hosted by the local server will load.
     -   Now, the players can dive into the mini-game and start playing!
-  
-## Contained Games
-**Detailed Game Explanations in the Git Repository**
-### Implemented:
- - None
-
-### To be implemented:
- - Quiplash
-
+    - 
 ## Resources
 
  - **MarkDown Editor** - stackedit.io
  - **Sequence Diagram Editor** - sequencediagram.org
  - **Code Editors** - [vsc (Visual Studio Code)](https://code.visualstudio.com/) and [Pycharm](https://www.jetbrains.com/pycharm/)
+..

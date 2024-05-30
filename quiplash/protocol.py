@@ -4,7 +4,6 @@
     DESCRIPTION: This file will handle the protocol of the game.
 """
 import json
-import logging
 
 from quiplash import game_constants as consts
 

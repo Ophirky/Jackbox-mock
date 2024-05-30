@@ -22,7 +22,7 @@
   <!-- Request script -->
   <script async>
     const evtSource = new EventSource("/did-start");
-    evtSource.onmessage = function (event) {
+    evtSource.onmessage = (event) => {
       // Check if request is valid \\
       if (JSON.parse(event.data)["start-game"] === "true") {
         // Replace the location in the search bar to wanted location \\

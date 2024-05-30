@@ -8,11 +8,15 @@ from utils.global_vars import game_manager
 import quiplash.game_constants as consts
 from utils.global_vars import text_font, screen
 
+
 class GameOver(Scene):
     """Game Over - When the game is over shows the final scores."""
 
-    def __init__(self):
-        """Constructor"""
+    def __init__(self) -> None:
+        """
+        Constructor of Player class
+        :return: None
+        """
         self.__scene_over = False
 
     @property
@@ -40,7 +44,7 @@ class GameOver(Scene):
             text_rect = text_surface.get_rect(center=(consts.WINDOW_WIDTH // 2, consts.WINDOW_HEIGHT // 2), )
             screen.blit(text_surface, text_rect)
         else:
-            current_letter_y = consts.WINDOW_HEIGHT // 2 - (len(winners)+1 * text_font.get_height())
+            current_letter_y = consts.WINDOW_HEIGHT // 2 - (len(winners) + 1 * text_font.get_height())
             text_surface = text_font.render(f"The winners are", True, consts.COLOR_WHITE, None)
             text_rect = text_surface.get_rect(center=(consts.WINDOW_WIDTH // 2, current_letter_y))
             screen.blit(text_surface, text_rect)

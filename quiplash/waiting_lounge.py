@@ -9,7 +9,6 @@ from utils.global_vars import screen, text_font
 from utils.functions import display_text
 import quiplash.game_constants as consts
 
-
 # items generation #
 text_surface = text_font.render("Wait for all\nthe other players.", True, consts.COLOR_WHITE, None)
 text_rect = text_surface.get_rect(center=(consts.WINDOW_WIDTH // 2, consts.WINDOW_HEIGHT // 2), )
@@ -20,7 +19,10 @@ class WaitingLounge(Scene):
     """Waiting lounge - while waiting for players to join"""
 
     def __init__(self):
-        """Constructor"""
+        """
+        Constructor of class
+        :return: None
+        """
         self.__scene_over = False
 
     @property

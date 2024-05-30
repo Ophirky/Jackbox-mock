@@ -11,10 +11,12 @@ import httpro
 # HttpParser #
 class HttpParser:
     """Class to make http_ophir request usable in code more easily"""
+
     def __init__(self, http_request: bytes) -> None:
         """
         The constructor of the HttpParser class.
         :param http_request: the request for the class to parse.
+        :return: None
         """
         # If the request is invalid #
         is_request_valid = httpro.is_valid_request(http_request)
@@ -43,8 +45,6 @@ class HttpParser:
                 else:
                     key, value = self.HTTP_REQUEST.split(b"=")
                     self.COOKIES[key] = value
-
-
 
             self.BODY = self.__body_parser()
             self.METHOD, self.URI, self.HTTP_VERSION, self.QUERY_PARAMS = self.__section_one_parser()
@@ -105,7 +105,7 @@ class HttpParser:
 def auto_test_http_parser() -> None:
     """
     Automatic tests for the HttpParser class.
-      :return: None
+    :return: None
     """
     # Valid HTTP request with query parameters
     valid_request = b"GET /index.html?param1=value1&param2=value2 HTTP/1.1\r\nHost: example.com\r\n\r\n"

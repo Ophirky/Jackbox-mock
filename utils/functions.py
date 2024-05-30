@@ -33,7 +33,7 @@ def display_text(surface: pygame.Surface, text: str, pos: tuple, font: pygame.fo
         for words in lines:
             word_surface = font.render(words, True, color, None)
             word_width, word_height = word_surface.get_size()
-            if x + word_width >= gconsts.WINDOW_WIDTH-right_padding:
+            if x + word_width >= gconsts.WINDOW_WIDTH - right_padding:
                 x = pos[0]
                 y += word_height
             surface.blit(word_surface, (x, y))

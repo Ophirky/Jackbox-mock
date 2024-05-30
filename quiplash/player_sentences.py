@@ -15,12 +15,16 @@ import time
 text_surface = text_font.render("Answer funny...", True, consts.COLOR_WHITE)
 text_rect = text_surface.get_rect(center=(consts.WINDOW_WIDTH // 2, consts.WINDOW_HEIGHT // 2))
 
+
 # Scene #
 class PlayerSentences(Scene):
     """Sentence submission scene"""
 
     def __init__(self):
-        """Constructor of Round One"""
+        """
+        Constructor of class
+        :return: None
+        """
 
         # When instance of class is created the game_manager will already be locked by the game_main program #
         self.__PLAYERS = global_vars.game_manager.players

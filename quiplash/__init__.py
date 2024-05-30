@@ -8,6 +8,7 @@ from quiplash import game_constants as consts
 from utils import general_constants as global_consts
 import logging
 
+
 def quiplash_setup() -> None:
     """
     Running the auto tests and sets up logger

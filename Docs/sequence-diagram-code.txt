@@ -1,0 +1,19 @@
+title Quiplash Protocol
+
+abox over Client,Server: Start Game Request-Response Sequence
+Client->Server: HTTP REQUEST: /did-start
+Server->Client: {"start-game": "false"}
+Client->Server: HTTP REQUEST: /did-start
+Server->Client: {"start-game: "true", "time-left": "192.333333"}
+abox over Client,Server: Start Vote Request-Response Sequence
+Client->Server: HTTP REQUEST: /start-vote
+Server->Client: {"start-game": "false"}
+Client->Server: HTTP REQUEST: /start-vote
+Server->Client: {"start-game: "true", "location": "game-over.html"}
+abox over Client,Server: Username and submition sequence
+Client->Server: HTTP REQUEST: /username body={"txt":"Ophirky"}
+Server->Client: HTTP REQUEST 200 ok
+
+Client->Server: HTTP REQUEST: /submit
+Server->Client: {"txt": "John Lennon is king"}
+Server->Client: HTTP REQUEST 200 ok

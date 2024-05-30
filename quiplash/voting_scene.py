@@ -34,7 +34,10 @@ class VotingScene(Scene):
     """Voting scene"""
 
     def __init__(self):
-        """Constructor"""
+        """
+        Constructor of class
+        :return: None
+        """
         self.__scene_over = False
 
         # Set submission counter to 0 - GAME_MANAGER IS ALREADY LOCKED #

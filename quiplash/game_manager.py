@@ -9,7 +9,10 @@ class GameManager:
     """The game manager"""
 
     def __init__(self) -> None:
-        """Constructor"""
+        """
+        Constructor of class
+        :return: None
+        """
         self.players = []
         self.game_started = False
         self.current_scene = 0
@@ -17,12 +20,13 @@ class GameManager:
         self.current_sentence_vote = 0
         self.game_over = False
 
-    def next_scene(self):
+    def next_scene(self) -> None:
         """
         Goes to the next scene
-        :return:
+        :return: None
         """
         self.current_scene += 1
+
 
 def game_manager_auto_asserts() -> None:
     """

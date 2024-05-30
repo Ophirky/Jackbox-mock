@@ -56,6 +56,10 @@
     <script>
         let countdownTimer;
 
+        /**
+         * Sends the users answer to the server
+         * @return {null}
+        **/
         function sendSentence() {
             let answer = document.getElementById("answer").value;
             fetch("/submit", {
@@ -83,11 +87,15 @@
             })
         }
 
-
-        function runTimer(initialTime) {
+        /**
+         * Starts the timer
+         * @param {givenTimeLeft} - the time that was given by the server
+         * @return {null}
+         **/
+        function runTimer(givenTimeLeft) {
             let timer = document.getElementById('timeLeft');
             let timerElement = document.querySelector('.timer');
-            let timeLeft = initialTime;
+            let timeLeft = givenTimeLeft;
 
             const timerCircle = timerElement.querySelector('svg > circle + circle');
             timerCircle.style.strokeDashoffset = 1;
@@ -97,7 +105,7 @@
                     // Progress Time \\
                     const timeRemaining = timeLeft--;
 
-                    const normalizedTime = (initialTime - timeRemaining) / initialTime;
+                    const normalizedTime = (givenTimeLeft - timeRemaining) / givenTimeLeft;
 
                     // Html updating \\
                     timerCircle.style.strokeDashoffset = normalizedTime; // Border length.
@@ -111,7 +119,7 @@
 
         // Get the sentence assigned to the player \\
         const evtSource = new EventSource("/get-sentence");
-        evtSource.onmessage = function (event) {
+        evtSource.onmessage = (event) => {
             let ans = JSON.parse(event.data);
             document.getElementById("sentence").textContent = ans["txt"];
 
