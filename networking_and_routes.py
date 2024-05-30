@@ -134,8 +134,6 @@ def start_sentence_vote(request: httpro.http_parser.HttpParser) -> httpro.http_m
 
     if game_manager.current_scene == gconsts.VOTING_SCENE_INDEX:
         for player in game_manager.players:
-            print(player.username + " " + request.COOKIES[b"username"].decode())
-            print(player.username == request.COOKIES[b"username"].decode())
             if player.username == request.COOKIES[b"username"].decode() \
                     and not player.voted and not game_manager.game_over:
                 return_val = httpro.http_message.HttpMsg(content_type=httpro.constants.MIME_TYPES["sse"],

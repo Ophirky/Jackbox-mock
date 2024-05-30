@@ -5,6 +5,14 @@
 """
 # Imports #
 from quiplash.scene import Scene
+from utils.global_vars import screen, text_font
+from utils.functions import display_text
+import quiplash.game_constants as consts
+
+
+# items generation #
+text_surface = text_font.render("Wait for all\nthe other players.", True, consts.COLOR_WHITE, None)
+text_rect = text_surface.get_rect(center=(consts.WINDOW_WIDTH // 2, consts.WINDOW_HEIGHT // 2), )
 
 
 # Scene #
@@ -28,4 +36,9 @@ class WaitingLounge(Scene):
         The waiting lounge (waiting for players) scene
         :return: None
         """
-        ...
+        display_text(screen,
+                     "Wait for the other \t\t\tplayers",
+                     (115, consts.WINDOW_HEIGHT // 2 - 50),
+                     text_font,
+                     consts.COLOR_WHITE
+                     )

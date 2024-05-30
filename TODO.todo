@@ -30,3 +30,7 @@
 - TODO: make video of people using the game
 - TODO: make sure README is up to date
 - TODO: make sure that all of the imports are sorted correctly
+- TODO: Check for unused imports
+- TODO: Remove home made Lock class in networking_and_routes.py
+- TODO: Check if game actually works fine.
+- TODO: Check if the documents are there and up to date

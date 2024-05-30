@@ -1,11 +1,14 @@
 """
-
+    AUTHOR: Ophir Nevo Michrowski
+    DATE: 19/05/2024
+    DESCRIPTION: Running the game.
 """
 import networking_and_routes as nar
 import quiplash
 import httpro
 import os
 import utils.general_constants as consts
+from utils import global_vars
 import threading
 
 if __name__ == '__main__':
@@ -18,12 +21,9 @@ if __name__ == '__main__':
     quiplash.quiplash_setup()
     nar.network_setup()
 
-    # Thread setup #
-    socket_thread = threading.Thread(target=nar.app.run)
-    game_socket = threading.Thread(target=quiplash.game_main.main)
+    # Starting the networking thread #
+    global_vars.socket_thread = threading.Thread(target=nar.app.run)
+    global_vars.socket_thread.start()
 
-    socket_thread.start()
-    game_socket.start()
-
-    while socket_thread.is_alive() or game_socket.is_alive():
-        ...
+    # Running the pygame script in the main thread - pygame is not thread safe #
+    quiplash.game_main.main()

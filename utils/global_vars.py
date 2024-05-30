@@ -6,8 +6,9 @@
 
 import httpro
 from quiplash.game_manager import GameManager
-from quiplash.game_constants import ROUND_TIME_SECONDS_DEFAULT
+from quiplash.game_constants import ROUND_TIME_SECONDS_DEFAULT, WINDOW_WIDTH, WINDOW_HEIGHT, FONT_PATH, TITLE_FONT_SIZE
 from threading import Lock
+import pygame
 
 app = httpro.app.App()
 game_manager = GameManager()
@@ -21,6 +22,13 @@ current_scene_instance_lock = Lock()
 
 round_time_seconds = ROUND_TIME_SECONDS_DEFAULT
 
+screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+pygame.font.init()  # Init the font at the start of the game.
+text_font = pygame.font.Font(FONT_PATH, TITLE_FONT_SIZE)
+
+# Thread Setup #
+socket_thread = None  # Initialize in main.py
+
 # variable has no lock since it cannot be accessed from two threads at the same time #
 round_start_time = None
-

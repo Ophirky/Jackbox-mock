@@ -27,6 +27,7 @@ class App:
         """This is the Constructor of the App class."""
         self.routes = dict()
         self.four_o_four = consts.FOUR_O_FOUR
+        self.__closed = False
 
     # ---------- Decorators ---------- #
     def route(self, route: bytes, permission_cookie: bytes = "None"):
@@ -74,6 +75,7 @@ class App:
             while b"\r\n\r\n" not in message and time.time() - time_start < consts.RECV_TIMEOUT:
                 msg = b""
                 try:
+                    client_socket.settimeout(.5)
                     msg = client_socket.recv(consts.RECV_LENGTH)
                 except socket.timeout:
                     consts.HTTP_LOGGER.debug("Got timeout on socket receive")
@@ -157,6 +159,14 @@ class App:
         else:
             raise TypeError("Function must get a string that holds the route to the 404 html file")
 
+    def close_app(self) -> None:
+        """
+        Shuts down the server and closes the server
+        :return: None
+        """
+        self.__closed = True
+        consts.HTTP_LOGGER.debug("Closing app.")
+
     def run(self, port=consts.PORT, host=consts.IP) -> None:
         """
         Starts the http server.
@@ -174,19 +184,20 @@ class App:
         socket_list = [sock]
 
         try:
-            while True:
+            while not self.__closed:
                 readable_socks_list, writeable_socks_list, exception_socks_list = select.select(socket_list,
                                                                                                 socket_list,
                                                                                                 socket_list)
-
                 for notified_socket in readable_socks_list:
                     if notified_socket == sock:  # checking for new connection #
+                        consts.HTTP_LOGGER.debug("Getting new connection")
                         client_socket, client_addr = sock.accept()
                         logging.info(consts.NEW_CLIENT.format(client_addr[0], client_addr[1]))
                         client_socket.settimeout(.5)
                         socket_list.append(client_socket)  # Adding the socket to the connected clients #
                     else:
                         try:
+                            consts.HTTP_LOGGER.debug("Starting receive")
                             message: httpro.http_parser.HttpParser = self.__receive_message(notified_socket)
                             consts.HTTP_LOGGER.info(b"Got Request: " + message.URI if message.URI else "None")
                             self.__handle_client(message, notified_socket)
@@ -198,4 +209,6 @@ class App:
                             notified_socket.close()
                             socket_list.remove(notified_socket)
         finally:
+            consts.HTTP_LOGGER.debug("Closing main socket.")
             sock.close()
+            consts.HTTP_LOGGER.debug("Main socket closed.")

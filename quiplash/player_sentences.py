@@ -5,11 +5,15 @@
 """
 # Imports #
 from quiplash.scene import Scene
-from quiplash import game_constants as consts
 from utils import global_vars
+import quiplash.game_constants as consts
+from utils.global_vars import screen, text_font
 import random
 import time
 
+# Vars #
+text_surface = text_font.render("Answer funny...", True, consts.COLOR_WHITE)
+text_rect = text_surface.get_rect(center=(consts.WINDOW_WIDTH // 2, consts.WINDOW_HEIGHT // 2))
 
 # Scene #
 class PlayerSentences(Scene):
@@ -90,5 +94,6 @@ class PlayerSentences(Scene):
         The sentence scene
         :return: None
         """
+        screen.blit(text_surface, text_rect)
         if self.__check_scene_over():
             self.__scene_over = True

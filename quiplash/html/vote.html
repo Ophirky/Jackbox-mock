@@ -42,8 +42,8 @@
                 body: JSON.stringify({ txt: vote.toString() })
             }).then((res) => {
                 if (res.status === 200) {
-                    document.getElementById("wait-title").style.display = "inline-block";
                     document.getElementById("buttons").style.display = "none";
+                    document.getElementById("wait-title").style.display = "flex";
 
                     const evtSource = new EventSource("/start-vote");
                     evtSource.onmessage = (event) => {
