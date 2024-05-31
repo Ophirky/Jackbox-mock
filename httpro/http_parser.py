@@ -87,7 +87,7 @@ class HttpParser:
 
             # If there are no params #
             except IndexError:
-                consts.HTTP_LOGGER.error("no query parameters")
+                consts.HTTP_LOGGER.info("no query parameters")
                 return None
             except Exception as e:
                 consts.HTTP_LOGGER.exception(e)

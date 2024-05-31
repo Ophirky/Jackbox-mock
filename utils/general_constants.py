@@ -7,7 +7,7 @@
 import logging
 
 # Logging #
-GLOBAL_LOG_LEVEL = logging.DEBUG
+GLOBAL_LOG_LEVEL = logging.ERROR
 GLOBAL_LOG_DIR = r"Logs"
 GLOBAL_LOG_FORMAT = "%(asctime)s | %(levelname)s | %(message)s"
 
